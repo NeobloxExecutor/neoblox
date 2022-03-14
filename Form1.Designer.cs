@@ -29,7 +29,7 @@ namespace neoblox
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Panel = new System.Windows.Forms.Panel();
             this.titleLabel = new System.Windows.Forms.Label();
             this.aceEditor = new System.Windows.Forms.WebBrowser();
             this.executeButton = new System.Windows.Forms.Button();
@@ -39,19 +39,21 @@ namespace neoblox
             this.injectButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.panel1.Controls.Add(this.minimizeButton);
-            this.panel1.Controls.Add(this.closeButton);
-            this.panel1.Controls.Add(this.titleLabel);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 49);
-            this.panel1.TabIndex = 0;
+            this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Panel.Controls.Add(this.minimizeButton);
+            this.Panel.Controls.Add(this.closeButton);
+            this.Panel.Controls.Add(this.titleLabel);
+            this.Panel.Location = new System.Drawing.Point(0, 0);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(801, 49);
+            this.Panel.TabIndex = 0;
+            this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
+            this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
             // 
             // titleLabel
             // 
@@ -182,21 +184,21 @@ namespace neoblox
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.executeButton);
             this.Controls.Add(this.aceEditor);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Panel);
             this.ForeColor = System.Drawing.Color.SeaShell;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "neoblox";
             this.Text = "Neoblox";
             this.Load += new System.EventHandler(this.neoblox_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Panel.ResumeLayout(false);
+            this.Panel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Panel;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.WebBrowser aceEditor;
         private System.Windows.Forms.Button executeButton;
