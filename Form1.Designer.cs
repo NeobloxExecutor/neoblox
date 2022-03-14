@@ -35,7 +35,9 @@ namespace neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ForeColor = System.Drawing.Color.SeaShell;
             this.Name = "neoblox";
             this.Text = "Neoblox";
             this.ResumeLayout(false);
