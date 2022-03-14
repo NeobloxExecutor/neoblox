@@ -75,5 +75,31 @@ namespace neoblox
                 }
             }
         }
+
+        private void saveScriptButton_Click(object sender, EventArgs e)
+        {
+            HtmlDocument document = aceEditor.Document;
+            string scriptName = "GetText";
+            object[] args = new string[0];
+            object obj = document.InvokeScript(scriptName, args);
+            string script = obj.ToString();
+
+            try
+            {
+                var saveFileDialog1 = new SaveFileDialog
+                {
+                    InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + "\\Scripts",
+                    Filter = string.Format("{0}Text files (*.txt)|*.txt|Lua files (*.lua)|*.lua", "*.lua"),
+                    RestoreDirectory = true,
+                    ShowHelp = false,
+                    CheckFileExists = false
+                };
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK) { File.WriteAllText(saveFileDialog1.FileName, script); }
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

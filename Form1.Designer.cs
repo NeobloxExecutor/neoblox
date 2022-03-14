@@ -35,7 +35,7 @@ namespace neoblox
             this.executeButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.openScriptButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.saveScriptButton = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -110,18 +110,19 @@ namespace neoblox
             this.openScriptButton.UseVisualStyleBackColor = false;
             this.openScriptButton.Click += new System.EventHandler(this.openScriptButton_Click);
             // 
-            // button3
+            // saveScriptButton
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(460, 401);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 37);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Save script";
-            this.button3.UseVisualStyleBackColor = false;
+            this.saveScriptButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.saveScriptButton.FlatAppearance.BorderSize = 0;
+            this.saveScriptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveScriptButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveScriptButton.Location = new System.Drawing.Point(460, 401);
+            this.saveScriptButton.Name = "saveScriptButton";
+            this.saveScriptButton.Size = new System.Drawing.Size(144, 37);
+            this.saveScriptButton.TabIndex = 5;
+            this.saveScriptButton.Text = "Save script";
+            this.saveScriptButton.UseVisualStyleBackColor = false;
+            this.saveScriptButton.Click += new System.EventHandler(this.saveScriptButton_Click);
             // 
             // button4
             // 
@@ -143,7 +144,7 @@ namespace neoblox
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.saveScriptButton);
             this.Controls.Add(this.openScriptButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.executeButton);
@@ -167,7 +168,7 @@ namespace neoblox
         private System.Windows.Forms.Button executeButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button openScriptButton;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button saveScriptButton;
         private System.Windows.Forms.Button button4;
     }
 }
