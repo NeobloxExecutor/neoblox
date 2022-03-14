@@ -101,5 +101,10 @@ namespace neoblox
 
             }
         }
+
+        private void injectButton_Click(object sender, EventArgs e)
+        {
+            wrdExploitAPI.LaunchExploit();
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace neoblox
             this.clearButton = new System.Windows.Forms.Button();
             this.openScriptButton = new System.Windows.Forms.Button();
             this.saveScriptButton = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.injectButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,18 +124,19 @@ namespace neoblox
             this.saveScriptButton.UseVisualStyleBackColor = false;
             this.saveScriptButton.Click += new System.EventHandler(this.saveScriptButton_Click);
             // 
-            // button4
+            // injectButton
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(610, 401);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(144, 37);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Inject";
-            this.button4.UseVisualStyleBackColor = false;
+            this.injectButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.injectButton.FlatAppearance.BorderSize = 0;
+            this.injectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.injectButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectButton.Location = new System.Drawing.Point(610, 401);
+            this.injectButton.Name = "injectButton";
+            this.injectButton.Size = new System.Drawing.Size(144, 37);
+            this.injectButton.TabIndex = 6;
+            this.injectButton.Text = "Inject";
+            this.injectButton.UseVisualStyleBackColor = false;
+            this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
             // 
             // neoblox
             // 
@@ -143,7 +144,7 @@ namespace neoblox
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.injectButton);
             this.Controls.Add(this.saveScriptButton);
             this.Controls.Add(this.openScriptButton);
             this.Controls.Add(this.clearButton);
@@ -169,7 +170,7 @@ namespace neoblox
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button openScriptButton;
         private System.Windows.Forms.Button saveScriptButton;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button injectButton;
     }
 }
 
