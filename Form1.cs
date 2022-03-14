@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -41,21 +42,6 @@ namespace neoblox
             catch
             {
                 MessageBox.Show("We couldn't activate Anti-Banwave due to an unexpected error!\nTry running neoblox as an administrator!\nBe careful!");
-            }
-        }
-
-        private void neoblox_Close(object sender, EventArgs e)
-        {
-            try
-            {
-                string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), "drivers\\etc\\hosts");
-                File.WriteAllLines(path, (from l in File.ReadLines(path) where l != "127.0.0.1 data.roblox.com" select l).ToList<string>());
-                File.WriteAllLines(path, (from l in File.ReadLines(path) where l != "127.0.0.1 roblox.sp.backtrace.io" select l).ToList<string>());
-                File.WriteAllLines(path, (from l in File.ReadLines(path) where l != "# Anti-Banwave measures for Roblox - added by neoblox" select l).ToList<string>());
-            }
-            catch
-            {
-                MessageBox.Show("We couldn't deactivate Anti-Banwave due to an unexpected error!\nRestart the program as an administrator!");
             }
         }
 
@@ -138,6 +124,7 @@ namespace neoblox
 
         private void closeButton_Click(object sender, EventArgs e)
         {
+            Process.Start("deactivate anti ban measures.exe");
             Application.Exit();
         }
 
