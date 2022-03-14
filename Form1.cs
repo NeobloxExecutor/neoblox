@@ -20,8 +20,8 @@ namespace neoblox
         }
 
         private void neoblox_Load(object sender, EventArgs e)
-        {
-
+        { 
+            WinAPI.AnimateWindow(this.Handle, 300, WinAPI.VER_Negative);
         }
     }
 }
