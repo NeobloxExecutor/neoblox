@@ -39,5 +39,13 @@ namespace neoblox
 
             wrdExploitAPI.SendLuaScript(script);
         }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            aceEditor.Document.InvokeScript("SetText", new object[]
+            {
+                ""
+            });
+        }
     }
 }
