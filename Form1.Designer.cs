@@ -80,6 +80,7 @@ namespace neoblox
             this.executeButton.TabIndex = 2;
             this.executeButton.Text = "Execute";
             this.executeButton.UseVisualStyleBackColor = false;
+            this.executeButton.Click += new System.EventHandler(this.executeButton_Click);
             // 
             // button1
             // 
