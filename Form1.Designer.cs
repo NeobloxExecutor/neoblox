@@ -64,6 +64,7 @@ namespace neoblox
             this.ForeColor = System.Drawing.Color.SeaShell;
             this.Name = "neoblox";
             this.Text = "Neoblox";
+            this.Load += new System.EventHandler(this.neoblox_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

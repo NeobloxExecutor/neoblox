@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// raifu was here owo
+
 namespace neoblox
 {
     public partial class neoblox : Form
@@ -15,6 +17,11 @@ namespace neoblox
         public neoblox()
         {
             InitializeComponent();
+        }
+
+        private void neoblox_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
