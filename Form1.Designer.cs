@@ -37,12 +37,16 @@ namespace neoblox
             this.openScriptButton = new System.Windows.Forms.Button();
             this.saveScriptButton = new System.Windows.Forms.Button();
             this.injectButton = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.minimizeButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.minimizeButton);
+            this.panel1.Controls.Add(this.closeButton);
             this.panel1.Controls.Add(this.titleLabel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -138,6 +142,34 @@ namespace neoblox
             this.injectButton.UseVisualStyleBackColor = false;
             this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
             // 
+            // closeButton
+            // 
+            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.Location = new System.Drawing.Point(752, 0);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(49, 46);
+            this.closeButton.TabIndex = 1;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // minimizeButton
+            // 
+            this.minimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimizeButton.FlatAppearance.BorderSize = 0;
+            this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizeButton.Location = new System.Drawing.Point(697, 0);
+            this.minimizeButton.Name = "minimizeButton";
+            this.minimizeButton.Size = new System.Drawing.Size(49, 46);
+            this.minimizeButton.TabIndex = 2;
+            this.minimizeButton.Text = "-";
+            this.minimizeButton.UseVisualStyleBackColor = true;
+            this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +184,7 @@ namespace neoblox
             this.Controls.Add(this.aceEditor);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.SeaShell;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "neoblox";
             this.Text = "Neoblox";
             this.Load += new System.EventHandler(this.neoblox_Load);
@@ -171,6 +204,8 @@ namespace neoblox
         private System.Windows.Forms.Button openScriptButton;
         private System.Windows.Forms.Button saveScriptButton;
         private System.Windows.Forms.Button injectButton;
+        private System.Windows.Forms.Button minimizeButton;
+        private System.Windows.Forms.Button closeButton;
     }
 }
 

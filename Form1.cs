@@ -135,5 +135,15 @@ namespace neoblox
         {
             wrdExploitAPI.LaunchExploit();
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void minimizeButton_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
