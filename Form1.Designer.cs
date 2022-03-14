@@ -138,7 +138,7 @@ namespace neoblox
             this.injectButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.injectButton.Location = new System.Drawing.Point(610, 401);
             this.injectButton.Name = "injectButton";
-            this.injectButton.Size = new System.Drawing.Size(144, 37);
+            this.injectButton.Size = new System.Drawing.Size(178, 37);
             this.injectButton.TabIndex = 6;
             this.injectButton.Text = "Inject";
             this.injectButton.UseVisualStyleBackColor = false;
