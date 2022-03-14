@@ -31,6 +31,7 @@ namespace neoblox
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.aceEditor = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,12 +55,21 @@ namespace neoblox
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Neoblox";
             // 
+            // aceEditor
+            // 
+            this.aceEditor.Location = new System.Drawing.Point(0, 44);
+            this.aceEditor.MinimumSize = new System.Drawing.Size(20, 20);
+            this.aceEditor.Name = "aceEditor";
+            this.aceEditor.Size = new System.Drawing.Size(801, 338);
+            this.aceEditor.TabIndex = 1;
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.aceEditor);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.SeaShell;
             this.Name = "neoblox";
@@ -75,6 +85,7 @@ namespace neoblox
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.WebBrowser aceEditor;
     }
 }
 

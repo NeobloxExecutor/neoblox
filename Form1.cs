@@ -22,6 +22,8 @@ namespace neoblox
         private void neoblox_Load(object sender, EventArgs e)
         { 
             WinAPI.AnimateWindow(this.Handle, 300, WinAPI.VER_Negative);
+
+            this.aceEditor.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
         }
     }
 }
