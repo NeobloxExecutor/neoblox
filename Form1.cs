@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace neoblox
 {
-    public partial class Form1 : Form
+    public partial class neoblox : Form
     {
-        public Form1()
+        public neoblox()
         {
             InitializeComponent();
         }
