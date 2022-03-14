@@ -41,7 +41,7 @@ namespace neoblox
             }
             catch
             {
-                MessageBox.Show("We couldn't activate Anti-Banwave due to an unexpected error!\nTry running neoblox as an administrator!\nBe careful!");
+                MessageBox.Show("We couldn't activate Anti-Ban measures due to an unexpected error!\nTry running neoblox as an administrator!\nAlways use an alt while exploiting!");
             }
         }
 
