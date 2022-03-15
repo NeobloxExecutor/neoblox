@@ -26,6 +26,8 @@ namespace neoblox
 
         private void neoblox_Load(object sender, EventArgs e)
         {
+            Process.Start("discordrpc.exe");
+
             WinAPI.AnimateWindow(this.Handle, 300, WinAPI.VER_Negative);
 
             this.aceEditor.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
@@ -125,6 +127,10 @@ namespace neoblox
         private void closeButton_Click(object sender, EventArgs e)
         {
             Process.Start("deactivate anti ban measures.exe");
+            foreach (var process in Process.GetProcessesByName("discordrpc"))
+            {
+                process.Kill();
+            }
             Application.Exit();
         }
 

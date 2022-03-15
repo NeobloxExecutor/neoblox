@@ -90,7 +90,7 @@ namespace neoblox
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.Silver;
-            this.titleLabel.Location = new System.Drawing.Point(4, 5);
+            this.titleLabel.Location = new System.Drawing.Point(4, 1);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(106, 36);
             this.titleLabel.TabIndex = 0;
