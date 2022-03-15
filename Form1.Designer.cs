@@ -182,7 +182,7 @@ namespace neoblox
             this.listBox1.ForeColor = System.Drawing.Color.Silver;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(627, 39);
+            this.listBox1.Location = new System.Drawing.Point(628, 39);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(171, 340);
             this.listBox1.TabIndex = 7;

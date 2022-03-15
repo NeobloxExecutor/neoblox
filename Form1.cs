@@ -30,7 +30,7 @@ namespace neoblox
 
             WinAPI.AnimateWindow(this.Handle, 300, WinAPI.VER_Negative);
 
-            this.aceEditor.Navigate(string.Format("file:///{0}ace/AceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
+            this.aceEditor.Navigate(string.Format("file:///{0}ace/aceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
 
             try
             {
@@ -176,7 +176,8 @@ namespace neoblox
         {
             listBox1.Items.Clear();
             PopulateListBox(listBox1, "./Scripts", "*.txt");
-            
+            PopulateListBox(listBox1, "./Scripts", "*.lua");
+
         }
     }
 }
