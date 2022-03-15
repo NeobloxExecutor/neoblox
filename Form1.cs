@@ -179,5 +179,14 @@ namespace neoblox
             PopulateListBox(listBox1, "./Scripts", "*.lua");
 
         }
+
+        private void walkspeedTextbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string walkspeed = walkspeedTextbox.Text;
+                wrdExploitAPI.SendLuaScript($"game.Players.LocalPlayer.Character.Humanoid.WalkSpeed={walkspeed}");
+            }
+        }
     }
 }

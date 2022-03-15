@@ -41,6 +41,8 @@ namespace neoblox
             this.injectButton = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.refreshScriptList = new System.Windows.Forms.Button();
+            this.walkspeedLabel = new System.Windows.Forms.Label();
+            this.walkspeedTextbox = new System.Windows.Forms.TextBox();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,11 +198,35 @@ namespace neoblox
             this.refreshScriptList.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refreshScriptList.Location = new System.Drawing.Point(10, 444);
             this.refreshScriptList.Name = "refreshScriptList";
-            this.refreshScriptList.Size = new System.Drawing.Size(778, 37);
+            this.refreshScriptList.Size = new System.Drawing.Size(110, 37);
             this.refreshScriptList.TabIndex = 8;
             this.refreshScriptList.Text = "Refresh script list";
             this.refreshScriptList.UseVisualStyleBackColor = false;
             this.refreshScriptList.Click += new System.EventHandler(this.refreshScriptList_Click);
+            // 
+            // walkspeedLabel
+            // 
+            this.walkspeedLabel.AutoSize = true;
+            this.walkspeedLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.walkspeedLabel.ForeColor = System.Drawing.Color.Silver;
+            this.walkspeedLabel.Location = new System.Drawing.Point(126, 448);
+            this.walkspeedLabel.Name = "walkspeedLabel";
+            this.walkspeedLabel.Size = new System.Drawing.Size(153, 24);
+            this.walkspeedLabel.TabIndex = 3;
+            this.walkspeedLabel.Text = "Change walkspeed:";
+            // 
+            // walkspeedTextbox
+            // 
+            this.walkspeedTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.walkspeedTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.walkspeedTextbox.ForeColor = System.Drawing.Color.Silver;
+            this.walkspeedTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.walkspeedTextbox.Location = new System.Drawing.Point(285, 452);
+            this.walkspeedTextbox.Name = "walkspeedTextbox";
+            this.walkspeedTextbox.Size = new System.Drawing.Size(100, 20);
+            this.walkspeedTextbox.TabIndex = 9;
+            this.walkspeedTextbox.TabStop = false;
+            this.walkspeedTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.walkspeedTextbox_KeyDown);
             // 
             // neoblox
             // 
@@ -208,6 +234,8 @@ namespace neoblox
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(800, 487);
+            this.Controls.Add(this.walkspeedTextbox);
+            this.Controls.Add(this.walkspeedLabel);
             this.Controls.Add(this.refreshScriptList);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.injectButton);
@@ -225,6 +253,7 @@ namespace neoblox
             this.Panel.ResumeLayout(false);
             this.Panel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -242,6 +271,8 @@ namespace neoblox
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button refreshScriptList;
+        private System.Windows.Forms.Label walkspeedLabel;
+        private System.Windows.Forms.TextBox walkspeedTextbox;
     }
 }
 
