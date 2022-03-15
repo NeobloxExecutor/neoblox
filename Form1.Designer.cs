@@ -30,6 +30,8 @@ namespace neoblox
         private void InitializeComponent()
         {
             this.Panel = new System.Windows.Forms.Panel();
+            this.minimizeButton = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
             this.aceEditor = new System.Windows.Forms.WebBrowser();
             this.executeButton = new System.Windows.Forms.Button();
@@ -37,8 +39,8 @@ namespace neoblox
             this.openScriptButton = new System.Windows.Forms.Button();
             this.saveScriptButton = new System.Windows.Forms.Button();
             this.injectButton = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
-            this.minimizeButton = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.refreshScriptList = new System.Windows.Forms.Button();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +57,34 @@ namespace neoblox
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
             // 
+            // minimizeButton
+            // 
+            this.minimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimizeButton.FlatAppearance.BorderSize = 0;
+            this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizeButton.Location = new System.Drawing.Point(697, 0);
+            this.minimizeButton.Name = "minimizeButton";
+            this.minimizeButton.Size = new System.Drawing.Size(49, 46);
+            this.minimizeButton.TabIndex = 2;
+            this.minimizeButton.Text = "-";
+            this.minimizeButton.UseVisualStyleBackColor = true;
+            this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
+            // 
+            // closeButton
+            // 
+            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.Location = new System.Drawing.Point(752, 0);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(49, 46);
+            this.closeButton.TabIndex = 1;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
@@ -68,10 +98,10 @@ namespace neoblox
             // 
             // aceEditor
             // 
-            this.aceEditor.Location = new System.Drawing.Point(0, 44);
+            this.aceEditor.Location = new System.Drawing.Point(0, 39);
             this.aceEditor.MinimumSize = new System.Drawing.Size(20, 20);
             this.aceEditor.Name = "aceEditor";
-            this.aceEditor.Size = new System.Drawing.Size(801, 338);
+            this.aceEditor.Size = new System.Drawing.Size(628, 343);
             this.aceEditor.TabIndex = 1;
             // 
             // executeButton
@@ -144,40 +174,42 @@ namespace neoblox
             this.injectButton.UseVisualStyleBackColor = false;
             this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
             // 
-            // closeButton
+            // listBox1
             // 
-            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeButton.FlatAppearance.BorderSize = 0;
-            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(752, 0);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(49, 46);
-            this.closeButton.TabIndex = 1;
-            this.closeButton.Text = "X";
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1.Font = new System.Drawing.Font("Pixter-Granular Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.ForeColor = System.Drawing.Color.Silver;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 17;
+            this.listBox1.Location = new System.Drawing.Point(627, 39);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(171, 340);
+            this.listBox1.TabIndex = 7;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // minimizeButton
+            // refreshScriptList
             // 
-            this.minimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimizeButton.FlatAppearance.BorderSize = 0;
-            this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimizeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimizeButton.Location = new System.Drawing.Point(697, 0);
-            this.minimizeButton.Name = "minimizeButton";
-            this.minimizeButton.Size = new System.Drawing.Size(49, 46);
-            this.minimizeButton.TabIndex = 2;
-            this.minimizeButton.Text = "-";
-            this.minimizeButton.UseVisualStyleBackColor = true;
-            this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
+            this.refreshScriptList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.refreshScriptList.FlatAppearance.BorderSize = 0;
+            this.refreshScriptList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refreshScriptList.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshScriptList.Location = new System.Drawing.Point(10, 444);
+            this.refreshScriptList.Name = "refreshScriptList";
+            this.refreshScriptList.Size = new System.Drawing.Size(778, 37);
+            this.refreshScriptList.TabIndex = 8;
+            this.refreshScriptList.Text = "Refresh script list";
+            this.refreshScriptList.UseVisualStyleBackColor = false;
+            this.refreshScriptList.Click += new System.EventHandler(this.refreshScriptList_Click);
             // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.Controls.Add(this.refreshScriptList);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.injectButton);
             this.Controls.Add(this.saveScriptButton);
             this.Controls.Add(this.openScriptButton);
@@ -208,6 +240,8 @@ namespace neoblox
         private System.Windows.Forms.Button injectButton;
         private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button refreshScriptList;
     }
 }
 

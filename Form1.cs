@@ -147,5 +147,30 @@ namespace neoblox
                 Top += e.Y - lastPoint.Y;
             }
         }
+
+        public static void PopulateListBox(ListBox lsb, string Folder, string FileType)
+        {
+            DirectoryInfo dinfo = new DirectoryInfo(Folder);
+            FileInfo[] Files = dinfo.GetFiles(FileType);
+            foreach (FileInfo file in Files)
+            {
+                lsb.Items.Add(file.Name);
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            aceEditor.Document.InvokeScript("SetText", new object[]
+            {
+                File.ReadAllText($"./Scripts/{listBox1.SelectedItem}")
+            });
+        }
+
+        private void refreshScriptList_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            PopulateListBox(listBox1, "./Scripts", "*.txt");
+            
+        }
     }
 }
