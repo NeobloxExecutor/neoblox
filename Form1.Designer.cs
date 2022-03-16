@@ -43,6 +43,8 @@ namespace neoblox
             this.refreshScriptList = new System.Windows.Forms.Button();
             this.walkspeedLabel = new System.Windows.Forms.Label();
             this.walkspeedTextbox = new System.Windows.Forms.TextBox();
+            this.jumppowerLabel = new System.Windows.Forms.Label();
+            this.jumppowerTextbox = new System.Windows.Forms.TextBox();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -228,12 +230,38 @@ namespace neoblox
             this.walkspeedTextbox.TabStop = false;
             this.walkspeedTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.walkspeedTextbox_KeyDown);
             // 
+            // jumppowerLabel
+            // 
+            this.jumppowerLabel.AutoSize = true;
+            this.jumppowerLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jumppowerLabel.ForeColor = System.Drawing.Color.Silver;
+            this.jumppowerLabel.Location = new System.Drawing.Point(397, 448);
+            this.jumppowerLabel.Name = "jumppowerLabel";
+            this.jumppowerLabel.Size = new System.Drawing.Size(157, 24);
+            this.jumppowerLabel.TabIndex = 10;
+            this.jumppowerLabel.Text = "Change jump power:";
+            // 
+            // jumppowerTextbox
+            // 
+            this.jumppowerTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.jumppowerTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.jumppowerTextbox.ForeColor = System.Drawing.Color.Silver;
+            this.jumppowerTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.jumppowerTextbox.Location = new System.Drawing.Point(560, 452);
+            this.jumppowerTextbox.Name = "jumppowerTextbox";
+            this.jumppowerTextbox.Size = new System.Drawing.Size(100, 20);
+            this.jumppowerTextbox.TabIndex = 11;
+            this.jumppowerTextbox.TabStop = false;
+            this.jumppowerTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.jumppowerTextbox_KeyDown);
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(800, 487);
+            this.Controls.Add(this.jumppowerTextbox);
+            this.Controls.Add(this.jumppowerLabel);
             this.Controls.Add(this.walkspeedTextbox);
             this.Controls.Add(this.walkspeedLabel);
             this.Controls.Add(this.refreshScriptList);
@@ -273,6 +301,8 @@ namespace neoblox
         private System.Windows.Forms.Button refreshScriptList;
         private System.Windows.Forms.Label walkspeedLabel;
         private System.Windows.Forms.TextBox walkspeedTextbox;
+        private System.Windows.Forms.Label jumppowerLabel;
+        private System.Windows.Forms.TextBox jumppowerTextbox;
     }
 }
 

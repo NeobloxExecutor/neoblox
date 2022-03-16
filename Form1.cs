@@ -188,5 +188,14 @@ namespace neoblox
                 wrdExploitAPI.SendLuaScript($"game.Players.LocalPlayer.Character.Humanoid.WalkSpeed={walkspeed}");
             }
         }
+
+        private void jumppowerTextbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string jumppower = jumppowerTextbox.Text;
+                wrdExploitAPI.SendLuaScript($"game.Players.LocalPlayer.Character.Humanoid.JumpPower = {jumppower}");
+            }
+        }
     }
 }
