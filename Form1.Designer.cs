@@ -201,7 +201,7 @@ namespace neoblox
             this.refreshScriptList.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refreshScriptList.Location = new System.Drawing.Point(10, 444);
             this.refreshScriptList.Name = "refreshScriptList";
-            this.refreshScriptList.Size = new System.Drawing.Size(110, 37);
+            this.refreshScriptList.Size = new System.Drawing.Size(181, 37);
             this.refreshScriptList.TabIndex = 8;
             this.refreshScriptList.Text = "Refresh script list";
             this.refreshScriptList.UseVisualStyleBackColor = false;
@@ -212,7 +212,7 @@ namespace neoblox
             this.walkspeedLabel.AutoSize = true;
             this.walkspeedLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.walkspeedLabel.ForeColor = System.Drawing.Color.Silver;
-            this.walkspeedLabel.Location = new System.Drawing.Point(126, 448);
+            this.walkspeedLabel.Location = new System.Drawing.Point(210, 449);
             this.walkspeedLabel.Name = "walkspeedLabel";
             this.walkspeedLabel.Size = new System.Drawing.Size(153, 24);
             this.walkspeedLabel.TabIndex = 3;
@@ -224,7 +224,7 @@ namespace neoblox
             this.walkspeedTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.walkspeedTextbox.ForeColor = System.Drawing.Color.Silver;
             this.walkspeedTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.walkspeedTextbox.Location = new System.Drawing.Point(285, 452);
+            this.walkspeedTextbox.Location = new System.Drawing.Point(369, 453);
             this.walkspeedTextbox.Name = "walkspeedTextbox";
             this.walkspeedTextbox.Size = new System.Drawing.Size(100, 20);
             this.walkspeedTextbox.TabIndex = 9;
@@ -236,7 +236,7 @@ namespace neoblox
             this.jumppowerLabel.AutoSize = true;
             this.jumppowerLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jumppowerLabel.ForeColor = System.Drawing.Color.Silver;
-            this.jumppowerLabel.Location = new System.Drawing.Point(397, 448);
+            this.jumppowerLabel.Location = new System.Drawing.Point(481, 449);
             this.jumppowerLabel.Name = "jumppowerLabel";
             this.jumppowerLabel.Size = new System.Drawing.Size(157, 24);
             this.jumppowerLabel.TabIndex = 10;
@@ -248,7 +248,7 @@ namespace neoblox
             this.jumppowerTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jumppowerTextbox.ForeColor = System.Drawing.Color.Silver;
             this.jumppowerTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.jumppowerTextbox.Location = new System.Drawing.Point(560, 452);
+            this.jumppowerTextbox.Location = new System.Drawing.Point(644, 453);
             this.jumppowerTextbox.Name = "jumppowerTextbox";
             this.jumppowerTextbox.Size = new System.Drawing.Size(100, 20);
             this.jumppowerTextbox.TabIndex = 11;
