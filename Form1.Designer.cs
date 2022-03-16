@@ -29,6 +29,7 @@ namespace neoblox
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
@@ -275,6 +276,7 @@ namespace neoblox
             this.Controls.Add(this.Panel);
             this.ForeColor = System.Drawing.Color.SeaShell;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "neoblox";
             this.Text = "Neoblox";
             this.Load += new System.EventHandler(this.neoblox_Load);
