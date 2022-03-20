@@ -193,5 +193,13 @@ namespace neoblox
         {
             wrdExploitAPI.SendLuaScript("loadstring(game:HttpGet('https://pastebin.com/raw/ETeUDwvV', true))()");
         }
+
+        private void killRblx_Click(object sender, EventArgs e)
+        {
+            foreach (var process in Process.GetProcessesByName("RobloxPlayerBeta"))
+            {
+                process.Kill();
+            }
+        }
     }
 }
