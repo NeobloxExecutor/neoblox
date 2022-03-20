@@ -44,8 +44,8 @@ namespace neoblox
             this.refreshScriptList = new System.Windows.Forms.Button();
             this.walkspeedLabel = new System.Windows.Forms.Label();
             this.walkspeedTextbox = new System.Windows.Forms.TextBox();
-            this.jumppowerLabel = new System.Windows.Forms.Label();
-            this.jumppowerTextbox = new System.Windows.Forms.TextBox();
+            this.flyLabel = new System.Windows.Forms.Label();
+            this.onButtonFly = new System.Windows.Forms.Button();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,29 +231,30 @@ namespace neoblox
             this.walkspeedTextbox.TabStop = false;
             this.walkspeedTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.walkspeedTextbox_KeyDown);
             // 
-            // jumppowerLabel
+            // flyLabel
             // 
-            this.jumppowerLabel.AutoSize = true;
-            this.jumppowerLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jumppowerLabel.ForeColor = System.Drawing.Color.Silver;
-            this.jumppowerLabel.Location = new System.Drawing.Point(481, 449);
-            this.jumppowerLabel.Name = "jumppowerLabel";
-            this.jumppowerLabel.Size = new System.Drawing.Size(157, 24);
-            this.jumppowerLabel.TabIndex = 10;
-            this.jumppowerLabel.Text = "Change jump power:";
+            this.flyLabel.AutoSize = true;
+            this.flyLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flyLabel.ForeColor = System.Drawing.Color.Silver;
+            this.flyLabel.Location = new System.Drawing.Point(481, 449);
+            this.flyLabel.Name = "flyLabel";
+            this.flyLabel.Size = new System.Drawing.Size(34, 24);
+            this.flyLabel.TabIndex = 10;
+            this.flyLabel.Text = "Fly";
             // 
-            // jumppowerTextbox
+            // onButtonFly
             // 
-            this.jumppowerTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.jumppowerTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.jumppowerTextbox.ForeColor = System.Drawing.Color.Silver;
-            this.jumppowerTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.jumppowerTextbox.Location = new System.Drawing.Point(644, 453);
-            this.jumppowerTextbox.Name = "jumppowerTextbox";
-            this.jumppowerTextbox.Size = new System.Drawing.Size(100, 20);
-            this.jumppowerTextbox.TabIndex = 11;
-            this.jumppowerTextbox.TabStop = false;
-            this.jumppowerTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.jumppowerTextbox_KeyDown);
+            this.onButtonFly.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.onButtonFly.FlatAppearance.BorderSize = 0;
+            this.onButtonFly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.onButtonFly.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.onButtonFly.Location = new System.Drawing.Point(521, 449);
+            this.onButtonFly.Name = "onButtonFly";
+            this.onButtonFly.Size = new System.Drawing.Size(161, 28);
+            this.onButtonFly.TabIndex = 11;
+            this.onButtonFly.Text = "On (Press E to toggle)";
+            this.onButtonFly.UseVisualStyleBackColor = false;
+            this.onButtonFly.Click += new System.EventHandler(this.onButtonFly_Click);
             // 
             // neoblox
             // 
@@ -261,8 +262,8 @@ namespace neoblox
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(800, 487);
-            this.Controls.Add(this.jumppowerTextbox);
-            this.Controls.Add(this.jumppowerLabel);
+            this.Controls.Add(this.onButtonFly);
+            this.Controls.Add(this.flyLabel);
             this.Controls.Add(this.walkspeedTextbox);
             this.Controls.Add(this.walkspeedLabel);
             this.Controls.Add(this.refreshScriptList);
@@ -303,8 +304,8 @@ namespace neoblox
         private System.Windows.Forms.Button refreshScriptList;
         private System.Windows.Forms.Label walkspeedLabel;
         private System.Windows.Forms.TextBox walkspeedTextbox;
-        private System.Windows.Forms.Label jumppowerLabel;
-        private System.Windows.Forms.TextBox jumppowerTextbox;
+        private System.Windows.Forms.Label flyLabel;
+        private System.Windows.Forms.Button onButtonFly;
     }
 }
 
