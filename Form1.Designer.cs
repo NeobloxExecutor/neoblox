@@ -31,6 +31,7 @@ namespace neoblox
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
+            this.killRblx = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
@@ -52,6 +53,7 @@ namespace neoblox
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Panel.Controls.Add(this.killRblx);
             this.Panel.Controls.Add(this.minimizeButton);
             this.Panel.Controls.Add(this.closeButton);
             this.Panel.Controls.Add(this.titleLabel);
@@ -61,6 +63,20 @@ namespace neoblox
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
+            // 
+            // killRblx
+            // 
+            this.killRblx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.killRblx.FlatAppearance.BorderSize = 0;
+            this.killRblx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.killRblx.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.killRblx.Location = new System.Drawing.Point(116, 7);
+            this.killRblx.Name = "killRblx";
+            this.killRblx.Size = new System.Drawing.Size(161, 28);
+            this.killRblx.TabIndex = 12;
+            this.killRblx.Text = "Kill Roblox Process";
+            this.killRblx.UseVisualStyleBackColor = false;
+            this.killRblx.Click += new System.EventHandler(this.killRblx_Click);
             // 
             // minimizeButton
             // 
@@ -306,6 +322,7 @@ namespace neoblox
         private System.Windows.Forms.TextBox walkspeedTextbox;
         private System.Windows.Forms.Label flyLabel;
         private System.Windows.Forms.Button onButtonFly;
+        private System.Windows.Forms.Button killRblx;
     }
 }
 
