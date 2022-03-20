@@ -47,6 +47,7 @@ namespace neoblox
             this.walkspeedTextbox = new System.Windows.Forms.TextBox();
             this.flyLabel = new System.Windows.Forms.Label();
             this.onButtonFly = new System.Windows.Forms.Button();
+            this.killRblx = new System.Windows.Forms.Button();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -271,6 +272,20 @@ namespace neoblox
             this.onButtonFly.Text = "On (Press E to toggle)";
             this.onButtonFly.UseVisualStyleBackColor = false;
             this.onButtonFly.Click += new System.EventHandler(this.onButtonFly_Click);
+            // 
+            // killRblx
+            // 
+            this.killRblx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.killRblx.FlatAppearance.BorderSize = 0;
+            this.killRblx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.killRblx.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.killRblx.Location = new System.Drawing.Point(116, 9);
+            this.killRblx.Name = "killRblx";
+            this.killRblx.Size = new System.Drawing.Size(161, 28);
+            this.killRblx.TabIndex = 12;
+            this.killRblx.Text = "Kill Roblox Process";
+            this.killRblx.UseVisualStyleBackColor = false;
+            this.killRblx.Click += new System.EventHandler(this.killRblx_Click);
             // 
             // neoblox
             // 
