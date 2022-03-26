@@ -59,7 +59,7 @@ namespace neoblox
             this.Panel.Controls.Add(this.titleLabel);
             this.Panel.Location = new System.Drawing.Point(0, 0);
             this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(801, 49);
+            this.Panel.Size = new System.Drawing.Size(1447, 49);
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
@@ -84,7 +84,7 @@ namespace neoblox
             this.minimizeButton.FlatAppearance.BorderSize = 0;
             this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minimizeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimizeButton.Location = new System.Drawing.Point(697, 0);
+            this.minimizeButton.Location = new System.Drawing.Point(1338, -2);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(49, 46);
             this.minimizeButton.TabIndex = 2;
@@ -98,7 +98,7 @@ namespace neoblox
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(752, 0);
+            this.closeButton.Location = new System.Drawing.Point(1393, 0);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(49, 46);
             this.closeButton.TabIndex = 1;
@@ -119,10 +119,10 @@ namespace neoblox
             // 
             // aceEditor
             // 
-            this.aceEditor.Location = new System.Drawing.Point(0, 39);
+            this.aceEditor.Location = new System.Drawing.Point(0, 55);
             this.aceEditor.MinimumSize = new System.Drawing.Size(20, 20);
             this.aceEditor.Name = "aceEditor";
-            this.aceEditor.Size = new System.Drawing.Size(628, 343);
+            this.aceEditor.Size = new System.Drawing.Size(1292, 327);
             this.aceEditor.TabIndex = 1;
             // 
             // executeButton
@@ -133,7 +133,7 @@ namespace neoblox
             this.executeButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.executeButton.Location = new System.Drawing.Point(10, 401);
             this.executeButton.Name = "executeButton";
-            this.executeButton.Size = new System.Drawing.Size(144, 37);
+            this.executeButton.Size = new System.Drawing.Size(228, 37);
             this.executeButton.TabIndex = 2;
             this.executeButton.Text = "Execute";
             this.executeButton.UseVisualStyleBackColor = false;
@@ -145,9 +145,9 @@ namespace neoblox
             this.clearButton.FlatAppearance.BorderSize = 0;
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearButton.Location = new System.Drawing.Point(160, 401);
+            this.clearButton.Location = new System.Drawing.Point(244, 401);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(144, 37);
+            this.clearButton.Size = new System.Drawing.Size(295, 37);
             this.clearButton.TabIndex = 3;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = false;
@@ -159,9 +159,9 @@ namespace neoblox
             this.openScriptButton.FlatAppearance.BorderSize = 0;
             this.openScriptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openScriptButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openScriptButton.Location = new System.Drawing.Point(310, 401);
+            this.openScriptButton.Location = new System.Drawing.Point(545, 401);
             this.openScriptButton.Name = "openScriptButton";
-            this.openScriptButton.Size = new System.Drawing.Size(144, 37);
+            this.openScriptButton.Size = new System.Drawing.Size(295, 37);
             this.openScriptButton.TabIndex = 4;
             this.openScriptButton.Text = "Open script";
             this.openScriptButton.UseVisualStyleBackColor = false;
@@ -173,9 +173,9 @@ namespace neoblox
             this.saveScriptButton.FlatAppearance.BorderSize = 0;
             this.saveScriptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveScriptButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveScriptButton.Location = new System.Drawing.Point(460, 401);
+            this.saveScriptButton.Location = new System.Drawing.Point(846, 401);
             this.saveScriptButton.Name = "saveScriptButton";
-            this.saveScriptButton.Size = new System.Drawing.Size(144, 37);
+            this.saveScriptButton.Size = new System.Drawing.Size(295, 37);
             this.saveScriptButton.TabIndex = 5;
             this.saveScriptButton.Text = "Save script";
             this.saveScriptButton.UseVisualStyleBackColor = false;
@@ -187,9 +187,9 @@ namespace neoblox
             this.injectButton.FlatAppearance.BorderSize = 0;
             this.injectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.injectButton.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectButton.Location = new System.Drawing.Point(610, 401);
+            this.injectButton.Location = new System.Drawing.Point(1147, 401);
             this.injectButton.Name = "injectButton";
-            this.injectButton.Size = new System.Drawing.Size(178, 37);
+            this.injectButton.Size = new System.Drawing.Size(295, 37);
             this.injectButton.TabIndex = 6;
             this.injectButton.Text = "Inject";
             this.injectButton.UseVisualStyleBackColor = false;
@@ -203,9 +203,9 @@ namespace neoblox
             this.listBox1.ForeColor = System.Drawing.Color.Silver;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 17;
-            this.listBox1.Location = new System.Drawing.Point(628, 39);
+            this.listBox1.Location = new System.Drawing.Point(1293, 58);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(171, 340);
+            this.listBox1.Size = new System.Drawing.Size(149, 323);
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -217,7 +217,7 @@ namespace neoblox
             this.refreshScriptList.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refreshScriptList.Location = new System.Drawing.Point(10, 444);
             this.refreshScriptList.Name = "refreshScriptList";
-            this.refreshScriptList.Size = new System.Drawing.Size(181, 37);
+            this.refreshScriptList.Size = new System.Drawing.Size(952, 37);
             this.refreshScriptList.TabIndex = 8;
             this.refreshScriptList.Text = "Refresh script list";
             this.refreshScriptList.UseVisualStyleBackColor = false;
@@ -228,7 +228,7 @@ namespace neoblox
             this.walkspeedLabel.AutoSize = true;
             this.walkspeedLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.walkspeedLabel.ForeColor = System.Drawing.Color.Silver;
-            this.walkspeedLabel.Location = new System.Drawing.Point(210, 449);
+            this.walkspeedLabel.Location = new System.Drawing.Point(968, 448);
             this.walkspeedLabel.Name = "walkspeedLabel";
             this.walkspeedLabel.Size = new System.Drawing.Size(153, 24);
             this.walkspeedLabel.TabIndex = 3;
@@ -240,7 +240,7 @@ namespace neoblox
             this.walkspeedTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.walkspeedTextbox.ForeColor = System.Drawing.Color.Silver;
             this.walkspeedTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.walkspeedTextbox.Location = new System.Drawing.Point(369, 453);
+            this.walkspeedTextbox.Location = new System.Drawing.Point(1127, 453);
             this.walkspeedTextbox.Name = "walkspeedTextbox";
             this.walkspeedTextbox.Size = new System.Drawing.Size(100, 20);
             this.walkspeedTextbox.TabIndex = 9;
@@ -252,7 +252,7 @@ namespace neoblox
             this.flyLabel.AutoSize = true;
             this.flyLabel.Font = new System.Drawing.Font("Pixter-Granular Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flyLabel.ForeColor = System.Drawing.Color.Silver;
-            this.flyLabel.Location = new System.Drawing.Point(481, 449);
+            this.flyLabel.Location = new System.Drawing.Point(1233, 449);
             this.flyLabel.Name = "flyLabel";
             this.flyLabel.Size = new System.Drawing.Size(34, 24);
             this.flyLabel.TabIndex = 10;
@@ -264,7 +264,7 @@ namespace neoblox
             this.onButtonFly.FlatAppearance.BorderSize = 0;
             this.onButtonFly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.onButtonFly.Font = new System.Drawing.Font("Pixter-Granular Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onButtonFly.Location = new System.Drawing.Point(521, 449);
+            this.onButtonFly.Location = new System.Drawing.Point(1273, 448);
             this.onButtonFly.Name = "onButtonFly";
             this.onButtonFly.Size = new System.Drawing.Size(161, 28);
             this.onButtonFly.TabIndex = 11;
@@ -277,7 +277,7 @@ namespace neoblox
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(800, 487);
+            this.ClientSize = new System.Drawing.Size(1446, 488);
             this.Controls.Add(this.onButtonFly);
             this.Controls.Add(this.flyLabel);
             this.Controls.Add(this.walkspeedTextbox);
