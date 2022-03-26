@@ -201,5 +201,10 @@ namespace neoblox
                 process.Kill();
             }
         }
+
+        private void topMostCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.TopMost = topMostCheckbox.Checked;
+        }
     }
 }

@@ -47,12 +47,14 @@ namespace neoblox
             this.walkspeedTextbox = new System.Windows.Forms.TextBox();
             this.flyLabel = new System.Windows.Forms.Label();
             this.onButtonFly = new System.Windows.Forms.Button();
+            this.topMostCheckbox = new System.Windows.Forms.CheckBox();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Panel.Controls.Add(this.topMostCheckbox);
             this.Panel.Controls.Add(this.killRblx);
             this.Panel.Controls.Add(this.minimizeButton);
             this.Panel.Controls.Add(this.closeButton);
@@ -272,6 +274,18 @@ namespace neoblox
             this.onButtonFly.UseVisualStyleBackColor = false;
             this.onButtonFly.Click += new System.EventHandler(this.onButtonFly_Click);
             // 
+            // topMostCheckbox
+            // 
+            this.topMostCheckbox.AutoSize = true;
+            this.topMostCheckbox.Font = new System.Drawing.Font("Pixter-Granular Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topMostCheckbox.Location = new System.Drawing.Point(283, 12);
+            this.topMostCheckbox.Name = "topMostCheckbox";
+            this.topMostCheckbox.Size = new System.Drawing.Size(81, 22);
+            this.topMostCheckbox.TabIndex = 13;
+            this.topMostCheckbox.Text = "Top Most";
+            this.topMostCheckbox.UseVisualStyleBackColor = true;
+            this.topMostCheckbox.CheckedChanged += new System.EventHandler(this.topMostCheckbox_CheckedChanged);
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +310,7 @@ namespace neoblox
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "neoblox";
             this.Text = "Neoblox";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.neoblox_Load);
             this.Panel.ResumeLayout(false);
             this.Panel.PerformLayout();
@@ -323,6 +338,7 @@ namespace neoblox
         private System.Windows.Forms.Label flyLabel;
         private System.Windows.Forms.Button onButtonFly;
         private System.Windows.Forms.Button killRblx;
+        private System.Windows.Forms.CheckBox topMostCheckbox;
     }
 }
 
