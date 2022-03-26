@@ -45,6 +45,11 @@ namespace neoblox
             {
                 MessageBox.Show("We couldn't activate Anti-Ban measures due to an unexpected error!\nTry running neoblox as an administrator!\nAlways use an alt while exploiting!");
             }
+
+            aceEditor.Document.InvokeScript("SetText", new object[]
+            {
+                "print(\"Thanks for downloading Neoblox! Consider starring the github repo! (https://github.com/Plextora/Neoblox)\""
+            });
         }
 
         private void executeButton_Click(object sender, EventArgs e)
