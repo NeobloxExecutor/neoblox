@@ -32,6 +32,11 @@ namespace neoblox
 
             this.aceEditor.Navigate(string.Format("file:///{0}ace/aceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
 
+            aceEditor.Document.InvokeScript("SetText", new object[]
+            {
+                "print(\"Thanks for downloading Neoblox! Consider starring the github repo! (https://github.com/Plextora/Neoblox)\""
+            });
+
             try
             {
                 using (StreamWriter w = File.AppendText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts")))
@@ -45,11 +50,6 @@ namespace neoblox
             {
                 MessageBox.Show("We couldn't activate Anti-Ban measures due to an unexpected error!\nTry running neoblox as an administrator!\nAlways use an alt while exploiting!");
             }
-
-            aceEditor.Document.InvokeScript("SetText", new object[]
-            {
-                "print(\"Thanks for downloading Neoblox! Consider starring the github repo! (https://github.com/Plextora/Neoblox)\""
-            });
         }
 
         private void executeButton_Click(object sender, EventArgs e)
