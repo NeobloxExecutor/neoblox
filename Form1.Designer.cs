@@ -70,7 +70,7 @@ namespace neoblox
             // 
             this.topMostCheckbox.AutoSize = true;
             this.topMostCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.topMostCheckbox.Location = new System.Drawing.Point(283, 12);
+            this.topMostCheckbox.Location = new System.Drawing.Point(294, 12);
             this.topMostCheckbox.Name = "topMostCheckbox";
             this.topMostCheckbox.Size = new System.Drawing.Size(86, 21);
             this.topMostCheckbox.TabIndex = 13;
@@ -84,7 +84,7 @@ namespace neoblox
             this.killRblx.FlatAppearance.BorderSize = 0;
             this.killRblx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.killRblx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.killRblx.Location = new System.Drawing.Point(116, 7);
+            this.killRblx.Location = new System.Drawing.Point(124, 7);
             this.killRblx.Name = "killRblx";
             this.killRblx.Size = new System.Drawing.Size(161, 28);
             this.killRblx.TabIndex = 12;
