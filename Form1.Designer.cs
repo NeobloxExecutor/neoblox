@@ -69,10 +69,10 @@ namespace neoblox
             // topMostCheckbox
             // 
             this.topMostCheckbox.AutoSize = true;
-            this.topMostCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.topMostCheckbox.Location = new System.Drawing.Point(294, 17);
+            this.topMostCheckbox.Font = new System.Drawing.Font("Hack NF", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topMostCheckbox.Location = new System.Drawing.Point(320, 17);
             this.topMostCheckbox.Name = "topMostCheckbox";
-            this.topMostCheckbox.Size = new System.Drawing.Size(86, 21);
+            this.topMostCheckbox.Size = new System.Drawing.Size(91, 20);
             this.topMostCheckbox.TabIndex = 13;
             this.topMostCheckbox.Text = "Top Most";
             this.topMostCheckbox.UseVisualStyleBackColor = true;
@@ -83,12 +83,12 @@ namespace neoblox
             this.killRblx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.killRblx.FlatAppearance.BorderSize = 0;
             this.killRblx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.killRblx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.killRblx.Location = new System.Drawing.Point(127, 12);
+            this.killRblx.Font = new System.Drawing.Font("Hack NF", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.killRblx.Location = new System.Drawing.Point(146, 12);
             this.killRblx.Name = "killRblx";
             this.killRblx.Size = new System.Drawing.Size(161, 28);
             this.killRblx.TabIndex = 12;
-            this.killRblx.Text = "Kill Roblox Process";
+            this.killRblx.Text = "Kill Roblox";
             this.killRblx.UseVisualStyleBackColor = false;
             this.killRblx.Click += new System.EventHandler(this.killRblx_Click);
             // 
@@ -97,7 +97,7 @@ namespace neoblox
             this.minimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimizeButton.FlatAppearance.BorderSize = 0;
             this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimizeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizeButton.Font = new System.Drawing.Font("Hack NF", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minimizeButton.Location = new System.Drawing.Point(1338, -2);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(49, 46);
@@ -111,7 +111,7 @@ namespace neoblox
             this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeButton.FlatAppearance.BorderSize = 0;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.Font = new System.Drawing.Font("Hack NF", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeButton.Location = new System.Drawing.Point(1393, 0);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(49, 46);
@@ -123,11 +123,11 @@ namespace neoblox
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Font = new System.Drawing.Font("Hack NF", 18.32727F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.Silver;
             this.titleLabel.Location = new System.Drawing.Point(4, 7);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(120, 32);
+            this.titleLabel.Size = new System.Drawing.Size(141, 33);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Neoblox";
             // 
@@ -144,7 +144,7 @@ namespace neoblox
             this.executeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.executeButton.FlatAppearance.BorderSize = 0;
             this.executeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.executeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.executeButton.Font = new System.Drawing.Font("Hack NF", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.executeButton.Location = new System.Drawing.Point(10, 401);
             this.executeButton.Name = "executeButton";
             this.executeButton.Size = new System.Drawing.Size(228, 37);
@@ -158,7 +158,7 @@ namespace neoblox
             this.clearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.clearButton.FlatAppearance.BorderSize = 0;
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearButton.Font = new System.Drawing.Font("Hack NF", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.Location = new System.Drawing.Point(244, 401);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(295, 37);
@@ -172,7 +172,7 @@ namespace neoblox
             this.openScriptButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.openScriptButton.FlatAppearance.BorderSize = 0;
             this.openScriptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openScriptButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openScriptButton.Font = new System.Drawing.Font("Hack NF", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openScriptButton.Location = new System.Drawing.Point(545, 401);
             this.openScriptButton.Name = "openScriptButton";
             this.openScriptButton.Size = new System.Drawing.Size(295, 37);
@@ -186,7 +186,7 @@ namespace neoblox
             this.saveScriptButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.saveScriptButton.FlatAppearance.BorderSize = 0;
             this.saveScriptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveScriptButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveScriptButton.Font = new System.Drawing.Font("Hack NF", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveScriptButton.Location = new System.Drawing.Point(846, 401);
             this.saveScriptButton.Name = "saveScriptButton";
             this.saveScriptButton.Size = new System.Drawing.Size(295, 37);
@@ -200,7 +200,7 @@ namespace neoblox
             this.injectButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.injectButton.FlatAppearance.BorderSize = 0;
             this.injectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.injectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectButton.Font = new System.Drawing.Font("Hack NF", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.injectButton.Location = new System.Drawing.Point(1147, 401);
             this.injectButton.Name = "injectButton";
             this.injectButton.Size = new System.Drawing.Size(295, 37);
@@ -213,13 +213,12 @@ namespace neoblox
             // 
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.Font = new System.Drawing.Font("Hack NF", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.Color.Silver;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(1198, 58);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(244, 320);
+            this.listBox1.Size = new System.Drawing.Size(244, 312);
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -228,7 +227,7 @@ namespace neoblox
             this.refreshScriptList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.refreshScriptList.FlatAppearance.BorderSize = 0;
             this.refreshScriptList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.refreshScriptList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshScriptList.Font = new System.Drawing.Font("Hack NF", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refreshScriptList.Location = new System.Drawing.Point(10, 444);
             this.refreshScriptList.Name = "refreshScriptList";
             this.refreshScriptList.Size = new System.Drawing.Size(952, 37);
@@ -240,11 +239,11 @@ namespace neoblox
             // walkspeedLabel
             // 
             this.walkspeedLabel.AutoSize = true;
-            this.walkspeedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.walkspeedLabel.Font = new System.Drawing.Font("Hack NF", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.walkspeedLabel.ForeColor = System.Drawing.Color.Silver;
-            this.walkspeedLabel.Location = new System.Drawing.Point(968, 452);
+            this.walkspeedLabel.Location = new System.Drawing.Point(978, 456);
             this.walkspeedLabel.Name = "walkspeedLabel";
-            this.walkspeedLabel.Size = new System.Drawing.Size(154, 20);
+            this.walkspeedLabel.Size = new System.Drawing.Size(143, 15);
             this.walkspeedLabel.TabIndex = 3;
             this.walkspeedLabel.Text = "Change walkspeed:";
             // 
@@ -252,6 +251,7 @@ namespace neoblox
             // 
             this.walkspeedTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.walkspeedTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.walkspeedTextbox.Font = new System.Drawing.Font("Hack NF", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.walkspeedTextbox.ForeColor = System.Drawing.Color.Silver;
             this.walkspeedTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.walkspeedTextbox.Location = new System.Drawing.Point(1127, 453);
@@ -264,11 +264,11 @@ namespace neoblox
             // flyLabel
             // 
             this.flyLabel.AutoSize = true;
-            this.flyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flyLabel.Font = new System.Drawing.Font("Hack NF", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flyLabel.ForeColor = System.Drawing.Color.Silver;
-            this.flyLabel.Location = new System.Drawing.Point(1233, 449);
+            this.flyLabel.Location = new System.Drawing.Point(1233, 453);
             this.flyLabel.Name = "flyLabel";
-            this.flyLabel.Size = new System.Drawing.Size(35, 24);
+            this.flyLabel.Size = new System.Drawing.Size(39, 19);
             this.flyLabel.TabIndex = 10;
             this.flyLabel.Text = "Fly";
             // 
@@ -277,7 +277,7 @@ namespace neoblox
             this.onButtonFly.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.onButtonFly.FlatAppearance.BorderSize = 0;
             this.onButtonFly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.onButtonFly.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.onButtonFly.Font = new System.Drawing.Font("Hack NF", 5.890909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.onButtonFly.Location = new System.Drawing.Point(1273, 448);
             this.onButtonFly.Name = "onButtonFly";
             this.onButtonFly.Size = new System.Drawing.Size(161, 28);
