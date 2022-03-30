@@ -30,11 +30,11 @@ namespace neoblox
             PopulateListBox(listBox1, "./Scripts", "*.txt");
             PopulateListBox(listBox1, "./Scripts", "*.lua");
 
+            this.aceEditor.Navigate(string.Format("file:///{0}ace/aceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
+
             Process.Start("discordrpc.exe");
 
             WinAPI.AnimateWindow(this.Handle, 300, WinAPI.VER_Negative);
-
-            this.aceEditor.Navigate(string.Format("file:///{0}ace/aceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
 
             aceEditor.Document.InvokeScript("SetText", new object[]
             {
