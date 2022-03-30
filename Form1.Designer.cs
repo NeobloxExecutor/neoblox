@@ -310,7 +310,6 @@ namespace neoblox
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "neoblox";
             this.Text = "Neoblox";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.neoblox_Load);
             this.Panel.ResumeLayout(false);
             this.Panel.PerformLayout();
