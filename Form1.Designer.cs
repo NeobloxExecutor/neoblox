@@ -70,7 +70,7 @@ namespace neoblox
             // 
             this.topMostCheckbox.AutoSize = true;
             this.topMostCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.topMostCheckbox.Location = new System.Drawing.Point(294, 12);
+            this.topMostCheckbox.Location = new System.Drawing.Point(294, 17);
             this.topMostCheckbox.Name = "topMostCheckbox";
             this.topMostCheckbox.Size = new System.Drawing.Size(86, 21);
             this.topMostCheckbox.TabIndex = 13;
@@ -84,7 +84,7 @@ namespace neoblox
             this.killRblx.FlatAppearance.BorderSize = 0;
             this.killRblx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.killRblx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.killRblx.Location = new System.Drawing.Point(124, 7);
+            this.killRblx.Location = new System.Drawing.Point(127, 12);
             this.killRblx.Name = "killRblx";
             this.killRblx.Size = new System.Drawing.Size(161, 28);
             this.killRblx.TabIndex = 12;
@@ -125,7 +125,7 @@ namespace neoblox
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.Silver;
-            this.titleLabel.Location = new System.Drawing.Point(4, 1);
+            this.titleLabel.Location = new System.Drawing.Point(4, 7);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(120, 32);
             this.titleLabel.TabIndex = 0;
@@ -277,7 +277,7 @@ namespace neoblox
             this.onButtonFly.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.onButtonFly.FlatAppearance.BorderSize = 0;
             this.onButtonFly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.onButtonFly.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.onButtonFly.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.onButtonFly.Location = new System.Drawing.Point(1273, 448);
             this.onButtonFly.Name = "onButtonFly";
             this.onButtonFly.Size = new System.Drawing.Size(161, 28);
