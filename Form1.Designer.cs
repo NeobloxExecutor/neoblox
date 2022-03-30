@@ -136,7 +136,7 @@ namespace neoblox
             this.aceEditor.Location = new System.Drawing.Point(0, 55);
             this.aceEditor.MinimumSize = new System.Drawing.Size(20, 20);
             this.aceEditor.Name = "aceEditor";
-            this.aceEditor.Size = new System.Drawing.Size(1292, 327);
+            this.aceEditor.Size = new System.Drawing.Size(1199, 327);
             this.aceEditor.TabIndex = 1;
             // 
             // executeButton
@@ -217,9 +217,9 @@ namespace neoblox
             this.listBox1.ForeColor = System.Drawing.Color.Silver;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(1293, 58);
+            this.listBox1.Location = new System.Drawing.Point(1198, 58);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(149, 320);
+            this.listBox1.Size = new System.Drawing.Size(244, 320);
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
