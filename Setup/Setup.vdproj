@@ -87,12 +87,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_0AD91FAF17F241BB9E6982608AB12863"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_0AF0E81E159446C5926510A9AFE2C5E9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -429,12 +423,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_39B9F3B5C9914AB184E8534C10375962"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_39E51CE6EF7D4E22B75E034FE055F2B0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -550,6 +538,12 @@
         "Entry"
         {
         "MsmKey" = "8:_47EBA7185FEF42C2911F7F503A0D8954"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_48E969A0EA5D41A4B4550E4C2D9EED91"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -796,7 +790,7 @@
         "Entry"
         {
         "MsmKey" = "8:_7158BF505AF4F49B4AB6C409DD1F4B61"
-        "OwnerKey" = "8:_39B9F3B5C9914AB184E8534C10375962"
+        "OwnerKey" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -838,7 +832,7 @@
         "Entry"
         {
         "MsmKey" = "8:_7659EE157961DF388533D2EFB498055A"
-        "OwnerKey" = "8:_39B9F3B5C9914AB184E8534C10375962"
+        "OwnerKey" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1617,6 +1611,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_EFDBF3A8C2974A8E8573F18881F1D2EB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1750,7 +1750,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_39B9F3B5C9914AB184E8534C10375962"
+        "OwnerKey" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1784,6 +1784,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -2072,26 +2080,6 @@
             "TargetName" = "8:nim.js"
             "Tag" = "8:"
             "Folder" = "8:_E689941992634290A3DF5CBCB8598721"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0AD91FAF17F241BB9E6982608AB12863"
-            {
-            "SourcePath" = "8:..\\neoblox-icon.ico"
-            "TargetName" = "8:neoblox-icon.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_BC04294B41344C6F9E995D63930A95FF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3612,6 +3600,26 @@
             "TargetName" = "8:ext-error_marker.js"
             "Tag" = "8:"
             "Folder" = "8:_266A4BFCA1F14D768BCBCBF880067413"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_48E969A0EA5D41A4B4550E4C2D9EED91"
+            {
+            "SourcePath" = "8:..\\icon-stuff\\neoblox-icon.ico"
+            "TargetName" = "8:neoblox-icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_BC04294B41344C6F9E995D63930A95FF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -7737,7 +7745,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:A level 7 keyless Lua executor for Roblox. Free, forever!"
         "ARPURLINFOABOUT" = "8:https://github.com/Plextora/neoblox"
-        "ARPPRODUCTICON" = "8:_0AD91FAF17F241BB9E6982608AB12863"
+        "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -7840,32 +7848,32 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_661C3CA3738449F2BFFD0420F5ECBF45"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2D95FA7F397141938B1FCCCE506BFDE6"
             {
-            "Name" = "8:Neoblox"
+            "Name" = "8:Neoblox 3.0"
             "Arguments" = "8:"
-            "Description" = "8:"
+            "Description" = "8:A level 7 keyless Lua executor for Roblox. Free, forever!"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_39B9F3B5C9914AB184E8534C10375962"
+            "Target" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
             "Folder" = "8:_C66E1885CDFC445F9D57819891350E77"
             "WorkingFolder" = "8:_BC04294B41344C6F9E995D63930A95FF"
-            "Icon" = "8:_0AD91FAF17F241BB9E6982608AB12863"
+            "Icon" = "8:_48E969A0EA5D41A4B4550E4C2D9EED91"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B4DB8D2037104D4A939C45BBF88404E6"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EDF491E2D7EF43DFB6556299261C6FFD"
             {
-            "Name" = "8:Neoblox"
+            "Name" = "8:Neoblox 3.0"
             "Arguments" = "8:"
-            "Description" = "8:"
+            "Description" = "8:A level 7 keyless Lua executor for Roblox. Free, forever!"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_39B9F3B5C9914AB184E8534C10375962"
+            "Target" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
             "Folder" = "8:_040716DA9D184C7BB911299429270142"
             "WorkingFolder" = "8:_BC04294B41344C6F9E995D63930A95FF"
-            "Icon" = "8:_0AD91FAF17F241BB9E6982608AB12863"
+            "Icon" = "8:_48E969A0EA5D41A4B4550E4C2D9EED91"
             "Feature" = "8:"
             }
         }
@@ -8267,7 +8275,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_39B9F3B5C9914AB184E8534C10375962"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EEFFFDA61A2A488EA68FFCB8D680D076"
             {
             "SourcePath" = "8:..\\obj\\Release\\neoblox.exe"
             "TargetName" = "8:"
