@@ -32,8 +32,6 @@ namespace neoblox
 
             this.aceEditor.Navigate(string.Format("file:///{0}ace/aceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
 
-            Process.Start("discordrpc.exe");
-
             WinAPI.AnimateWindow(this.Handle, 300, WinAPI.VER_Negative);
 
             aceEditor.Document.InvokeScript("SetText", new object[]
@@ -214,6 +212,23 @@ namespace neoblox
         private void topMostCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             this.TopMost = topMostCheckbox.Checked;
+        }
+
+        private void discordRPCCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (discordRPCCheckbox.Checked == true)
+            {
+                Process.Start("discordrpc.exe");
+            }
+
+            if (discordRPCCheckbox.Checked == false)
+            {
+                Process.Start("discordrpc.exe");
+                foreach (var process in Process.GetProcessesByName("discordrpc"))
+                {
+                    process.Kill();
+                }
+            }
         }
     }
 }

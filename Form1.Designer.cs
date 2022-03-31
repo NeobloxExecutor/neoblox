@@ -31,6 +31,7 @@ namespace neoblox
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
+            this.discordRPCCheckbox = new System.Windows.Forms.CheckBox();
             this.topMostCheckbox = new System.Windows.Forms.CheckBox();
             this.killRblx = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
@@ -54,6 +55,7 @@ namespace neoblox
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Panel.Controls.Add(this.discordRPCCheckbox);
             this.Panel.Controls.Add(this.topMostCheckbox);
             this.Panel.Controls.Add(this.killRblx);
             this.Panel.Controls.Add(this.minimizeButton);
@@ -65,6 +67,18 @@ namespace neoblox
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
+            // 
+            // discordRPCCheckbox
+            // 
+            this.discordRPCCheckbox.AutoSize = true;
+            this.discordRPCCheckbox.Font = new System.Drawing.Font("Hack NF", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discordRPCCheckbox.Location = new System.Drawing.Point(417, 17);
+            this.discordRPCCheckbox.Name = "discordRPCCheckbox";
+            this.discordRPCCheckbox.Size = new System.Drawing.Size(115, 20);
+            this.discordRPCCheckbox.TabIndex = 14;
+            this.discordRPCCheckbox.Text = "Discord RPC";
+            this.discordRPCCheckbox.UseVisualStyleBackColor = true;
+            this.discordRPCCheckbox.CheckedChanged += new System.EventHandler(this.discordRPCCheckbox_CheckedChanged);
             // 
             // topMostCheckbox
             // 
@@ -336,6 +350,7 @@ namespace neoblox
         private System.Windows.Forms.Button onButtonFly;
         private System.Windows.Forms.Button killRblx;
         private System.Windows.Forms.CheckBox topMostCheckbox;
+        private System.Windows.Forms.CheckBox discordRPCCheckbox;
     }
 }
 
