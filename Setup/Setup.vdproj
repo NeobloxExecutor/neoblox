@@ -543,12 +543,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_48E969A0EA5D41A4B4550E4C2D9EED91"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4963B78C8E5B4D839C9428290FA35BD5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1114,6 +1108,12 @@
         "Entry"
         {
         "MsmKey" = "8:_A6A6727DF0174F60AD39DABEDC74A438"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A706A13E16F944A6A87CD2BCD7715E04"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1744,12 +1744,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7158BF505AF4F49B4AB6C409DD1F4B61"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1757,6 +1751,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7659EE157961DF388533D2EFB498055A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7158BF505AF4F49B4AB6C409DD1F4B61"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -3600,26 +3600,6 @@
             "TargetName" = "8:ext-error_marker.js"
             "Tag" = "8:"
             "Folder" = "8:_266A4BFCA1F14D768BCBCBF880067413"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_48E969A0EA5D41A4B4550E4C2D9EED91"
-            {
-            "SourcePath" = "8:..\\icon-stuff\\neoblox-icon.ico"
-            "TargetName" = "8:neoblox-icon.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_BC04294B41344C6F9E995D63930A95FF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -5542,6 +5522,26 @@
             "TargetName" = "8:worker-xml.js"
             "Tag" = "8:"
             "Folder" = "8:_266A4BFCA1F14D768BCBCBF880067413"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A706A13E16F944A6A87CD2BCD7715E04"
+            {
+            "SourcePath" = "8:..\\icon-stuff\\neoblox-icon.ico"
+            "TargetName" = "8:neoblox-icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_BC04294B41344C6F9E995D63930A95FF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -7728,7 +7728,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Neoblox"
         "ProductCode" = "8:{B94C67A6-8109-474C-A0C5-828423B336BA}"
-        "PackageCode" = "8:{5D1EBF7C-99FC-4B5C-8444-C8FFB7252CED}"
+        "PackageCode" = "8:{F6257552-58CF-45BB-A93D-2B3C5252E9BE}"
         "UpgradeCode" = "8:{35279DB2-666B-44C8-A586-5C91DB61C550}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -7848,23 +7848,9 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2D95FA7F397141938B1FCCCE506BFDE6"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_49E9B26C0295420F9BD1C87D069AFE67"
             {
-            "Name" = "8:Neoblox 3.0"
-            "Arguments" = "8:"
-            "Description" = "8:A level 7 keyless Lua executor for Roblox. Free, forever!"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
-            "Folder" = "8:_C66E1885CDFC445F9D57819891350E77"
-            "WorkingFolder" = "8:_BC04294B41344C6F9E995D63930A95FF"
-            "Icon" = "8:_48E969A0EA5D41A4B4550E4C2D9EED91"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EDF491E2D7EF43DFB6556299261C6FFD"
-            {
-            "Name" = "8:Neoblox 3.0"
+            "Name" = "8:Neoblox"
             "Arguments" = "8:"
             "Description" = "8:A level 7 keyless Lua executor for Roblox. Free, forever!"
             "ShowCmd" = "3:1"
@@ -7873,7 +7859,21 @@
             "Target" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
             "Folder" = "8:_040716DA9D184C7BB911299429270142"
             "WorkingFolder" = "8:_BC04294B41344C6F9E995D63930A95FF"
-            "Icon" = "8:_48E969A0EA5D41A4B4550E4C2D9EED91"
+            "Icon" = "8:_A706A13E16F944A6A87CD2BCD7715E04"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E0A85A14FC4547C2948AAF62233CFCBD"
+            {
+            "Name" = "8:Neoblox"
+            "Arguments" = "8:"
+            "Description" = "8:A level 7 keyless Lua executor for Roblox. Free, forever!"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_EEFFFDA61A2A488EA68FFCB8D680D076"
+            "Folder" = "8:_C66E1885CDFC445F9D57819891350E77"
+            "WorkingFolder" = "8:_BC04294B41344C6F9E995D63930A95FF"
+            "Icon" = "8:_A706A13E16F944A6A87CD2BCD7715E04"
             "Feature" = "8:"
             }
         }
