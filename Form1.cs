@@ -24,6 +24,38 @@ namespace neoblox
             InitializeComponent();
         }
 
+        public void config()
+        {
+            string topMostOn = "topmost:neutral";
+
+            string discordRPCOn = "discordrpc:neutral";
+
+            // mfw if statements go brr
+
+            if (topMostCheckbox.Checked == true)
+            {
+                topMostOn = "topmost:true";
+            }
+            if (topMostCheckbox.Checked == false)
+            {
+                topMostOn = "topmost:false";
+            }
+            if (discordRPCCheckbox.Checked == true)
+            {
+                discordRPCOn = "discordrpc:true";
+            }
+            if (discordRPCCheckbox.Checked == false)
+            {
+                discordRPCOn = "discordrpc:false";
+            }
+
+            using (StreamWriter writer = new StreamWriter("config.txt"))
+            {
+                writer.WriteLine(topMostOn);
+                writer.WriteLine(discordRPCOn);
+            }
+        }
+
         private void neoblox_Load(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
@@ -38,6 +70,29 @@ namespace neoblox
             {
                 "print(\"Thanks for downloading Neoblox! Consider starring the github repo! (https://github.com/Plextora/Neoblox)\""
             });
+
+            if (!File.Exists("config.txt"))
+            {
+                File.Create("config.txt");
+            }
+
+            string contents = File.ReadAllText("config.txt");
+            if (contents.Contains("topmost:true"))
+            {
+                topMostCheckbox.Checked = true;
+            }
+            if (contents.Contains("topmost:false"))
+            {
+                topMostCheckbox.Checked = false;
+            }
+            if (contents.Contains("discordrpc:true"))
+            {
+                discordRPCCheckbox.Checked = true;
+            }
+            if (contents.Contains("discordrpc:false"))
+            {
+                discordRPCCheckbox.Checked = false;
+            }
 
             try
             {
@@ -212,7 +267,11 @@ namespace neoblox
         private void topMostCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             this.TopMost = topMostCheckbox.Checked;
+
+            config();
         }
+
+        
 
         private void discordRPCCheckbox_CheckedChanged(object sender, EventArgs e)
         {
@@ -229,6 +288,8 @@ namespace neoblox
                     process.Kill();
                 }
             }
+
+            config();
         }
     }
 }
