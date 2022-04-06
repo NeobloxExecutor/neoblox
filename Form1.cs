@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -31,6 +32,8 @@ namespace neoblox
 
             string discordRPCOn = "discordrpc:neutral";
 
+            string musicOn = "music:neutral";
+
             // mfw if statements go brr
 
             if (topMostCheckbox.Checked == true)
@@ -49,11 +52,20 @@ namespace neoblox
             {
                 discordRPCOn = "discordrpc:false";
             }
+            if (musicCheckbox.Checked == true)
+            {
+                musicOn = "music:true";
+            }
+            if (musicCheckbox.Checked == false)
+            {
+                musicOn = "music:false";
+            }
 
             using (StreamWriter writer = new StreamWriter("config.txt"))
             {
                 writer.WriteLine(topMostOn);
                 writer.WriteLine(discordRPCOn);
+                writer.WriteLine(musicOn);
             }
         }
 
@@ -91,6 +103,14 @@ namespace neoblox
             if (contents.Contains("discordrpc:false"))
             {
                 discordRPCCheckbox.Checked = false;
+            }
+            if (contents.Contains("music:true"))
+            {
+                musicCheckbox.Checked = true;
+            }
+            if (contents.Contains("music:false"))
+            {
+                musicCheckbox.Checked = false;
             }
 
             try
@@ -286,6 +306,22 @@ namespace neoblox
                 {
                     process.Kill();
                 }
+            }
+
+            config();
+        }
+
+        private void musicCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            var soundPlayer = new System.Media.SoundPlayer();
+            if (musicCheckbox.Checked == true)
+            {
+                soundPlayer.SoundLocation = "https://us-east-1.tixte.net/uploads/plextora.is-from.space/elevatormusic.wav";
+                soundPlayer.PlayLooping();
+            }
+            if (musicCheckbox.Checked == false)
+            {
+                soundPlayer.Stop();
             }
 
             config();

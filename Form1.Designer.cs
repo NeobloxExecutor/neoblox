@@ -51,12 +51,14 @@ namespace neoblox
             this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
             this.onButtonFly = new ns1.SiticoneButton();
+            this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Panel.Controls.Add(this.musicCheckbox);
             this.Panel.Controls.Add(this.siticoneButton3);
             this.Panel.Controls.Add(this.siticoneButton2);
             this.Panel.Controls.Add(this.killRblx);
@@ -366,6 +368,28 @@ namespace neoblox
             this.onButtonFly.Text = "On (Press E to toggle)";
             this.onButtonFly.Click += new System.EventHandler(this.onButtonFly_Click);
             // 
+            // musicCheckbox
+            // 
+            this.musicCheckbox.AutoSize = true;
+            this.musicCheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.musicCheckbox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.musicCheckbox.CheckedState.BorderRadius = 2;
+            this.musicCheckbox.CheckedState.BorderThickness = 0;
+            this.musicCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.musicCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.musicCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
+            this.musicCheckbox.Location = new System.Drawing.Point(592, 7);
+            this.musicCheckbox.Name = "musicCheckbox";
+            this.musicCheckbox.Size = new System.Drawing.Size(87, 34);
+            this.musicCheckbox.TabIndex = 18;
+            this.musicCheckbox.Text = "Music";
+            this.musicCheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.musicCheckbox.UncheckedState.BorderRadius = 2;
+            this.musicCheckbox.UncheckedState.BorderThickness = 0;
+            this.musicCheckbox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.musicCheckbox.UseVisualStyleBackColor = false;
+            this.musicCheckbox.CheckedChanged += new System.EventHandler(this.musicCheckbox_CheckedChanged);
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -423,6 +447,7 @@ namespace neoblox
         private ns1.SiticoneButton onButtonFly;
         private ns1.SiticoneButton siticoneButton3;
         private ns1.SiticoneButton siticoneButton2;
+        private ns1.SiticoneCheckBox musicCheckbox;
     }
 }
 
