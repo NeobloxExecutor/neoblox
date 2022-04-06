@@ -10,13 +10,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Utility;
 using WeAreDevs_API;
 
 // raifu was here owo
 
 namespace neoblox
 {
-    public partial class neoblox : Form
+    public partial class neoblox : FadeForm
     {
         ExploitAPI wrdExploitAPI = new ExploitAPI();
         public neoblox()
@@ -63,8 +64,6 @@ namespace neoblox
             PopulateListBox(listBox1, "./Scripts", "*.lua");
 
             this.aceEditor.Navigate(string.Format("file:///{0}ace/aceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
-
-            WinAPI.AnimateWindow(this.Handle, 300, WinAPI.VER_Negative);
 
             aceEditor.Document.InvokeScript("SetText", new object[]
             {
