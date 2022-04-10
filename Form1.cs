@@ -19,7 +19,7 @@ using WeAreDevs_API;
 
 namespace neoblox
 {
-    public partial class neoblox : FadeForm
+    public partial class neoblox : Form
     {
         ExploitAPI wrdExploitAPI = new ExploitAPI();
         public neoblox()
@@ -164,10 +164,6 @@ namespace neoblox
             }
             monacoEditor.Url = new Uri(string.Format("file:///{0}/Monaco/Monaco.html", Directory.GetCurrentDirectory()));
             await Task.Delay(500);
-            monacoEditor.Document.InvokeScript("SetTheme", new string[]
-            {
-                   "Dark"
-            });
             AddBase();
             AddMath();
             AddGlobalNS();

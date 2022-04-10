@@ -71,7 +71,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Siticone.UI">
-      <HintPath>D:\dev\Visual Studio 2019 Projects\AscentMC\DLLs\Siticone.UI.dll</HintPath>
+      <HintPath>DLLs\Siticone.UI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
