@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,18 +70,109 @@ namespace neoblox
             }
         }
 
-        private void neoblox_Load(object sender, EventArgs e)
+        WebClient wc = new WebClient();
+        private string defPath = Application.StartupPath + "//Monaco//";
+
+        private void AddIntel(string label, string kind, string detail, string insertText)
+        {
+            string text = "\"" + label + "\"";
+            string text2 = "\"" + kind + "\"";
+            string text3 = "\"" + detail + "\"";
+            string text4 = "\"" + insertText + "\"";
+            monacoEditor.Document.InvokeScript("AddIntellisense", new object[]
+            {
+                label,
+                kind,
+                detail,
+                insertText
+            });
+        }
+
+        private void AddGlobalF()
+        {
+            string[] array = File.ReadAllLines(this.defPath + "//globalf.txt");
+            foreach (string text in array)
+            {
+                bool flag = text.Contains(':');
+                if (flag)
+                {
+                    this.AddIntel(text, "Function", text, text.Substring(1));
+                }
+                else
+                {
+                    this.AddIntel(text, "Function", text, text);
+                }
+            }
+        }
+
+        private void AddGlobalV()
+        {
+            foreach (string text in File.ReadLines(this.defPath + "//globalv.txt"))
+            {
+                this.AddIntel(text, "Variable", text, text);
+            }
+        }
+
+        private void AddGlobalNS()
+        {
+            foreach (string text in File.ReadLines(this.defPath + "//globalns.txt"))
+            {
+                this.AddIntel(text, "Class", text, text);
+            }
+        }
+
+        private void AddMath()
+        {
+            foreach (string text in File.ReadLines(this.defPath + "//classfunc.txt"))
+            {
+                this.AddIntel(text, "Method", text, text);
+            }
+        }
+
+        private void AddBase()
+        {
+            foreach (string text in File.ReadLines(this.defPath + "//base.txt"))
+            {
+                this.AddIntel(text, "Keyword", text, text);
+            }
+        }
+
+        private async void neoblox_Load(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
             PopulateListBox(listBox1, "./Scripts", "*.txt");
             PopulateListBox(listBox1, "./Scripts", "*.lua");
 
-            this.aceEditor.Navigate(string.Format("file:///{0}ace/aceEditor.html", AppDomain.CurrentDomain.BaseDirectory));
-
-            aceEditor.Document.InvokeScript("SetText", new object[]
+            WebClient wc = new WebClient
             {
-                "print(\"Thanks for downloading Neoblox! Consider starring the github repo! (https://github.com/Plextora/Neoblox)\""
+                Proxy = null
+            };
+            try
+            {
+                RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Main\\FeatureControl\\FEATURE_BROWSER_EMULATION", true);
+                string friendlyName = AppDomain.CurrentDomain.FriendlyName;
+                bool flag2 = registryKey.GetValue(friendlyName) == null;
+                if (flag2)
+                {
+                    registryKey.SetValue(friendlyName, 11001, RegistryValueKind.DWord);
+                }
+                registryKey = null;
+                friendlyName = null;
+            }
+            catch (Exception)
+            {
+            }
+            monacoEditor.Url = new Uri(string.Format("file:///{0}/Monaco/Monaco.html", Directory.GetCurrentDirectory()));
+            await Task.Delay(500);
+            monacoEditor.Document.InvokeScript("SetTheme", new string[]
+            {
+                   "Dark"
             });
+            AddBase();
+            AddMath();
+            AddGlobalNS();
+            AddGlobalV();
+            AddGlobalF();
 
             if (!File.Exists("config.txt"))
             {
@@ -130,7 +222,7 @@ namespace neoblox
 
         private void executeButton_Click(object sender, EventArgs e)
         {
-            HtmlDocument document = aceEditor.Document;
+            HtmlDocument document = monacoEditor.Document;
             string scriptName = "GetText";
             object[] args = new string[0];
             object obj = document.InvokeScript(scriptName, args);
@@ -141,7 +233,7 @@ namespace neoblox
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            aceEditor.Document.InvokeScript("SetText", new object[]
+            monacoEditor.Document.InvokeScript("SetText", new object[]
             {
                 ""
             });
@@ -165,7 +257,7 @@ namespace neoblox
                     using (StreamReader reader = new StreamReader(fileStream))
                     {
                         var MainText = reader.ReadToEnd();
-                        aceEditor.Document.InvokeScript("SetText", new object[]
+                        monacoEditor.Document.InvokeScript("SetText", new object[]
                         {
                             MainText
                         });
@@ -176,7 +268,7 @@ namespace neoblox
 
         private void saveScriptButton_Click(object sender, EventArgs e)
         {
-            HtmlDocument document = aceEditor.Document;
+            HtmlDocument document = monacoEditor.Document;
             string scriptName = "GetText";
             object[] args = new string[0];
             object obj = document.InvokeScript(scriptName, args);
@@ -247,7 +339,7 @@ namespace neoblox
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            aceEditor.Document.InvokeScript("SetText", new object[]
+            monacoEditor.Document.InvokeScript("SetText", new object[]
             {
                 File.ReadAllText($"./Scripts/{listBox1.SelectedItem}")
             });

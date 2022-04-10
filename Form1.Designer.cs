@@ -31,13 +31,14 @@ namespace neoblox
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
+            this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.siticoneButton3 = new ns1.SiticoneButton();
             this.siticoneButton2 = new ns1.SiticoneButton();
             this.killRblx = new ns1.SiticoneButton();
             this.discordRPCCheckbox = new ns1.SiticoneCheckBox();
             this.topMostCheckbox = new ns1.SiticoneCheckBox();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.aceEditor = new System.Windows.Forms.WebBrowser();
+            this.monacoEditor = new System.Windows.Forms.WebBrowser();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.walkspeedLabel = new System.Windows.Forms.Label();
             this.walkspeedTextbox = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@ namespace neoblox
             this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
             this.onButtonFly = new ns1.SiticoneButton();
-            this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,28 @@ namespace neoblox
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
+            // 
+            // musicCheckbox
+            // 
+            this.musicCheckbox.AutoSize = true;
+            this.musicCheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.musicCheckbox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.musicCheckbox.CheckedState.BorderRadius = 2;
+            this.musicCheckbox.CheckedState.BorderThickness = 0;
+            this.musicCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.musicCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.musicCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
+            this.musicCheckbox.Location = new System.Drawing.Point(592, 7);
+            this.musicCheckbox.Name = "musicCheckbox";
+            this.musicCheckbox.Size = new System.Drawing.Size(87, 34);
+            this.musicCheckbox.TabIndex = 18;
+            this.musicCheckbox.Text = "Music";
+            this.musicCheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.musicCheckbox.UncheckedState.BorderRadius = 2;
+            this.musicCheckbox.UncheckedState.BorderThickness = 0;
+            this.musicCheckbox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.musicCheckbox.UseVisualStyleBackColor = false;
+            this.musicCheckbox.CheckedChanged += new System.EventHandler(this.musicCheckbox_CheckedChanged);
             // 
             // siticoneButton3
             // 
@@ -175,13 +197,13 @@ namespace neoblox
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Neoblox";
             // 
-            // aceEditor
+            // monacoEditor
             // 
-            this.aceEditor.Location = new System.Drawing.Point(0, 47);
-            this.aceEditor.MinimumSize = new System.Drawing.Size(20, 20);
-            this.aceEditor.Name = "aceEditor";
-            this.aceEditor.Size = new System.Drawing.Size(1202, 335);
-            this.aceEditor.TabIndex = 1;
+            this.monacoEditor.Location = new System.Drawing.Point(0, 47);
+            this.monacoEditor.MinimumSize = new System.Drawing.Size(20, 20);
+            this.monacoEditor.Name = "monacoEditor";
+            this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
+            this.monacoEditor.TabIndex = 1;
             // 
             // listBox1
             // 
@@ -368,28 +390,6 @@ namespace neoblox
             this.onButtonFly.Text = "On (Press E to toggle)";
             this.onButtonFly.Click += new System.EventHandler(this.onButtonFly_Click);
             // 
-            // musicCheckbox
-            // 
-            this.musicCheckbox.AutoSize = true;
-            this.musicCheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.musicCheckbox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.musicCheckbox.CheckedState.BorderRadius = 2;
-            this.musicCheckbox.CheckedState.BorderThickness = 0;
-            this.musicCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.musicCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.musicCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.musicCheckbox.Location = new System.Drawing.Point(592, 7);
-            this.musicCheckbox.Name = "musicCheckbox";
-            this.musicCheckbox.Size = new System.Drawing.Size(87, 34);
-            this.musicCheckbox.TabIndex = 18;
-            this.musicCheckbox.Text = "Music";
-            this.musicCheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.musicCheckbox.UncheckedState.BorderRadius = 2;
-            this.musicCheckbox.UncheckedState.BorderThickness = 0;
-            this.musicCheckbox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.musicCheckbox.UseVisualStyleBackColor = false;
-            this.musicCheckbox.CheckedChanged += new System.EventHandler(this.musicCheckbox_CheckedChanged);
-            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,7 +409,7 @@ namespace neoblox
             this.Controls.Add(this.walkspeedTextbox);
             this.Controls.Add(this.walkspeedLabel);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.aceEditor);
+            this.Controls.Add(this.monacoEditor);
             this.Controls.Add(this.Panel);
             this.ForeColor = System.Drawing.Color.SeaShell;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -428,7 +428,7 @@ namespace neoblox
 
         private System.Windows.Forms.Panel Panel;
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.WebBrowser aceEditor;
+        private System.Windows.Forms.WebBrowser monacoEditor;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label walkspeedLabel;
         private System.Windows.Forms.TextBox walkspeedTextbox;
