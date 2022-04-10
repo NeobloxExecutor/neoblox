@@ -4,6 +4,6 @@
 
 ![Neoblox Image](https://us-east-1.tixte.net/uploads/plextora.is-from.space/neoblox_rb3El1R24r.png)
 
-Neoblox is keyless, no BS, easy to use executor for all your exploiting needs. No linkvertise, No "Hot MILFs in your area!" ads, just a useful executor. Neoblox uses the WeAreDevs API, so you're guaranteed to have quick patches whenever Roblox updates! Neoblox also uses the ace editor, which is built on JS and is better than Visual Studio's editors, Monaco.
+Neoblox is keyless, no BS, easy to use executor for all your exploiting needs. No linkvertise, No "Hot MILFs in your area!" ads, just a useful executor. Neoblox uses the WeAreDevs API, so you're guaranteed to have quick patches whenever Roblox updates!
 
 [Here's how to use Neoblox](https://youtu.be/0Jok6ayY0k0) (Neoblox does not have any viruses)
