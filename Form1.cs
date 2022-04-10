@@ -1,32 +1,42 @@
-﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-using Utility;
-using WeAreDevs_API;
-
-// raifu was here owo
-
-namespace neoblox
+﻿namespace neoblox
 {
+    using Microsoft.Win32;
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Data;
+    using System.Diagnostics;
+    using System.Drawing;
+    using System.IO;
+    using System.Linq;
+    using System.Net;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
+    using Utility;
+    using WeAreDevs_API;
+
+    /// <summary>
+    /// Defines the <see cref="neoblox" />.
+    /// </summary>
     public partial class neoblox : Form
     {
-        ExploitAPI wrdExploitAPI = new ExploitAPI();
+        /// <summary>
+        /// Defines the wrdExploitAPI.
+        /// </summary>
+        internal ExploitAPI wrdExploitAPI = new ExploitAPI();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="neoblox"/> class.
+        /// </summary>
         public neoblox()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// The config.
+        /// </summary>
         public void config()
         {
             string topMostOn = "topmost:neutral";
@@ -70,9 +80,23 @@ namespace neoblox
             }
         }
 
-        WebClient wc = new WebClient();
+        /// <summary>
+        /// Defines the wc.
+        /// </summary>
+        internal WebClient wc = new WebClient();
+
+        /// <summary>
+        /// Defines the defPath.
+        /// </summary>
         private string defPath = Application.StartupPath + "//Monaco//";
 
+        /// <summary>
+        /// The AddIntel.
+        /// </summary>
+        /// <param name="label">The label<see cref="string"/>.</param>
+        /// <param name="kind">The kind<see cref="string"/>.</param>
+        /// <param name="detail">The detail<see cref="string"/>.</param>
+        /// <param name="insertText">The insertText<see cref="string"/>.</param>
         private void AddIntel(string label, string kind, string detail, string insertText)
         {
             string text = "\"" + label + "\"";
@@ -88,6 +112,9 @@ namespace neoblox
             });
         }
 
+        /// <summary>
+        /// The AddGlobalF.
+        /// </summary>
         private void AddGlobalF()
         {
             string[] array = File.ReadAllLines(this.defPath + "//globalf.txt");
@@ -105,6 +132,9 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The AddGlobalV.
+        /// </summary>
         private void AddGlobalV()
         {
             foreach (string text in File.ReadLines(this.defPath + "//globalv.txt"))
@@ -113,6 +143,9 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The AddGlobalNS.
+        /// </summary>
         private void AddGlobalNS()
         {
             foreach (string text in File.ReadLines(this.defPath + "//globalns.txt"))
@@ -121,6 +154,9 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The AddMath.
+        /// </summary>
         private void AddMath()
         {
             foreach (string text in File.ReadLines(this.defPath + "//classfunc.txt"))
@@ -129,6 +165,9 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The AddBase.
+        /// </summary>
         private void AddBase()
         {
             foreach (string text in File.ReadLines(this.defPath + "//base.txt"))
@@ -137,6 +176,11 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The neoblox_Load.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private async void neoblox_Load(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
@@ -216,6 +260,11 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The executeButton_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void executeButton_Click(object sender, EventArgs e)
         {
             HtmlDocument document = monacoEditor.Document;
@@ -227,6 +276,11 @@ namespace neoblox
             wrdExploitAPI.SendLuaScript(script);
         }
 
+        /// <summary>
+        /// The clearButton_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void clearButton_Click(object sender, EventArgs e)
         {
             monacoEditor.Document.InvokeScript("SetText", new object[]
@@ -235,6 +289,11 @@ namespace neoblox
             });
         }
 
+        /// <summary>
+        /// The openScriptButton_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void openScriptButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
@@ -262,6 +321,11 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The saveScriptButton_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void saveScriptButton_Click(object sender, EventArgs e)
         {
             HtmlDocument document = monacoEditor.Document;
@@ -288,11 +352,21 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The injectButton_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void injectButton_Click(object sender, EventArgs e)
         {
             wrdExploitAPI.LaunchExploit();
         }
 
+        /// <summary>
+        /// The closeButton_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void closeButton_Click(object sender, EventArgs e)
         {
             Process.Start("deactivate anti ban measures.exe");
@@ -303,17 +377,36 @@ namespace neoblox
             Application.Exit();
         }
 
+        /// <summary>
+        /// The minimizeButton_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void minimizeButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
-        Point lastPoint;
 
+        /// <summary>
+        /// Defines the lastPoint.
+        /// </summary>
+        internal Point lastPoint;
+
+        /// <summary>
+        /// The Panel_MouseDown.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="MouseEventArgs"/>.</param>
         private void Panel_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
         }
 
+        /// <summary>
+        /// The Panel_MouseMove.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="MouseEventArgs"/>.</param>
         private void Panel_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -323,6 +416,12 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The PopulateListBox.
+        /// </summary>
+        /// <param name="lsb">The lsb<see cref="ListBox"/>.</param>
+        /// <param name="Folder">The Folder<see cref="string"/>.</param>
+        /// <param name="FileType">The FileType<see cref="string"/>.</param>
         public static void PopulateListBox(ListBox lsb, string Folder, string FileType)
         {
             DirectoryInfo dinfo = new DirectoryInfo(Folder);
@@ -333,6 +432,11 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The listBox1_SelectedIndexChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             monacoEditor.Document.InvokeScript("SetText", new object[]
@@ -341,14 +445,23 @@ namespace neoblox
             });
         }
 
+        /// <summary>
+        /// The refreshScriptList_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void refreshScriptList_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
             PopulateListBox(listBox1, "./Scripts", "*.txt");
             PopulateListBox(listBox1, "./Scripts", "*.lua");
-
         }
 
+        /// <summary>
+        /// The walkspeedTextbox_KeyDown.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
         private void walkspeedTextbox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -358,11 +471,21 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The onButtonFly_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void onButtonFly_Click(object sender, EventArgs e)
         {
             wrdExploitAPI.SendLuaScript("loadstring(game:HttpGet('https://pastebin.com/raw/ETeUDwvV', true))()");
         }
 
+        /// <summary>
+        /// The killRblx_Click.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void killRblx_Click(object sender, EventArgs e)
         {
             foreach (var process in Process.GetProcessesByName("RobloxPlayerBeta"))
@@ -371,6 +494,11 @@ namespace neoblox
             }
         }
 
+        /// <summary>
+        /// The topMostCheckbox_CheckedChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void topMostCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             this.TopMost = topMostCheckbox.Checked;
@@ -378,8 +506,11 @@ namespace neoblox
             config();
         }
 
-        
-
+        /// <summary>
+        /// The discordRPCCheckbox_CheckedChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void discordRPCCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             if (discordRPCCheckbox.Checked == true)
@@ -399,6 +530,11 @@ namespace neoblox
             config();
         }
 
+        /// <summary>
+        /// The musicCheckbox_CheckedChanged.
+        /// </summary>
+        /// <param name="sender">The sender<see cref="object"/>.</param>
+        /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void musicCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             var soundPlayer = new System.Media.SoundPlayer();

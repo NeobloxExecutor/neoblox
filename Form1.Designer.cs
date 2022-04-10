@@ -1,10 +1,12 @@
-﻿
-namespace neoblox
+﻿namespace neoblox
 {
-    partial class neoblox
+    /// <summary>
+    /// Defines the <see cref="neoblox" />.
+    /// </summary>
+    internal partial class neoblox
     {
         /// <summary>
-        /// Required designer variable.
+        /// Required designer variable..
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
@@ -20,8 +22,6 @@ namespace neoblox
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -421,33 +421,116 @@ namespace neoblox
             this.Panel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
-        #endregion
-
+        /// <summary>
+        /// Defines the Panel.
+        /// </summary>
         private System.Windows.Forms.Panel Panel;
+
+        /// <summary>
+        /// Defines the titleLabel.
+        /// </summary>
         private System.Windows.Forms.Label titleLabel;
+
+        /// <summary>
+        /// Defines the monacoEditor.
+        /// </summary>
         private System.Windows.Forms.WebBrowser monacoEditor;
+
+        /// <summary>
+        /// Defines the listBox1.
+        /// </summary>
         private System.Windows.Forms.ListBox listBox1;
+
+        /// <summary>
+        /// Defines the walkspeedLabel.
+        /// </summary>
         private System.Windows.Forms.Label walkspeedLabel;
+
+        /// <summary>
+        /// Defines the walkspeedTextbox.
+        /// </summary>
         private System.Windows.Forms.TextBox walkspeedTextbox;
+
+        /// <summary>
+        /// Defines the flyLabel.
+        /// </summary>
         private System.Windows.Forms.Label flyLabel;
+
+        /// <summary>
+        /// Defines the refreshScriptList.
+        /// </summary>
         private ns1.SiticoneButton refreshScriptList;
+
+        /// <summary>
+        /// Defines the injectButton.
+        /// </summary>
         private ns1.SiticoneButton injectButton;
+
+        /// <summary>
+        /// Defines the saveScriptButton.
+        /// </summary>
         private ns1.SiticoneButton saveScriptButton;
+
+        /// <summary>
+        /// Defines the openScriptButton.
+        /// </summary>
         private ns1.SiticoneButton openScriptButton;
+
+        /// <summary>
+        /// Defines the clearButton.
+        /// </summary>
         private ns1.SiticoneButton clearButton;
+
+        /// <summary>
+        /// Defines the executeButton.
+        /// </summary>
         private ns1.SiticoneButton executeButton;
+
+        /// <summary>
+        /// Defines the killRblx.
+        /// </summary>
         private ns1.SiticoneButton killRblx;
+
+        /// <summary>
+        /// Defines the discordRPCCheckbox.
+        /// </summary>
         private ns1.SiticoneCheckBox discordRPCCheckbox;
+
+        /// <summary>
+        /// Defines the topMostCheckbox.
+        /// </summary>
         private ns1.SiticoneCheckBox topMostCheckbox;
+
+        /// <summary>
+        /// Defines the icon.
+        /// </summary>
         private System.Windows.Forms.Label icon;
+
+        /// <summary>
+        /// Defines the credit.
+        /// </summary>
         private System.Windows.Forms.Label credit;
+
+        /// <summary>
+        /// Defines the onButtonFly.
+        /// </summary>
         private ns1.SiticoneButton onButtonFly;
+
+        /// <summary>
+        /// Defines the siticoneButton3.
+        /// </summary>
         private ns1.SiticoneButton siticoneButton3;
+
+        /// <summary>
+        /// Defines the siticoneButton2.
+        /// </summary>
         private ns1.SiticoneButton siticoneButton2;
+
+        /// <summary>
+        /// Defines the musicCheckbox.
+        /// </summary>
         private ns1.SiticoneCheckBox musicCheckbox;
     }
 }
-

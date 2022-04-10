@@ -8,16 +8,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
 namespace neoblox.Properties
 {
+    /// <summary>
+    /// Defines the <see cref="Settings" />.
+    /// </summary>
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
     {
-
+        /// <summary>
+        /// Defines the defaultInstance.
+        /// </summary>
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
 
+        /// <summary>
+        /// Gets the Default.
+        /// </summary>
         public static Settings Default
         {
             get
