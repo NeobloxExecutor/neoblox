@@ -52,6 +52,7 @@
             this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
             this.onButtonFly = new ns1.SiticoneButton();
+            this.injectButtonFix = new ns1.SiticoneButton();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -281,7 +282,7 @@
             this.injectButton.Location = new System.Drawing.Point(802, 399);
             this.injectButton.Name = "injectButton";
             this.injectButton.ShadowDecoration.Parent = this.injectButton;
-            this.injectButton.Size = new System.Drawing.Size(512, 33);
+            this.injectButton.Size = new System.Drawing.Size(194, 33);
             this.injectButton.TabIndex = 17;
             this.injectButton.Text = "Inject";
             this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
@@ -390,12 +391,29 @@
             this.onButtonFly.Text = "On (Press E to toggle)";
             this.onButtonFly.Click += new System.EventHandler(this.onButtonFly_Click);
             // 
+            // injectButtonFix
+            // 
+            this.injectButtonFix.CheckedState.Parent = this.injectButtonFix;
+            this.injectButtonFix.CustomImages.Parent = this.injectButtonFix;
+            this.injectButtonFix.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.injectButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
+            this.injectButtonFix.HoveredState.Parent = this.injectButtonFix;
+            this.injectButtonFix.Location = new System.Drawing.Point(1002, 399);
+            this.injectButtonFix.Name = "injectButtonFix";
+            this.injectButtonFix.ShadowDecoration.Parent = this.injectButtonFix;
+            this.injectButtonFix.Size = new System.Drawing.Size(194, 33);
+            this.injectButtonFix.TabIndex = 21;
+            this.injectButtonFix.Text = "Inject (fix)";
+            this.injectButtonFix.Click += new System.EventHandler(this.injectButtonFix_Click);
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1446, 488);
+            this.Controls.Add(this.injectButtonFix);
             this.Controls.Add(this.onButtonFly);
             this.Controls.Add(this.icon);
             this.Controls.Add(this.credit);
@@ -421,6 +439,7 @@
             this.Panel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         /// <summary>
@@ -532,5 +551,6 @@
         /// Defines the musicCheckbox.
         /// </summary>
         private ns1.SiticoneCheckBox musicCheckbox;
+        private ns1.SiticoneButton injectButtonFix;
     }
 }
