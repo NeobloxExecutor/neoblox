@@ -3,7 +3,7 @@
     /// <summary>
     /// Defines the <see cref="neoblox" />.
     /// </summary>
-    internal partial class neoblox
+    public partial class neoblox
     {
         /// <summary>
         /// Required designer variable..
