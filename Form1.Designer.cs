@@ -38,7 +38,6 @@
             this.discordRPCCheckbox = new ns1.SiticoneCheckBox();
             this.topMostCheckbox = new ns1.SiticoneCheckBox();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.monacoEditor = new System.Windows.Forms.WebBrowser();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.walkspeedLabel = new System.Windows.Forms.Label();
             this.walkspeedTextbox = new System.Windows.Forms.TextBox();
@@ -53,12 +52,15 @@
             this.credit = new System.Windows.Forms.Label();
             this.onButtonFly = new ns1.SiticoneButton();
             this.injectButtonFix = new ns1.SiticoneButton();
+            this.scriptHubButton = new ns1.SiticoneButton();
+            this.monacoEditor = new System.Windows.Forms.WebBrowser();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Panel.Controls.Add(this.scriptHubButton);
             this.Panel.Controls.Add(this.musicCheckbox);
             this.Panel.Controls.Add(this.siticoneButton3);
             this.Panel.Controls.Add(this.siticoneButton2);
@@ -197,14 +199,6 @@
             this.titleLabel.Size = new System.Drawing.Size(121, 38);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Neoblox";
-            // 
-            // monacoEditor
-            // 
-            this.monacoEditor.Location = new System.Drawing.Point(0, 47);
-            this.monacoEditor.MinimumSize = new System.Drawing.Size(20, 20);
-            this.monacoEditor.Name = "monacoEditor";
-            this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
-            this.monacoEditor.TabIndex = 1;
             // 
             // listBox1
             // 
@@ -407,6 +401,30 @@
             this.injectButtonFix.Text = "Inject (fix)";
             this.injectButtonFix.Click += new System.EventHandler(this.injectButtonFix_Click);
             // 
+            // scriptHubButton
+            // 
+            this.scriptHubButton.CheckedState.Parent = this.scriptHubButton;
+            this.scriptHubButton.CustomImages.Parent = this.scriptHubButton;
+            this.scriptHubButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scriptHubButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.scriptHubButton.HoveredState.Parent = this.scriptHubButton;
+            this.scriptHubButton.Location = new System.Drawing.Point(685, 8);
+            this.scriptHubButton.Name = "scriptHubButton";
+            this.scriptHubButton.ShadowDecoration.Parent = this.scriptHubButton;
+            this.scriptHubButton.Size = new System.Drawing.Size(172, 33);
+            this.scriptHubButton.TabIndex = 19;
+            this.scriptHubButton.Text = "Click to go to script hub";
+            this.scriptHubButton.Click += new System.EventHandler(this.scriptHubButton_Click);
+            // 
+            // monacoEditor
+            // 
+            this.monacoEditor.Location = new System.Drawing.Point(0, 47);
+            this.monacoEditor.MinimumSize = new System.Drawing.Size(20, 20);
+            this.monacoEditor.Name = "monacoEditor";
+            this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
+            this.monacoEditor.TabIndex = 1;
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -451,11 +469,6 @@
         /// Defines the titleLabel.
         /// </summary>
         private System.Windows.Forms.Label titleLabel;
-
-        /// <summary>
-        /// Defines the monacoEditor.
-        /// </summary>
-        private System.Windows.Forms.WebBrowser monacoEditor;
 
         /// <summary>
         /// Defines the listBox1.
@@ -552,5 +565,7 @@
         /// </summary>
         private ns1.SiticoneCheckBox musicCheckbox;
         private ns1.SiticoneButton injectButtonFix;
+        private ns1.SiticoneButton scriptHubButton;
+        private System.Windows.Forms.WebBrowser monacoEditor;
     }
 }

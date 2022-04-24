@@ -562,5 +562,12 @@
 
             config();
         }
+
+        private void scriptHubButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScriptHub sh = new ScriptHub();
+            sh.ShowDialog();
+        }
     }
 }
