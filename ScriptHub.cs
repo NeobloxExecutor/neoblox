@@ -107,5 +107,22 @@ namespace neoblox
         {
             wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
         }
+
+        private void injectButtonFix_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start("finj.exe");
+            }
+            catch
+            {
+                MessageBox.Show("Inject fix failed! Try using the normal inject. If that doesn't work report the bug at https://github.com/Plextora/neoblox/issues");
+            }
+        }
+
+        private void injectButton_Click(object sender, EventArgs e)
+        {
+            wrdExploitAPI.LaunchExploit();
+        }
     }
 }

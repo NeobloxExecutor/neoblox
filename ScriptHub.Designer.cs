@@ -40,6 +40,8 @@ namespace neoblox
             this.phantomForcesESP = new ns1.SiticoneButton();
             this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
+            this.injectButtonFix = new ns1.SiticoneButton();
+            this.injectButton = new ns1.SiticoneButton();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -205,12 +207,46 @@ namespace neoblox
             this.credit.TabIndex = 28;
             this.credit.Text = "Made by Plextora#0033";
             // 
+            // injectButtonFix
+            // 
+            this.injectButtonFix.CheckedState.Parent = this.injectButtonFix;
+            this.injectButtonFix.CustomImages.Parent = this.injectButtonFix;
+            this.injectButtonFix.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.injectButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
+            this.injectButtonFix.HoveredState.Parent = this.injectButtonFix;
+            this.injectButtonFix.Location = new System.Drawing.Point(596, 13);
+            this.injectButtonFix.Name = "injectButtonFix";
+            this.injectButtonFix.ShadowDecoration.Parent = this.injectButtonFix;
+            this.injectButtonFix.Size = new System.Drawing.Size(135, 33);
+            this.injectButtonFix.TabIndex = 31;
+            this.injectButtonFix.Text = "Inject (fix)";
+            this.injectButtonFix.Click += new System.EventHandler(this.injectButtonFix_Click);
+            // 
+            // injectButton
+            // 
+            this.injectButton.CheckedState.Parent = this.injectButton;
+            this.injectButton.CustomImages.Parent = this.injectButton;
+            this.injectButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.injectButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.injectButton.HoveredState.Parent = this.injectButton;
+            this.injectButton.Location = new System.Drawing.Point(455, 13);
+            this.injectButton.Name = "injectButton";
+            this.injectButton.ShadowDecoration.Parent = this.injectButton;
+            this.injectButton.Size = new System.Drawing.Size(135, 33);
+            this.injectButton.TabIndex = 30;
+            this.injectButton.Text = "Inject";
+            this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.injectButtonFix);
+            this.Controls.Add(this.injectButton);
             this.Controls.Add(this.icon);
             this.Controls.Add(this.credit);
             this.Controls.Add(this.phantomForcesESP);
@@ -246,5 +282,7 @@ namespace neoblox
         private ns1.SiticoneButton phantomForcesESP;
         private System.Windows.Forms.Label icon;
         private System.Windows.Forms.Label credit;
+        private ns1.SiticoneButton injectButtonFix;
+        private ns1.SiticoneButton injectButton;
     }
 }
