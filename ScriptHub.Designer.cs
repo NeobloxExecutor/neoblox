@@ -101,13 +101,13 @@ namespace neoblox
             this.xrayScript.CheckedState.Parent = this.xrayScript;
             this.xrayScript.CustomImages.Parent = this.xrayScript;
             this.xrayScript.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.xrayScript.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrayScript.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrayScript.ForeColor = System.Drawing.Color.PeachPuff;
             this.xrayScript.HoveredState.Parent = this.xrayScript;
             this.xrayScript.Location = new System.Drawing.Point(12, 63);
             this.xrayScript.Name = "xrayScript";
             this.xrayScript.ShadowDecoration.Parent = this.xrayScript;
-            this.xrayScript.Size = new System.Drawing.Size(125, 43);
+            this.xrayScript.Size = new System.Drawing.Size(170, 43);
             this.xrayScript.TabIndex = 23;
             this.xrayScript.Text = "Xray script (X to toggle)";
             this.xrayScript.Click += new System.EventHandler(this.xrayScript_Click);
@@ -120,7 +120,7 @@ namespace neoblox
             this.infiniteJumpScript.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infiniteJumpScript.ForeColor = System.Drawing.Color.PeachPuff;
             this.infiniteJumpScript.HoveredState.Parent = this.infiniteJumpScript;
-            this.infiniteJumpScript.Location = new System.Drawing.Point(143, 63);
+            this.infiniteJumpScript.Location = new System.Drawing.Point(188, 63);
             this.infiniteJumpScript.Name = "infiniteJumpScript";
             this.infiniteJumpScript.ShadowDecoration.Parent = this.infiniteJumpScript;
             this.infiniteJumpScript.Size = new System.Drawing.Size(125, 43);
