@@ -35,6 +35,7 @@ namespace neoblox
             this.closeButton = new ns1.SiticoneButton();
             this.xrayScript = new ns1.SiticoneButton();
             this.infiniteJumpScript = new ns1.SiticoneButton();
+            this.qToTP = new ns1.SiticoneButton();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -128,12 +129,29 @@ namespace neoblox
             this.infiniteJumpScript.Text = "Infinite Jump";
             this.infiniteJumpScript.Click += new System.EventHandler(this.infiniteJumpScript_Click);
             // 
+            // qToTP
+            // 
+            this.qToTP.CheckedState.Parent = this.qToTP;
+            this.qToTP.CustomImages.Parent = this.qToTP;
+            this.qToTP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.qToTP.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qToTP.ForeColor = System.Drawing.Color.PeachPuff;
+            this.qToTP.HoveredState.Parent = this.qToTP;
+            this.qToTP.Location = new System.Drawing.Point(319, 63);
+            this.qToTP.Name = "qToTP";
+            this.qToTP.ShadowDecoration.Parent = this.qToTP;
+            this.qToTP.Size = new System.Drawing.Size(125, 43);
+            this.qToTP.TabIndex = 25;
+            this.qToTP.Text = "Ctrl + click TP";
+            this.qToTP.Click += new System.EventHandler(this.ctrlClickToTP_Click);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.qToTP);
             this.Controls.Add(this.infiniteJumpScript);
             this.Controls.Add(this.xrayScript);
             this.Controls.Add(this.closeButton);
@@ -159,5 +177,6 @@ namespace neoblox
         private ns1.SiticoneButton closeButton;
         private ns1.SiticoneButton xrayScript;
         private ns1.SiticoneButton infiniteJumpScript;
+        private ns1.SiticoneButton qToTP;
     }
 }

@@ -92,5 +92,10 @@ namespace neoblox
         {
             wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/GDqr8kWM'))();");
         }
+
+        private void ctrlClickToTP_Click(object sender, EventArgs e)
+        {
+            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/PzB5aw8q'))();");
+        }
     }
 }
