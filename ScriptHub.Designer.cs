@@ -42,6 +42,8 @@ namespace neoblox
             this.credit = new System.Windows.Forms.Label();
             this.injectButtonFix = new ns1.SiticoneButton();
             this.injectButton = new ns1.SiticoneButton();
+            this.katGUI = new ns1.SiticoneButton();
+            this.mm2GUI = new ns1.SiticoneButton();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -239,12 +241,46 @@ namespace neoblox
             this.injectButton.Text = "Inject";
             this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
             // 
+            // katGUI
+            // 
+            this.katGUI.CheckedState.Parent = this.katGUI;
+            this.katGUI.CustomImages.Parent = this.katGUI;
+            this.katGUI.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.katGUI.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.katGUI.ForeColor = System.Drawing.Color.PeachPuff;
+            this.katGUI.HoveredState.Parent = this.katGUI;
+            this.katGUI.Location = new System.Drawing.Point(12, 112);
+            this.katGUI.Name = "katGUI";
+            this.katGUI.ShadowDecoration.Parent = this.katGUI;
+            this.katGUI.Size = new System.Drawing.Size(88, 43);
+            this.katGUI.TabIndex = 32;
+            this.katGUI.Text = "KAT GUI";
+            this.katGUI.Click += new System.EventHandler(this.katGUI_Click);
+            // 
+            // mm2GUI
+            // 
+            this.mm2GUI.CheckedState.Parent = this.mm2GUI;
+            this.mm2GUI.CustomImages.Parent = this.mm2GUI;
+            this.mm2GUI.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.mm2GUI.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mm2GUI.ForeColor = System.Drawing.Color.PeachPuff;
+            this.mm2GUI.HoveredState.Parent = this.mm2GUI;
+            this.mm2GUI.Location = new System.Drawing.Point(106, 112);
+            this.mm2GUI.Name = "mm2GUI";
+            this.mm2GUI.ShadowDecoration.Parent = this.mm2GUI;
+            this.mm2GUI.Size = new System.Drawing.Size(101, 43);
+            this.mm2GUI.TabIndex = 33;
+            this.mm2GUI.Text = "MM2 GUI";
+            this.mm2GUI.Click += new System.EventHandler(this.mm2GUI_Click);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.mm2GUI);
+            this.Controls.Add(this.katGUI);
             this.Controls.Add(this.injectButtonFix);
             this.Controls.Add(this.injectButton);
             this.Controls.Add(this.icon);
@@ -284,5 +320,7 @@ namespace neoblox
         private System.Windows.Forms.Label credit;
         private ns1.SiticoneButton injectButtonFix;
         private ns1.SiticoneButton injectButton;
+        private ns1.SiticoneButton katGUI;
+        private ns1.SiticoneButton mm2GUI;
     }
 }

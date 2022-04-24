@@ -108,6 +108,16 @@ namespace neoblox
             wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
         }
 
+        private void katGUI_Click(object sender, EventArgs e)
+        {
+            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/4itkacii'))();");
+        }
+
+        private void mm2GUI_Click(object sender, EventArgs e)
+        {
+            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/ee39zaEi'))();");
+        }
+
         private void injectButtonFix_Click(object sender, EventArgs e)
         {
             try
