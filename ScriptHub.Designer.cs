@@ -38,6 +38,8 @@ namespace neoblox
             this.qToTP = new ns1.SiticoneButton();
             this.phantomForcesSilentAim = new ns1.SiticoneButton();
             this.phantomForcesESP = new ns1.SiticoneButton();
+            this.icon = new System.Windows.Forms.Label();
+            this.credit = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -179,12 +181,38 @@ namespace neoblox
             this.phantomForcesESP.Text = "Phantom Forces ESP";
             this.phantomForcesESP.Click += new System.EventHandler(this.phantomForcesESP_Click);
             // 
+            // icon
+            // 
+            this.icon.AutoSize = true;
+            this.icon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.icon.Font = new System.Drawing.Font("Hack NF", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icon.ForeColor = System.Drawing.Color.PeachPuff;
+            this.icon.Location = new System.Drawing.Point(829, 478);
+            this.icon.Name = "icon";
+            this.icon.Size = new System.Drawing.Size(32, 33);
+            this.icon.TabIndex = 29;
+            this.icon.Text = "";
+            // 
+            // credit
+            // 
+            this.credit.AutoSize = true;
+            this.credit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.credit.Font = new System.Drawing.Font("Segoe UI", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.credit.ForeColor = System.Drawing.Color.PeachPuff;
+            this.credit.Location = new System.Drawing.Point(603, 479);
+            this.credit.Name = "credit";
+            this.credit.Size = new System.Drawing.Size(231, 30);
+            this.credit.TabIndex = 28;
+            this.credit.Text = "Made by Plextora#0033";
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.icon);
+            this.Controls.Add(this.credit);
             this.Controls.Add(this.phantomForcesESP);
             this.Controls.Add(this.phantomForcesSilentAim);
             this.Controls.Add(this.qToTP);
@@ -216,5 +244,7 @@ namespace neoblox
         private ns1.SiticoneButton qToTP;
         private ns1.SiticoneButton phantomForcesSilentAim;
         private ns1.SiticoneButton phantomForcesESP;
+        private System.Windows.Forms.Label icon;
+        private System.Windows.Forms.Label credit;
     }
 }
