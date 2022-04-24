@@ -97,5 +97,15 @@ namespace neoblox
         {
             wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/PzB5aw8q'))();");
         }
+
+        private void phantomForcesSilentAim_Click(object sender, EventArgs e)
+        {
+            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/LjD1BRMm'))();");
+        }
+
+        private void phantomForcesESP_Click(object sender, EventArgs e)
+        {
+            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
+        }
     }
 }

@@ -36,6 +36,8 @@ namespace neoblox
             this.xrayScript = new ns1.SiticoneButton();
             this.infiniteJumpScript = new ns1.SiticoneButton();
             this.qToTP = new ns1.SiticoneButton();
+            this.phantomForcesSilentAim = new ns1.SiticoneButton();
+            this.phantomForcesESP = new ns1.SiticoneButton();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -145,12 +147,46 @@ namespace neoblox
             this.qToTP.Text = "Ctrl + click TP";
             this.qToTP.Click += new System.EventHandler(this.ctrlClickToTP_Click);
             // 
+            // phantomForcesSilentAim
+            // 
+            this.phantomForcesSilentAim.CheckedState.Parent = this.phantomForcesSilentAim;
+            this.phantomForcesSilentAim.CustomImages.Parent = this.phantomForcesSilentAim;
+            this.phantomForcesSilentAim.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.phantomForcesSilentAim.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phantomForcesSilentAim.ForeColor = System.Drawing.Color.PeachPuff;
+            this.phantomForcesSilentAim.HoveredState.Parent = this.phantomForcesSilentAim;
+            this.phantomForcesSilentAim.Location = new System.Drawing.Point(450, 63);
+            this.phantomForcesSilentAim.Name = "phantomForcesSilentAim";
+            this.phantomForcesSilentAim.ShadowDecoration.Parent = this.phantomForcesSilentAim;
+            this.phantomForcesSilentAim.Size = new System.Drawing.Size(196, 43);
+            this.phantomForcesSilentAim.TabIndex = 26;
+            this.phantomForcesSilentAim.Text = "Phantom Forces silent aim";
+            this.phantomForcesSilentAim.Click += new System.EventHandler(this.phantomForcesSilentAim_Click);
+            // 
+            // phantomForcesESP
+            // 
+            this.phantomForcesESP.CheckedState.Parent = this.phantomForcesESP;
+            this.phantomForcesESP.CustomImages.Parent = this.phantomForcesESP;
+            this.phantomForcesESP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.phantomForcesESP.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phantomForcesESP.ForeColor = System.Drawing.Color.PeachPuff;
+            this.phantomForcesESP.HoveredState.Parent = this.phantomForcesESP;
+            this.phantomForcesESP.Location = new System.Drawing.Point(652, 63);
+            this.phantomForcesESP.Name = "phantomForcesESP";
+            this.phantomForcesESP.ShadowDecoration.Parent = this.phantomForcesESP;
+            this.phantomForcesESP.Size = new System.Drawing.Size(182, 43);
+            this.phantomForcesESP.TabIndex = 27;
+            this.phantomForcesESP.Text = "Phantom Forces ESP";
+            this.phantomForcesESP.Click += new System.EventHandler(this.phantomForcesESP_Click);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.phantomForcesESP);
+            this.Controls.Add(this.phantomForcesSilentAim);
             this.Controls.Add(this.qToTP);
             this.Controls.Add(this.infiniteJumpScript);
             this.Controls.Add(this.xrayScript);
@@ -178,5 +214,7 @@ namespace neoblox
         private ns1.SiticoneButton xrayScript;
         private ns1.SiticoneButton infiniteJumpScript;
         private ns1.SiticoneButton qToTP;
+        private ns1.SiticoneButton phantomForcesSilentAim;
+        private ns1.SiticoneButton phantomForcesESP;
     }
 }
