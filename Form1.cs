@@ -494,16 +494,20 @@
         }
 
         /// <summary>
-        /// The walkspeedTextbox_KeyDown.
+        /// The fpsCapTextbox_KeyDown.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>
         /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
-        private void walkspeedTextbox_KeyDown(object sender, KeyEventArgs e)
+        private void fpsCapTextbox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                string walkspeed = walkspeedTextbox.Text;
-                wrdExploitAPI.SendLuaScript($"game.Players.LocalPlayer.Character.Humanoid.WalkSpeed={walkspeed}");
+                bool isIntInText = fpsCapTextbox.Text.All(char.IsDigit);
+                if (isIntInText)
+                {
+                    string fpsCap = fpsCapTextbox.Text;
+                    wrdExploitAPI.SendLuaScript($"set_fps_cap({fpsCap})");
+                }
             }
         }
 

@@ -32,7 +32,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
-            this.injectCheckLabel = new System.Windows.Forms.Label();
             this.scriptHubButton = new ns1.SiticoneButton();
             this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.siticoneButton3 = new ns1.SiticoneButton();
@@ -41,9 +40,10 @@
             this.discordRPCCheckbox = new ns1.SiticoneCheckBox();
             this.topMostCheckbox = new ns1.SiticoneCheckBox();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.injectCheckLabel = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.walkspeedLabel = new System.Windows.Forms.Label();
-            this.walkspeedTextbox = new System.Windows.Forms.TextBox();
+            this.fpsCapLabel = new System.Windows.Forms.Label();
+            this.fpsCapTextbox = new System.Windows.Forms.TextBox();
             this.flyLabel = new System.Windows.Forms.Label();
             this.refreshScriptList = new ns1.SiticoneButton();
             this.injectButton = new ns1.SiticoneButton();
@@ -77,18 +77,6 @@
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
-            // 
-            // injectCheckLabel
-            // 
-            this.injectCheckLabel.AutoSize = true;
-            this.injectCheckLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.injectCheckLabel.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectCheckLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.injectCheckLabel.Location = new System.Drawing.Point(1202, 403);
-            this.injectCheckLabel.Name = "injectCheckLabel";
-            this.injectCheckLabel.Size = new System.Drawing.Size(175, 23);
-            this.injectCheckLabel.TabIndex = 22;
-            this.injectCheckLabel.Text = "Neoblox isn\'t injected";
             // 
             // scriptHubButton
             // 
@@ -231,6 +219,18 @@
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Neoblox";
             // 
+            // injectCheckLabel
+            // 
+            this.injectCheckLabel.AutoSize = true;
+            this.injectCheckLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.injectCheckLabel.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectCheckLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.injectCheckLabel.Location = new System.Drawing.Point(1202, 403);
+            this.injectCheckLabel.Name = "injectCheckLabel";
+            this.injectCheckLabel.Size = new System.Drawing.Size(175, 23);
+            this.injectCheckLabel.TabIndex = 22;
+            this.injectCheckLabel.Text = "Neoblox isn\'t injected";
+            // 
             // listBox1
             // 
             this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
@@ -244,30 +244,30 @@
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // walkspeedLabel
+            // fpsCapLabel
             // 
-            this.walkspeedLabel.AutoSize = true;
-            this.walkspeedLabel.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walkspeedLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.walkspeedLabel.Location = new System.Drawing.Point(570, 453);
-            this.walkspeedLabel.Name = "walkspeedLabel";
-            this.walkspeedLabel.Size = new System.Drawing.Size(120, 17);
-            this.walkspeedLabel.TabIndex = 3;
-            this.walkspeedLabel.Text = "Change walkspeed:";
+            this.fpsCapLabel.AutoSize = true;
+            this.fpsCapLabel.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fpsCapLabel.ForeColor = System.Drawing.Color.PeachPuff;
+            this.fpsCapLabel.Location = new System.Drawing.Point(581, 454);
+            this.fpsCapLabel.Name = "fpsCapLabel";
+            this.fpsCapLabel.Size = new System.Drawing.Size(104, 17);
+            this.fpsCapLabel.TabIndex = 3;
+            this.fpsCapLabel.Text = "Change FPS cap:";
             // 
-            // walkspeedTextbox
+            // fpsCapTextbox
             // 
-            this.walkspeedTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.walkspeedTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.walkspeedTextbox.Font = new System.Drawing.Font("Hack NF", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walkspeedTextbox.ForeColor = System.Drawing.Color.Silver;
-            this.walkspeedTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.walkspeedTextbox.Location = new System.Drawing.Point(696, 453);
-            this.walkspeedTextbox.Name = "walkspeedTextbox";
-            this.walkspeedTextbox.Size = new System.Drawing.Size(100, 20);
-            this.walkspeedTextbox.TabIndex = 9;
-            this.walkspeedTextbox.TabStop = false;
-            this.walkspeedTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.walkspeedTextbox_KeyDown);
+            this.fpsCapTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.fpsCapTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fpsCapTextbox.Font = new System.Drawing.Font("Hack NF", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fpsCapTextbox.ForeColor = System.Drawing.Color.Silver;
+            this.fpsCapTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.fpsCapTextbox.Location = new System.Drawing.Point(696, 453);
+            this.fpsCapTextbox.Name = "fpsCapTextbox";
+            this.fpsCapTextbox.Size = new System.Drawing.Size(100, 20);
+            this.fpsCapTextbox.TabIndex = 9;
+            this.fpsCapTextbox.TabStop = false;
+            this.fpsCapTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fpsCapTextbox_KeyDown);
             // 
             // flyLabel
             // 
@@ -463,8 +463,8 @@
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.executeButton);
             this.Controls.Add(this.flyLabel);
-            this.Controls.Add(this.walkspeedTextbox);
-            this.Controls.Add(this.walkspeedLabel);
+            this.Controls.Add(this.fpsCapTextbox);
+            this.Controls.Add(this.fpsCapLabel);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.monacoEditor);
             this.Controls.Add(this.Panel);
@@ -499,12 +499,12 @@
         /// <summary>
         /// Defines the walkspeedLabel.
         /// </summary>
-        private System.Windows.Forms.Label walkspeedLabel;
+        private System.Windows.Forms.Label fpsCapLabel;
 
         /// <summary>
         /// Defines the walkspeedTextbox.
         /// </summary>
-        private System.Windows.Forms.TextBox walkspeedTextbox;
+        private System.Windows.Forms.TextBox fpsCapTextbox;
 
         /// <summary>
         /// Defines the flyLabel.
