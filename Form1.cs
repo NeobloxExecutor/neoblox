@@ -34,6 +34,20 @@
             InitializeComponent();
         }
 
+        private void injectLabel()
+        {
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                injectCheckLabel.Text = "Neoblox is injected";
+                injectCheckLabel.ForeColor = Color.GreenYellow;
+            }
+            else
+            {
+                injectCheckLabel.Text = "Neoblox isn't injected";
+                injectCheckLabel.ForeColor = Color.Crimson;
+            }
+        }
+
         /// <summary>
         /// The config.
         /// </summary>
@@ -183,9 +197,12 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private async void neoblox_Load(object sender, EventArgs e)
         {
+            injectLabel();
+
             listBox1.Items.Clear();
             PopulateListBox(listBox1, "./Scripts", "*.txt");
             PopulateListBox(listBox1, "./Scripts", "*.lua");
+
 
             WebClient wc = new WebClient
             {
@@ -258,6 +275,11 @@
             {
                 MessageBox.Show("We couldn't activate Anti-Ban measures due to an unexpected error!\nTry running neoblox as an administrator!\nAlways use an alt while exploiting!");
             }
+        }
+
+        private void checkInjectedTimer_Tick(object sender, EventArgs e)
+        {
+            injectLabel();
         }
 
         /// <summary>
@@ -367,6 +389,8 @@
             try
             {
                 Process.Start("finj.exe");
+                injectCheckLabel.Text = "Neoblox cannot tell if injected";
+                injectCheckLabel.ForeColor = Color.Khaki;
             }
             catch
             {

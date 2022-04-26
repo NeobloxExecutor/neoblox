@@ -29,8 +29,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
+            this.injectCheckLabel = new System.Windows.Forms.Label();
+            this.scriptHubButton = new ns1.SiticoneButton();
             this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.siticoneButton3 = new ns1.SiticoneButton();
             this.siticoneButton2 = new ns1.SiticoneButton();
@@ -52,8 +55,8 @@
             this.credit = new System.Windows.Forms.Label();
             this.onButtonFly = new ns1.SiticoneButton();
             this.injectButtonFix = new ns1.SiticoneButton();
-            this.scriptHubButton = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
+            this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +78,34 @@
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
             // 
+            // injectCheckLabel
+            // 
+            this.injectCheckLabel.AutoSize = true;
+            this.injectCheckLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.injectCheckLabel.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectCheckLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.injectCheckLabel.Location = new System.Drawing.Point(1202, 403);
+            this.injectCheckLabel.Name = "injectCheckLabel";
+            this.injectCheckLabel.Size = new System.Drawing.Size(175, 23);
+            this.injectCheckLabel.TabIndex = 22;
+            this.injectCheckLabel.Text = "Neoblox isn\'t injected";
+            // 
+            // scriptHubButton
+            // 
+            this.scriptHubButton.CheckedState.Parent = this.scriptHubButton;
+            this.scriptHubButton.CustomImages.Parent = this.scriptHubButton;
+            this.scriptHubButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scriptHubButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.scriptHubButton.HoveredState.Parent = this.scriptHubButton;
+            this.scriptHubButton.Location = new System.Drawing.Point(683, 8);
+            this.scriptHubButton.Name = "scriptHubButton";
+            this.scriptHubButton.ShadowDecoration.Parent = this.scriptHubButton;
+            this.scriptHubButton.Size = new System.Drawing.Size(172, 33);
+            this.scriptHubButton.TabIndex = 19;
+            this.scriptHubButton.Text = "Click to go to script hub";
+            this.scriptHubButton.Click += new System.EventHandler(this.scriptHubButton_Click);
+            // 
             // musicCheckbox
             // 
             this.musicCheckbox.AutoSize = true;
@@ -85,7 +116,7 @@
             this.musicCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.musicCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.musicCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.musicCheckbox.Location = new System.Drawing.Point(592, 7);
+            this.musicCheckbox.Location = new System.Drawing.Point(590, 7);
             this.musicCheckbox.Name = "musicCheckbox";
             this.musicCheckbox.Size = new System.Drawing.Size(87, 34);
             this.musicCheckbox.TabIndex = 18;
@@ -137,7 +168,7 @@
             this.killRblx.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.killRblx.ForeColor = System.Drawing.Color.PeachPuff;
             this.killRblx.HoveredState.Parent = this.killRblx;
-            this.killRblx.Location = new System.Drawing.Point(138, 8);
+            this.killRblx.Location = new System.Drawing.Point(136, 8);
             this.killRblx.Name = "killRblx";
             this.killRblx.ShadowDecoration.Parent = this.killRblx;
             this.killRblx.Size = new System.Drawing.Size(172, 33);
@@ -155,7 +186,7 @@
             this.discordRPCCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.discordRPCCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discordRPCCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.discordRPCCheckbox.Location = new System.Drawing.Point(440, 7);
+            this.discordRPCCheckbox.Location = new System.Drawing.Point(438, 7);
             this.discordRPCCheckbox.Name = "discordRPCCheckbox";
             this.discordRPCCheckbox.Size = new System.Drawing.Size(146, 34);
             this.discordRPCCheckbox.TabIndex = 14;
@@ -177,7 +208,7 @@
             this.topMostCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.topMostCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topMostCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.topMostCheckbox.Location = new System.Drawing.Point(316, 7);
+            this.topMostCheckbox.Location = new System.Drawing.Point(314, 7);
             this.topMostCheckbox.Name = "topMostCheckbox";
             this.topMostCheckbox.Size = new System.Drawing.Size(118, 34);
             this.topMostCheckbox.TabIndex = 13;
@@ -401,22 +432,6 @@
             this.injectButtonFix.Text = "Inject (fix)";
             this.injectButtonFix.Click += new System.EventHandler(this.injectButtonFix_Click);
             // 
-            // scriptHubButton
-            // 
-            this.scriptHubButton.CheckedState.Parent = this.scriptHubButton;
-            this.scriptHubButton.CustomImages.Parent = this.scriptHubButton;
-            this.scriptHubButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scriptHubButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.scriptHubButton.HoveredState.Parent = this.scriptHubButton;
-            this.scriptHubButton.Location = new System.Drawing.Point(685, 8);
-            this.scriptHubButton.Name = "scriptHubButton";
-            this.scriptHubButton.ShadowDecoration.Parent = this.scriptHubButton;
-            this.scriptHubButton.Size = new System.Drawing.Size(172, 33);
-            this.scriptHubButton.TabIndex = 19;
-            this.scriptHubButton.Text = "Click to go to script hub";
-            this.scriptHubButton.Click += new System.EventHandler(this.scriptHubButton_Click);
-            // 
             // monacoEditor
             // 
             this.monacoEditor.Location = new System.Drawing.Point(0, 47);
@@ -425,12 +440,18 @@
             this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
             this.monacoEditor.TabIndex = 1;
             // 
+            // checkInjectedTimer
+            // 
+            this.checkInjectedTimer.Interval = 500;
+            this.checkInjectedTimer.Tick += new System.EventHandler(this.checkInjectedTimer_Tick);
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1446, 488);
+            this.Controls.Add(this.injectCheckLabel);
             this.Controls.Add(this.injectButtonFix);
             this.Controls.Add(this.onButtonFly);
             this.Controls.Add(this.icon);
@@ -567,5 +588,7 @@
         private ns1.SiticoneButton injectButtonFix;
         private ns1.SiticoneButton scriptHubButton;
         private System.Windows.Forms.WebBrowser monacoEditor;
+        private System.Windows.Forms.Label injectCheckLabel;
+        private System.Windows.Forms.Timer checkInjectedTimer;
     }
 }
