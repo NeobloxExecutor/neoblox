@@ -442,6 +442,7 @@
             // 
             // checkInjectedTimer
             // 
+            this.checkInjectedTimer.Enabled = true;
             this.checkInjectedTimer.Interval = 500;
             this.checkInjectedTimer.Tick += new System.EventHandler(this.checkInjectedTimer_Tick);
             // 
