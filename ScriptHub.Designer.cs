@@ -29,6 +29,7 @@ namespace neoblox
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.titleLabel = new System.Windows.Forms.Label();
             this.scriptHubButton = new ns1.SiticoneButton();
             this.minimizeButton = new ns1.SiticoneButton();
@@ -44,6 +45,8 @@ namespace neoblox
             this.injectButton = new ns1.SiticoneButton();
             this.katGUI = new ns1.SiticoneButton();
             this.mm2GUI = new ns1.SiticoneButton();
+            this.injectCheckLabel = new System.Windows.Forms.Label();
+            this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // titleLabel
@@ -273,12 +276,31 @@ namespace neoblox
             this.mm2GUI.Text = "MM2 GUI";
             this.mm2GUI.Click += new System.EventHandler(this.mm2GUI_Click);
             // 
+            // injectCheckLabel
+            // 
+            this.injectCheckLabel.AutoSize = true;
+            this.injectCheckLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.injectCheckLabel.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectCheckLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.injectCheckLabel.Location = new System.Drawing.Point(8, 485);
+            this.injectCheckLabel.Name = "injectCheckLabel";
+            this.injectCheckLabel.Size = new System.Drawing.Size(175, 23);
+            this.injectCheckLabel.TabIndex = 34;
+            this.injectCheckLabel.Text = "Neoblox isn\'t injected";
+            // 
+            // checkInjectedTimer
+            // 
+            this.checkInjectedTimer.Enabled = true;
+            this.checkInjectedTimer.Interval = 500;
+            this.checkInjectedTimer.Tick += new System.EventHandler(this.checkInjectedTimer_Tick);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.injectCheckLabel);
             this.Controls.Add(this.mm2GUI);
             this.Controls.Add(this.katGUI);
             this.Controls.Add(this.injectButtonFix);
@@ -298,6 +320,7 @@ namespace neoblox
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ScriptHub";
             this.Text = "ScriptHub";
+            this.Load += new System.EventHandler(this.ScriptHub_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ScriptHub_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ScriptHub_MouseMove);
             this.ResumeLayout(false);
@@ -322,5 +345,7 @@ namespace neoblox
         private ns1.SiticoneButton injectButton;
         private ns1.SiticoneButton katGUI;
         private ns1.SiticoneButton mm2GUI;
+        private System.Windows.Forms.Label injectCheckLabel;
+        private System.Windows.Forms.Timer checkInjectedTimer;
     }
 }

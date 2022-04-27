@@ -22,6 +22,30 @@ namespace neoblox
 
         internal ExploitAPI wrdExploitAPI = new ExploitAPI();
 
+        private void ScriptHub_Load(object sender, EventArgs e)
+        {
+            injectLabel();
+        }
+
+        private void injectLabel()
+        {
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                injectCheckLabel.Text = "Neoblox is injected";
+                injectCheckLabel.ForeColor = Color.GreenYellow;
+            }
+            else
+            {
+                injectCheckLabel.Text = "Neoblox isn't injected";
+                injectCheckLabel.ForeColor = Color.Crimson;
+            }
+        }
+
+        private void checkInjectedTimer_Tick(object sender, EventArgs e)
+        {
+            injectLabel();
+        }
+
         /// <summary>
         /// The closeButton_Click.
         /// </summary>
