@@ -199,6 +199,8 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private async void neoblox_Load(object sender, EventArgs e)
         {
+            krnlExploitAPI.Initialize();
+
             injectLabel();
 
             listBox1.Items.Clear();
