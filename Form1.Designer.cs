@@ -32,6 +32,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
+            this.krnlAPICheckbox = new ns1.SiticoneCheckBox();
+            this.wrdAPICheckbox = new ns1.SiticoneCheckBox();
             this.scriptHubButton = new ns1.SiticoneButton();
             this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.siticoneButton3 = new ns1.SiticoneButton();
@@ -63,6 +65,8 @@
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Panel.Controls.Add(this.krnlAPICheckbox);
+            this.Panel.Controls.Add(this.wrdAPICheckbox);
             this.Panel.Controls.Add(this.scriptHubButton);
             this.Panel.Controls.Add(this.musicCheckbox);
             this.Panel.Controls.Add(this.siticoneButton3);
@@ -78,6 +82,48 @@
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
             // 
+            // krnlAPICheckbox
+            // 
+            this.krnlAPICheckbox.AutoSize = true;
+            this.krnlAPICheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.krnlAPICheckbox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.krnlAPICheckbox.CheckedState.BorderRadius = 2;
+            this.krnlAPICheckbox.CheckedState.BorderThickness = 0;
+            this.krnlAPICheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.krnlAPICheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.krnlAPICheckbox.ForeColor = System.Drawing.Color.PeachPuff;
+            this.krnlAPICheckbox.Location = new System.Drawing.Point(800, 7);
+            this.krnlAPICheckbox.Name = "krnlAPICheckbox";
+            this.krnlAPICheckbox.Size = new System.Drawing.Size(106, 34);
+            this.krnlAPICheckbox.TabIndex = 21;
+            this.krnlAPICheckbox.Text = "Krnl API";
+            this.krnlAPICheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.krnlAPICheckbox.UncheckedState.BorderRadius = 2;
+            this.krnlAPICheckbox.UncheckedState.BorderThickness = 0;
+            this.krnlAPICheckbox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.krnlAPICheckbox.UseVisualStyleBackColor = true;
+            // 
+            // wrdAPICheckbox
+            // 
+            this.wrdAPICheckbox.AutoSize = true;
+            this.wrdAPICheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.wrdAPICheckbox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.wrdAPICheckbox.CheckedState.BorderRadius = 2;
+            this.wrdAPICheckbox.CheckedState.BorderThickness = 0;
+            this.wrdAPICheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.wrdAPICheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wrdAPICheckbox.ForeColor = System.Drawing.Color.PeachPuff;
+            this.wrdAPICheckbox.Location = new System.Drawing.Point(680, 7);
+            this.wrdAPICheckbox.Name = "wrdAPICheckbox";
+            this.wrdAPICheckbox.Size = new System.Drawing.Size(118, 34);
+            this.wrdAPICheckbox.TabIndex = 20;
+            this.wrdAPICheckbox.Text = "WRD API";
+            this.wrdAPICheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.wrdAPICheckbox.UncheckedState.BorderRadius = 2;
+            this.wrdAPICheckbox.UncheckedState.BorderThickness = 0;
+            this.wrdAPICheckbox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.wrdAPICheckbox.UseVisualStyleBackColor = false;
+            // 
             // scriptHubButton
             // 
             this.scriptHubButton.CheckedState.Parent = this.scriptHubButton;
@@ -86,7 +132,7 @@
             this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scriptHubButton.ForeColor = System.Drawing.Color.PeachPuff;
             this.scriptHubButton.HoveredState.Parent = this.scriptHubButton;
-            this.scriptHubButton.Location = new System.Drawing.Point(683, 8);
+            this.scriptHubButton.Location = new System.Drawing.Point(916, 8);
             this.scriptHubButton.Name = "scriptHubButton";
             this.scriptHubButton.ShadowDecoration.Parent = this.scriptHubButton;
             this.scriptHubButton.Size = new System.Drawing.Size(172, 33);
@@ -591,5 +637,7 @@
         private System.Windows.Forms.WebBrowser monacoEditor;
         private System.Windows.Forms.Label injectCheckLabel;
         private System.Windows.Forms.Timer checkInjectedTimer;
+        private ns1.SiticoneCheckBox krnlAPICheckbox;
+        private ns1.SiticoneCheckBox wrdAPICheckbox;
     }
 }

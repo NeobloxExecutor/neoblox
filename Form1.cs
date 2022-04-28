@@ -15,6 +15,7 @@
     using System.Windows.Forms;
     using Utility;
     using WeAreDevs_API;
+    using KrnlAPI;
 
     /// <summary>
     /// Defines the <see cref="neoblox" />.
@@ -25,6 +26,7 @@
         /// Defines the wrdExploitAPI.
         /// </summary>
         internal ExploitAPI wrdExploitAPI = new ExploitAPI();
+        KrnlApi krnlExploitAPI = new KrnlApi();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="neoblox"/> class.
@@ -381,7 +383,7 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void injectButton_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.LaunchExploit();
+            krnlExploitAPI.Inject();
         }
 
         private void injectButtonFix_Click(object sender, EventArgs e)
