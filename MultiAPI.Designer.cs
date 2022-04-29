@@ -34,7 +34,6 @@ namespace neoblox
             this.minimizeButton = new ns1.SiticoneButton();
             this.titleLabel = new System.Windows.Forms.Label();
             this.multiAPIButton = new ns1.SiticoneButton();
-            this.injectCheckLabel = new System.Windows.Forms.Label();
             this.krnlInject = new ns1.SiticoneButton();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -98,18 +97,6 @@ namespace neoblox
             this.multiAPIButton.Text = "Click to leave multi API selection";
             this.multiAPIButton.Click += new System.EventHandler(this.multiAPIButton_Click);
             // 
-            // injectCheckLabel
-            // 
-            this.injectCheckLabel.AutoSize = true;
-            this.injectCheckLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.injectCheckLabel.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectCheckLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.injectCheckLabel.Location = new System.Drawing.Point(543, 195);
-            this.injectCheckLabel.Name = "injectCheckLabel";
-            this.injectCheckLabel.Size = new System.Drawing.Size(175, 23);
-            this.injectCheckLabel.TabIndex = 35;
-            this.injectCheckLabel.Text = "Neoblox isn\'t injected";
-            // 
             // krnlInject
             // 
             this.krnlInject.CheckedState.Parent = this.krnlInject;
@@ -126,12 +113,6 @@ namespace neoblox
             this.krnlInject.Text = "Krnl API Inject";
             this.krnlInject.Click += new System.EventHandler(this.krnlInject_Click);
             // 
-            // checkInjectedTimer
-            // 
-            this.checkInjectedTimer.Enabled = true;
-            this.checkInjectedTimer.Interval = 500;
-            this.checkInjectedTimer.Tick += new System.EventHandler(this.checkInjectedTimer_Tick);
-            // 
             // MultiAPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,7 +120,6 @@ namespace neoblox
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(763, 227);
             this.Controls.Add(this.krnlInject);
-            this.Controls.Add(this.injectCheckLabel);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.minimizeButton);
             this.Controls.Add(this.titleLabel);
@@ -161,7 +141,6 @@ namespace neoblox
         private ns1.SiticoneButton minimizeButton;
         private System.Windows.Forms.Label titleLabel;
         private ns1.SiticoneButton multiAPIButton;
-        private System.Windows.Forms.Label injectCheckLabel;
         private ns1.SiticoneButton krnlInject;
         private System.Windows.Forms.Timer checkInjectedTimer;
     }

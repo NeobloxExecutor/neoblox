@@ -29,7 +29,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
             this.multiAPI = new ns1.SiticoneButton();
@@ -41,7 +40,6 @@
             this.discordRPCCheckbox = new ns1.SiticoneCheckBox();
             this.topMostCheckbox = new ns1.SiticoneCheckBox();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.injectCheckLabel = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.fpsCapLabel = new System.Windows.Forms.Label();
             this.fpsCapTextbox = new System.Windows.Forms.TextBox();
@@ -57,7 +55,6 @@
             this.onButtonFly = new ns1.SiticoneButton();
             this.injectButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
-            this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
             this.krnlExecute = new ns1.SiticoneButton();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
@@ -237,18 +234,6 @@
             this.titleLabel.Size = new System.Drawing.Size(121, 38);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Neoblox";
-            // 
-            // injectCheckLabel
-            // 
-            this.injectCheckLabel.AutoSize = true;
-            this.injectCheckLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.injectCheckLabel.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectCheckLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.injectCheckLabel.Location = new System.Drawing.Point(1202, 405);
-            this.injectCheckLabel.Name = "injectCheckLabel";
-            this.injectCheckLabel.Size = new System.Drawing.Size(139, 19);
-            this.injectCheckLabel.TabIndex = 22;
-            this.injectCheckLabel.Text = "Neoblox isn\'t injected";
             // 
             // listBox1
             // 
@@ -459,12 +444,6 @@
             this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
             this.monacoEditor.TabIndex = 1;
             // 
-            // checkInjectedTimer
-            // 
-            this.checkInjectedTimer.Enabled = true;
-            this.checkInjectedTimer.Interval = 500;
-            this.checkInjectedTimer.Tick += new System.EventHandler(this.checkInjectedTimer_Tick);
-            // 
             // krnlExecute
             // 
             this.krnlExecute.CheckedState.Parent = this.krnlExecute;
@@ -488,7 +467,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1446, 525);
             this.Controls.Add(this.krnlExecute);
-            this.Controls.Add(this.injectCheckLabel);
             this.Controls.Add(this.injectButtonFix);
             this.Controls.Add(this.onButtonFly);
             this.Controls.Add(this.icon);
@@ -625,8 +603,6 @@
         private ns1.SiticoneButton injectButtonFix;
         private ns1.SiticoneButton scriptHubButton;
         private System.Windows.Forms.WebBrowser monacoEditor;
-        private System.Windows.Forms.Label injectCheckLabel;
-        private System.Windows.Forms.Timer checkInjectedTimer;
         private ns1.SiticoneButton multiAPI;
         private ns1.SiticoneButton krnlExecute;
     }

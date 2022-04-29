@@ -27,36 +27,6 @@ namespace neoblox
 
         private void ScriptHub_Load(object sender, EventArgs e)
         {
-            injectLabel();
-        }
-
-        private void injectLabel()
-        {
-            if (wrdExploitAPI.isAPIAttached())
-            {
-                injectCheckLabel.Text = "Neoblox is injected (WRD)";
-                injectCheckLabel.ForeColor = Color.GreenYellow;
-            }
-            if (wrdExploitAPI.isAPIAttached() == false)
-            {
-                injectCheckLabel.Text = "Neoblox isn't injected";
-                injectCheckLabel.ForeColor = Color.Crimson;
-            }
-            if (krnlExploitAPI.IsInjected())
-            {
-                injectCheckLabel.Text = "Neoblox is injected (Krnl)";
-                injectCheckLabel.ForeColor = Color.GreenYellow;
-            }
-            if (krnlExploitAPI.IsInjected() == false)
-            {
-                injectCheckLabel.Text = "Neoblox isn't injected";
-                injectCheckLabel.ForeColor = Color.Crimson;
-            }
-        }
-
-        private void checkInjectedTimer_Tick(object sender, EventArgs e)
-        {
-            injectLabel();
         }
 
         /// <summary>

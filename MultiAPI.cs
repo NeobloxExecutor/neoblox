@@ -23,35 +23,9 @@ namespace neoblox
             InitializeComponent();
         }
 
-
-        private void injectLabel()
-        {
-            if (nb.wrdExploitAPI.isAPIAttached())
-            {
-                injectCheckLabel.Text = "Neoblox is injected (WRD)";
-                injectCheckLabel.ForeColor = Color.GreenYellow;
-            }
-            if (nb.wrdExploitAPI.isAPIAttached() == false)
-            {
-                injectCheckLabel.Text = "Neoblox isn't injected";
-                injectCheckLabel.ForeColor = Color.Crimson;
-            }
-            if (krnlExploitAPI.IsInjected())
-            {
-                injectCheckLabel.Text = "Neoblox is injected (Krnl)";
-                injectCheckLabel.ForeColor = Color.GreenYellow;
-            }
-            if (krnlExploitAPI.IsInjected() == false)
-            {
-                injectCheckLabel.Text = "Neoblox isn't injected";
-                injectCheckLabel.ForeColor = Color.Crimson;
-            }
-        }
-
         private void MultiAPI_Load(object sender, EventArgs e)
         {
             krnlExploitAPI.Initialize();
-            injectLabel();
         }
 
         private void multiAPIButton_Click(object sender, EventArgs e)
@@ -90,11 +64,6 @@ namespace neoblox
         private void krnlInject_Click(object sender, EventArgs e)
         {
             krnlExploitAPI.Inject();
-        }
-
-        private void checkInjectedTimer_Tick(object sender, EventArgs e)
-        {
-            injectLabel();
         }
     }
 }
