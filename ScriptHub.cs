@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using WeAreDevs_API;
+using KrnlAPI;
 
 namespace neoblox
 {
@@ -22,6 +23,8 @@ namespace neoblox
 
         internal ExploitAPI wrdExploitAPI = new ExploitAPI();
 
+        KrnlApi krnlExploitAPI = new KrnlApi();
+
         private void ScriptHub_Load(object sender, EventArgs e)
         {
             injectLabel();
@@ -31,10 +34,20 @@ namespace neoblox
         {
             if (wrdExploitAPI.isAPIAttached())
             {
-                injectCheckLabel.Text = "Neoblox is injected";
+                injectCheckLabel.Text = "Neoblox is injected (WRD)";
                 injectCheckLabel.ForeColor = Color.GreenYellow;
             }
-            else
+            if (wrdExploitAPI.isAPIAttached() == false)
+            {
+                injectCheckLabel.Text = "Neoblox isn't injected";
+                injectCheckLabel.ForeColor = Color.Crimson;
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                injectCheckLabel.Text = "Neoblox is injected (Krnl)";
+                injectCheckLabel.ForeColor = Color.GreenYellow;
+            }
+            if (krnlExploitAPI.IsInjected() == false)
             {
                 injectCheckLabel.Text = "Neoblox isn't injected";
                 injectCheckLabel.ForeColor = Color.Crimson;
@@ -109,37 +122,86 @@ namespace neoblox
 
         private void xrayScript_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/u1zKqy4s'))();");
+            if (krnlExploitAPI.IsInjected())
+            {
+                krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/u1zKqy4s'))();");
+            }
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/u1zKqy4s'))();");
+            }
         }
 
         private void infiniteJumpScript_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/GDqr8kWM'))();");
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/GDqr8kWM'))();");
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/GDqr8kWM'))();");
+            }
         }
 
         private void ctrlClickToTP_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/PzB5aw8q'))();");
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/PzB5aw8q'))();");
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/PzB5aw8q'))();");
+            }
         }
 
         private void phantomForcesSilentAim_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/LjD1BRMm'))();");
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/LjD1BRMm'))();");
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/LjD1BRMm'))();");
+            }
         }
 
         private void phantomForcesESP_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
+            }
         }
 
         private void katGUI_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/4itkacii'))();");
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/4itkacii'))();");
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/4itkacii'))();");
+            }
         }
 
         private void mm2GUI_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/ee39zaEi'))();");
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/ee39zaEi'))();");
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/ee39zaEi'))();");
+            }
         }
 
         private void injectButtonFix_Click(object sender, EventArgs e)

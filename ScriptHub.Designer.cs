@@ -225,7 +225,7 @@ namespace neoblox
             this.injectButtonFix.ShadowDecoration.Parent = this.injectButtonFix;
             this.injectButtonFix.Size = new System.Drawing.Size(135, 33);
             this.injectButtonFix.TabIndex = 31;
-            this.injectButtonFix.Text = "Inject (fix)";
+            this.injectButtonFix.Text = "Inject (WRD fix)";
             this.injectButtonFix.Click += new System.EventHandler(this.injectButtonFix_Click);
             // 
             // injectButton
@@ -241,7 +241,7 @@ namespace neoblox
             this.injectButton.ShadowDecoration.Parent = this.injectButton;
             this.injectButton.Size = new System.Drawing.Size(135, 33);
             this.injectButton.TabIndex = 30;
-            this.injectButton.Text = "Inject";
+            this.injectButton.Text = "Inject (WRD)";
             this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
             // 
             // katGUI
