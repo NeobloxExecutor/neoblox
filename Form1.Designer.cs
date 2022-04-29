@@ -32,6 +32,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
+            this.multiAPI = new ns1.SiticoneButton();
             this.scriptHubButton = new ns1.SiticoneButton();
             this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.siticoneButton3 = new ns1.SiticoneButton();
@@ -50,19 +51,21 @@
             this.saveScriptButton = new ns1.SiticoneButton();
             this.openScriptButton = new ns1.SiticoneButton();
             this.clearButton = new ns1.SiticoneButton();
-            this.executeButton = new ns1.SiticoneButton();
+            this.executeButtonWRD = new ns1.SiticoneButton();
             this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
             this.onButtonFly = new ns1.SiticoneButton();
             this.injectButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
+            this.krnlExecute = new ns1.SiticoneButton();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Panel.Controls.Add(this.multiAPI);
             this.Panel.Controls.Add(this.scriptHubButton);
             this.Panel.Controls.Add(this.musicCheckbox);
             this.Panel.Controls.Add(this.siticoneButton3);
@@ -77,6 +80,22 @@
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
+            // 
+            // multiAPI
+            // 
+            this.multiAPI.CheckedState.Parent = this.multiAPI;
+            this.multiAPI.CustomImages.Parent = this.multiAPI;
+            this.multiAPI.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.multiAPI.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiAPI.ForeColor = System.Drawing.Color.PeachPuff;
+            this.multiAPI.HoveredState.Parent = this.multiAPI;
+            this.multiAPI.Location = new System.Drawing.Point(861, 8);
+            this.multiAPI.Name = "multiAPI";
+            this.multiAPI.ShadowDecoration.Parent = this.multiAPI;
+            this.multiAPI.Size = new System.Drawing.Size(172, 33);
+            this.multiAPI.TabIndex = 20;
+            this.multiAPI.Text = "Click to select APIs";
+            this.multiAPI.Click += new System.EventHandler(this.multiAPI_Click);
             // 
             // scriptHubButton
             // 
@@ -223,11 +242,11 @@
             // 
             this.injectCheckLabel.AutoSize = true;
             this.injectCheckLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.injectCheckLabel.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.injectCheckLabel.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.injectCheckLabel.ForeColor = System.Drawing.Color.Crimson;
-            this.injectCheckLabel.Location = new System.Drawing.Point(1202, 403);
+            this.injectCheckLabel.Location = new System.Drawing.Point(1202, 405);
             this.injectCheckLabel.Name = "injectCheckLabel";
-            this.injectCheckLabel.Size = new System.Drawing.Size(175, 23);
+            this.injectCheckLabel.Size = new System.Drawing.Size(139, 19);
             this.injectCheckLabel.TabIndex = 22;
             this.injectCheckLabel.Text = "Neoblox isn\'t injected";
             // 
@@ -249,11 +268,11 @@
             this.fpsCapLabel.AutoSize = true;
             this.fpsCapLabel.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fpsCapLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.fpsCapLabel.Location = new System.Drawing.Point(581, 454);
+            this.fpsCapLabel.Location = new System.Drawing.Point(547, 453);
             this.fpsCapLabel.Name = "fpsCapLabel";
-            this.fpsCapLabel.Size = new System.Drawing.Size(104, 17);
+            this.fpsCapLabel.Size = new System.Drawing.Size(145, 17);
             this.fpsCapLabel.TabIndex = 3;
-            this.fpsCapLabel.Text = "Change FPS cap:";
+            this.fpsCapLabel.Text = "Change FPS cap (WRD):";
             // 
             // fpsCapTextbox
             // 
@@ -309,7 +328,7 @@
             this.injectButton.ShadowDecoration.Parent = this.injectButton;
             this.injectButton.Size = new System.Drawing.Size(194, 33);
             this.injectButton.TabIndex = 17;
-            this.injectButton.Text = "Inject";
+            this.injectButton.Text = "Inject (WRD)";
             this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
             // 
             // saveScriptButton
@@ -360,21 +379,21 @@
             this.clearButton.Text = "Clear";
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // executeButton
+            // executeButtonWRD
             // 
-            this.executeButton.CheckedState.Parent = this.executeButton;
-            this.executeButton.CustomImages.Parent = this.executeButton;
-            this.executeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.executeButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.executeButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.executeButton.HoveredState.Parent = this.executeButton;
-            this.executeButton.Location = new System.Drawing.Point(16, 399);
-            this.executeButton.Name = "executeButton";
-            this.executeButton.ShadowDecoration.Parent = this.executeButton;
-            this.executeButton.Size = new System.Drawing.Size(180, 33);
-            this.executeButton.TabIndex = 13;
-            this.executeButton.Text = "Execute";
-            this.executeButton.Click += new System.EventHandler(this.executeButton_Click);
+            this.executeButtonWRD.CheckedState.Parent = this.executeButtonWRD;
+            this.executeButtonWRD.CustomImages.Parent = this.executeButtonWRD;
+            this.executeButtonWRD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.executeButtonWRD.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.executeButtonWRD.ForeColor = System.Drawing.Color.PeachPuff;
+            this.executeButtonWRD.HoveredState.Parent = this.executeButtonWRD;
+            this.executeButtonWRD.Location = new System.Drawing.Point(16, 399);
+            this.executeButtonWRD.Name = "executeButtonWRD";
+            this.executeButtonWRD.ShadowDecoration.Parent = this.executeButtonWRD;
+            this.executeButtonWRD.Size = new System.Drawing.Size(180, 33);
+            this.executeButtonWRD.TabIndex = 13;
+            this.executeButtonWRD.Text = "Execute (WRD)";
+            this.executeButtonWRD.Click += new System.EventHandler(this.executeButton_Click);
             // 
             // icon
             // 
@@ -429,7 +448,7 @@
             this.injectButtonFix.ShadowDecoration.Parent = this.injectButtonFix;
             this.injectButtonFix.Size = new System.Drawing.Size(194, 33);
             this.injectButtonFix.TabIndex = 21;
-            this.injectButtonFix.Text = "Inject (fix)";
+            this.injectButtonFix.Text = "Inject (WRD fix)";
             this.injectButtonFix.Click += new System.EventHandler(this.injectButtonFix_Click);
             // 
             // monacoEditor
@@ -446,12 +465,29 @@
             this.checkInjectedTimer.Interval = 500;
             this.checkInjectedTimer.Tick += new System.EventHandler(this.checkInjectedTimer_Tick);
             // 
+            // krnlExecute
+            // 
+            this.krnlExecute.CheckedState.Parent = this.krnlExecute;
+            this.krnlExecute.CustomImages.Parent = this.krnlExecute;
+            this.krnlExecute.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.krnlExecute.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.krnlExecute.ForeColor = System.Drawing.Color.PeachPuff;
+            this.krnlExecute.HoveredState.Parent = this.krnlExecute;
+            this.krnlExecute.Location = new System.Drawing.Point(16, 479);
+            this.krnlExecute.Name = "krnlExecute";
+            this.krnlExecute.ShadowDecoration.Parent = this.krnlExecute;
+            this.krnlExecute.Size = new System.Drawing.Size(180, 33);
+            this.krnlExecute.TabIndex = 23;
+            this.krnlExecute.Text = "Execute (Krnl)";
+            this.krnlExecute.Click += new System.EventHandler(this.krnlExecute_Click);
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1446, 488);
+            this.ClientSize = new System.Drawing.Size(1446, 525);
+            this.Controls.Add(this.krnlExecute);
             this.Controls.Add(this.injectCheckLabel);
             this.Controls.Add(this.injectButtonFix);
             this.Controls.Add(this.onButtonFly);
@@ -462,7 +498,7 @@
             this.Controls.Add(this.saveScriptButton);
             this.Controls.Add(this.openScriptButton);
             this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.executeButton);
+            this.Controls.Add(this.executeButtonWRD);
             this.Controls.Add(this.flyLabel);
             this.Controls.Add(this.fpsCapTextbox);
             this.Controls.Add(this.fpsCapLabel);
@@ -540,7 +576,7 @@
         /// <summary>
         /// Defines the executeButton.
         /// </summary>
-        private ns1.SiticoneButton executeButton;
+        private ns1.SiticoneButton executeButtonWRD;
 
         /// <summary>
         /// Defines the killRblx.
@@ -591,5 +627,7 @@
         private System.Windows.Forms.WebBrowser monacoEditor;
         private System.Windows.Forms.Label injectCheckLabel;
         private System.Windows.Forms.Timer checkInjectedTimer;
+        private ns1.SiticoneButton multiAPI;
+        private ns1.SiticoneButton krnlExecute;
     }
 }

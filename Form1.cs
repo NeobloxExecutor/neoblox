@@ -40,10 +40,20 @@
         {
             if (wrdExploitAPI.isAPIAttached())
             {
-                injectCheckLabel.Text = "Neoblox is injected";
+                injectCheckLabel.Text = "Neoblox is injected (WRD)";
                 injectCheckLabel.ForeColor = Color.GreenYellow;
             }
-            else
+            if (wrdExploitAPI.isAPIAttached() == false)
+            {
+                injectCheckLabel.Text = "Neoblox isn't injected";
+                injectCheckLabel.ForeColor = Color.Crimson;
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                injectCheckLabel.Text = "Neoblox is injected (Krnl)";
+                injectCheckLabel.ForeColor = Color.GreenYellow;
+            }
+            if (krnlExploitAPI.IsInjected() == false)
             {
                 injectCheckLabel.Text = "Neoblox isn't injected";
                 injectCheckLabel.ForeColor = Color.Crimson;
@@ -199,7 +209,6 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private async void neoblox_Load(object sender, EventArgs e)
         {
-            krnlExploitAPI.Initialize();
 
             injectLabel();
 
@@ -385,7 +394,7 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void injectButton_Click(object sender, EventArgs e)
         {
-            krnlExploitAPI.Inject();
+            wrdExploitAPI.LaunchExploit();
         }
 
         private void injectButtonFix_Click(object sender, EventArgs e)
@@ -600,6 +609,24 @@
             this.Hide();
             ScriptHub sh = new ScriptHub();
             sh.ShowDialog();
+        }
+
+        private void multiAPI_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MultiAPI mAPI = new MultiAPI();
+            mAPI.ShowDialog();
+        }
+
+        private void krnlExecute_Click(object sender, EventArgs e)
+        {
+            HtmlDocument document = monacoEditor.Document;
+            string scriptName = "GetText";
+            object[] args = new string[0];
+            object obj = document.InvokeScript(scriptName, args);
+            string script = obj.ToString();
+
+            krnlExploitAPI.Execute(script);
         }
     }
 }
