@@ -308,16 +308,6 @@
 
                 wrdExploitAPI.SendLuaScript(script);
             }
-            else
-            {
-                HtmlDocument document = monacoEditor.Document;
-                string scriptName = "GetText";
-                object[] args = new string[0];
-                object obj = document.InvokeScript(scriptName, args);
-                string script = obj.ToString();
-
-                krnlExploitAPI.Execute(script);
-            }
         }
 
         /// <summary>
@@ -409,15 +399,32 @@
             }
             if (isEasyExploit == true)
             {
-                easyExploitsAPI.LaunchExploit();
+                if (wrdExploitAPI.isAPIAttached())
+                {
+                    MessageBox.Show("Cannot inject EasyExploit and WRD at the same time!");
+                }
+                else
+                {
+                    easyExploitsAPI.LaunchExploit();
+                }
             }
             if (isWRD == true)
             {
-                wrdExploitAPI.LaunchExploit();
-            }
-            else
-            {
-                krnlExploitAPI.Inject();
+                try
+                {
+                    if (easyExploitsAPI.isInjected())
+                    {
+                        MessageBox.Show("Cannot inject WRD and EasyExploit at the same time!");
+                    }
+                    else
+                    {
+                        wrdExploitAPI.LaunchExploit();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Inject failed. Try using inject fix");
+                }
             }
         }
 
