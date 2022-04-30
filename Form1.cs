@@ -16,6 +16,7 @@
     using Utility;
     using WeAreDevs_API;
     using KrnlAPI;
+    using EasyExploits;
 
     /// <summary>
     /// Defines the <see cref="neoblox" />.
@@ -27,6 +28,7 @@
         /// </summary>
         internal ExploitAPI wrdExploitAPI = new ExploitAPI();
         KrnlApi krnlExploitAPI = new KrnlApi();
+        EasyExploits.Module neobloxExploit = new EasyExploits.Module();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="neoblox"/> class.

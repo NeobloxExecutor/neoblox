@@ -36,6 +36,7 @@ namespace neoblox
             this.multiAPIButton = new ns1.SiticoneButton();
             this.krnlInject = new ns1.SiticoneButton();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
+            this.easyxploitAPIInject = new ns1.SiticoneButton();
             this.SuspendLayout();
             // 
             // closeButton
@@ -105,7 +106,7 @@ namespace neoblox
             this.krnlInject.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.krnlInject.ForeColor = System.Drawing.Color.PeachPuff;
             this.krnlInject.HoveredState.Parent = this.krnlInject;
-            this.krnlInject.Location = new System.Drawing.Point(274, 106);
+            this.krnlInject.Location = new System.Drawing.Point(274, 44);
             this.krnlInject.Name = "krnlInject";
             this.krnlInject.ShadowDecoration.Parent = this.krnlInject;
             this.krnlInject.Size = new System.Drawing.Size(230, 33);
@@ -113,12 +114,29 @@ namespace neoblox
             this.krnlInject.Text = "Krnl API Inject";
             this.krnlInject.Click += new System.EventHandler(this.krnlInject_Click);
             // 
+            // easyxploitAPIInject
+            // 
+            this.easyxploitAPIInject.CheckedState.Parent = this.easyxploitAPIInject;
+            this.easyxploitAPIInject.CustomImages.Parent = this.easyxploitAPIInject;
+            this.easyxploitAPIInject.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.easyxploitAPIInject.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.easyxploitAPIInject.ForeColor = System.Drawing.Color.PeachPuff;
+            this.easyxploitAPIInject.HoveredState.Parent = this.easyxploitAPIInject;
+            this.easyxploitAPIInject.Location = new System.Drawing.Point(274, 83);
+            this.easyxploitAPIInject.Name = "easyxploitAPIInject";
+            this.easyxploitAPIInject.ShadowDecoration.Parent = this.easyxploitAPIInject;
+            this.easyxploitAPIInject.Size = new System.Drawing.Size(230, 33);
+            this.easyxploitAPIInject.TabIndex = 37;
+            this.easyxploitAPIInject.Text = "EasyXploit API Inject";
+            this.easyxploitAPIInject.Click += new System.EventHandler(this.easyxploitAPIInject_Click);
+            // 
             // MultiAPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(763, 227);
+            this.Controls.Add(this.easyxploitAPIInject);
             this.Controls.Add(this.krnlInject);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.minimizeButton);
@@ -143,5 +161,6 @@ namespace neoblox
         private ns1.SiticoneButton multiAPIButton;
         private ns1.SiticoneButton krnlInject;
         private System.Windows.Forms.Timer checkInjectedTimer;
+        private ns1.SiticoneButton easyxploitAPIInject;
     }
 }

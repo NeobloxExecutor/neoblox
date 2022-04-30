@@ -71,6 +71,9 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EasyExploits">
+      <HintPath>DLLs\EasyExploits.dll</HintPath>
+    </Reference>
     <Reference Include="KrnlAPI">
       <HintPath>DLLs\KrnlAPI.dll</HintPath>
     </Reference>

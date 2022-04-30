@@ -16,6 +16,8 @@ namespace neoblox
     {
         KrnlApi krnlExploitAPI = new KrnlApi();
 
+        EasyExploits.Module neobloxExploit = new EasyExploits.Module();
+
         neoblox nb = new neoblox();
 
         public MultiAPI()
@@ -63,7 +65,14 @@ namespace neoblox
 
         private void krnlInject_Click(object sender, EventArgs e)
         {
+            bool isKrnlUsing = true;
             krnlExploitAPI.Inject();
+        }
+
+        private void easyxploitAPIInject_Click(object sender, EventArgs e)
+        {
+            bool isezXPloitUsing = true;
+            neobloxExploit.LaunchExploit();
         }
     }
 }
