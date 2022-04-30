@@ -85,7 +85,7 @@
             this.multiAPIComboBox.ForeColor = System.Drawing.Color.PeachPuff;
             this.multiAPIComboBox.FormattingEnabled = true;
             this.multiAPIComboBox.Items.AddRange(new object[] {
-            "Krnl",
+            "Krnl (not keyless!)",
             "EasyExploit",
             "WRD"});
             this.multiAPIComboBox.Location = new System.Drawing.Point(861, 15);
