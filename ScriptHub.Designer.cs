@@ -220,7 +220,7 @@ namespace neoblox
             this.attachButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attachButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
             this.attachButtonFix.HoveredState.Parent = this.attachButtonFix;
-            this.attachButtonFix.Location = new System.Drawing.Point(596, 13);
+            this.attachButtonFix.Location = new System.Drawing.Point(539, 13);
             this.attachButtonFix.Name = "attachButtonFix";
             this.attachButtonFix.ShadowDecoration.Parent = this.attachButtonFix;
             this.attachButtonFix.Size = new System.Drawing.Size(135, 33);
@@ -239,9 +239,9 @@ namespace neoblox
             this.attachButton.Location = new System.Drawing.Point(455, 13);
             this.attachButton.Name = "attachButton";
             this.attachButton.ShadowDecoration.Parent = this.attachButton;
-            this.attachButton.Size = new System.Drawing.Size(135, 33);
+            this.attachButton.Size = new System.Drawing.Size(78, 33);
             this.attachButton.TabIndex = 30;
-            this.attachButton.Text = "Attach (WRD)";
+            this.attachButton.Text = "Attach";
             this.attachButton.Click += new System.EventHandler(this.attachButton_Click);
             // 
             // katGUI
