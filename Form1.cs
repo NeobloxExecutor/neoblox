@@ -13,6 +13,7 @@
     using System.Text;
     using System.Threading.Tasks;
     using System.Windows.Forms;
+
     using Utility;
     using WeAreDevs_API;
     using KrnlAPI;
@@ -21,7 +22,7 @@
     /// <summary>
     /// Defines the <see cref="neoblox" />.
     /// </summary>
-    public partial class neoblox : Form
+    public partial class neoblox : FadeForm
     {
         ExploitAPI wrdExploitAPI = new ExploitAPI();
 
