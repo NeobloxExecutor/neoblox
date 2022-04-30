@@ -30,6 +30,7 @@ namespace neoblox
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScriptHub));
             this.scriptHubButton = new ns1.SiticoneButton();
             this.minimizeButton = new ns1.SiticoneButton();
             this.closeButton = new ns1.SiticoneButton();
@@ -318,6 +319,7 @@ namespace neoblox
             this.Controls.Add(this.scriptHubButton);
             this.ForeColor = System.Drawing.Color.PeachPuff;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ScriptHub";
             this.Text = "ScriptHub";
             this.Load += new System.EventHandler(this.ScriptHub_Load);
