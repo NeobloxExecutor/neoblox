@@ -45,7 +45,7 @@
             this.fpsCapTextbox = new System.Windows.Forms.TextBox();
             this.flyLabel = new System.Windows.Forms.Label();
             this.refreshScriptList = new ns1.SiticoneButton();
-            this.injectButton = new ns1.SiticoneButton();
+            this.attachButton = new ns1.SiticoneButton();
             this.saveScriptButton = new ns1.SiticoneButton();
             this.openScriptButton = new ns1.SiticoneButton();
             this.clearButton = new ns1.SiticoneButton();
@@ -53,7 +53,7 @@
             this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
             this.onButtonFly = new ns1.SiticoneButton();
-            this.injectButtonFix = new ns1.SiticoneButton();
+            this.attachButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
@@ -301,21 +301,21 @@
             this.refreshScriptList.Text = "Refresh script list";
             this.refreshScriptList.Click += new System.EventHandler(this.refreshScriptList_Click);
             // 
-            // injectButton
+            // attachButton
             // 
-            this.injectButton.CheckedState.Parent = this.injectButton;
-            this.injectButton.CustomImages.Parent = this.injectButton;
-            this.injectButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.injectButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.injectButton.HoveredState.Parent = this.injectButton;
-            this.injectButton.Location = new System.Drawing.Point(802, 399);
-            this.injectButton.Name = "injectButton";
-            this.injectButton.ShadowDecoration.Parent = this.injectButton;
-            this.injectButton.Size = new System.Drawing.Size(194, 33);
-            this.injectButton.TabIndex = 17;
-            this.injectButton.Text = "Inject";
-            this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
+            this.attachButton.CheckedState.Parent = this.attachButton;
+            this.attachButton.CustomImages.Parent = this.attachButton;
+            this.attachButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.attachButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attachButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.attachButton.HoveredState.Parent = this.attachButton;
+            this.attachButton.Location = new System.Drawing.Point(802, 399);
+            this.attachButton.Name = "attachButton";
+            this.attachButton.ShadowDecoration.Parent = this.attachButton;
+            this.attachButton.Size = new System.Drawing.Size(194, 33);
+            this.attachButton.TabIndex = 17;
+            this.attachButton.Text = "Attach";
+            this.attachButton.Click += new System.EventHandler(this.attachButton_Click);
             // 
             // saveScriptButton
             // 
@@ -421,21 +421,21 @@
             this.onButtonFly.Text = "On (Press E to toggle)";
             this.onButtonFly.Click += new System.EventHandler(this.onButtonFly_Click);
             // 
-            // injectButtonFix
+            // attachButtonFix
             // 
-            this.injectButtonFix.CheckedState.Parent = this.injectButtonFix;
-            this.injectButtonFix.CustomImages.Parent = this.injectButtonFix;
-            this.injectButtonFix.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.injectButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
-            this.injectButtonFix.HoveredState.Parent = this.injectButtonFix;
-            this.injectButtonFix.Location = new System.Drawing.Point(1002, 399);
-            this.injectButtonFix.Name = "injectButtonFix";
-            this.injectButtonFix.ShadowDecoration.Parent = this.injectButtonFix;
-            this.injectButtonFix.Size = new System.Drawing.Size(194, 33);
-            this.injectButtonFix.TabIndex = 21;
-            this.injectButtonFix.Text = "Inject (WRD fix)";
-            this.injectButtonFix.Click += new System.EventHandler(this.injectButtonFix_Click);
+            this.attachButtonFix.CheckedState.Parent = this.attachButtonFix;
+            this.attachButtonFix.CustomImages.Parent = this.attachButtonFix;
+            this.attachButtonFix.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.attachButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attachButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
+            this.attachButtonFix.HoveredState.Parent = this.attachButtonFix;
+            this.attachButtonFix.Location = new System.Drawing.Point(1002, 399);
+            this.attachButtonFix.Name = "attachButtonFix";
+            this.attachButtonFix.ShadowDecoration.Parent = this.attachButtonFix;
+            this.attachButtonFix.Size = new System.Drawing.Size(194, 33);
+            this.attachButtonFix.TabIndex = 21;
+            this.attachButtonFix.Text = "Attach (WRD fix)";
+            this.attachButtonFix.Click += new System.EventHandler(this.attachButtonFix_Click);
             // 
             // monacoEditor
             // 
@@ -451,12 +451,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1446, 492);
-            this.Controls.Add(this.injectButtonFix);
+            this.Controls.Add(this.attachButtonFix);
             this.Controls.Add(this.onButtonFly);
             this.Controls.Add(this.icon);
             this.Controls.Add(this.credit);
             this.Controls.Add(this.refreshScriptList);
-            this.Controls.Add(this.injectButton);
+            this.Controls.Add(this.attachButton);
             this.Controls.Add(this.saveScriptButton);
             this.Controls.Add(this.openScriptButton);
             this.Controls.Add(this.clearButton);
@@ -518,7 +518,7 @@
         /// <summary>
         /// Defines the injectButton.
         /// </summary>
-        private ns1.SiticoneButton injectButton;
+        private ns1.SiticoneButton attachButton;
 
         /// <summary>
         /// Defines the saveScriptButton.
@@ -584,7 +584,7 @@
         /// Defines the musicCheckbox.
         /// </summary>
         private ns1.SiticoneCheckBox musicCheckbox;
-        private ns1.SiticoneButton injectButtonFix;
+        private ns1.SiticoneButton attachButtonFix;
         private ns1.SiticoneButton scriptHubButton;
         private System.Windows.Forms.WebBrowser monacoEditor;
         private System.Windows.Forms.ComboBox multiAPIComboBox;

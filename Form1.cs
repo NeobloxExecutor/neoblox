@@ -386,12 +386,7 @@
             }
         }
 
-        /// <summary>
-        /// The injectButton_Click.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void injectButton_Click(object sender, EventArgs e)
+        private void attachButton_Click(object sender, EventArgs e)
         {
             if (isKrnl == true)
             {
@@ -401,7 +396,7 @@
             {
                 if (wrdExploitAPI.isAPIAttached())
                 {
-                    MessageBox.Show("Cannot inject EasyExploit and WRD at the same time!");
+                    MessageBox.Show("Cannot attach EasyExploit and WRD at the same time!");
                 }
                 else
                 {
@@ -414,7 +409,7 @@
                 {
                     if (easyExploitsAPI.isInjected())
                     {
-                        MessageBox.Show("Cannot inject WRD and EasyExploit at the same time!");
+                        MessageBox.Show("Cannot attach WRD and EasyExploit at the same time!");
                     }
                     else
                     {
@@ -423,12 +418,12 @@
                 }
                 catch
                 {
-                    MessageBox.Show("Inject failed. Try using inject fix");
+                    MessageBox.Show("Attach failed. Try using attach fix");
                 }
             }
         }
 
-        private void injectButtonFix_Click(object sender, EventArgs e)
+        private void attachButtonFix_Click(object sender, EventArgs e)
         {
             try
             {
@@ -436,7 +431,7 @@
             }
             catch
             {
-                MessageBox.Show("Inject fix failed! Try using the normal inject. If that doesn't work report the bug at https://github.com/Plextora/neoblox/issues");
+                MessageBox.Show("Attach fix failed! Try using the normal Attach. If that doesn't work report the bug at https://github.com/Plextora/neoblox/issues");
             }
         }
 

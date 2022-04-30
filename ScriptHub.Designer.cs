@@ -41,8 +41,8 @@ namespace neoblox
             this.phantomForcesESP = new ns1.SiticoneButton();
             this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
-            this.injectButtonFix = new ns1.SiticoneButton();
-            this.injectButton = new ns1.SiticoneButton();
+            this.attachButtonFix = new ns1.SiticoneButton();
+            this.attachButton = new ns1.SiticoneButton();
             this.katGUI = new ns1.SiticoneButton();
             this.mm2GUI = new ns1.SiticoneButton();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
@@ -211,37 +211,37 @@ namespace neoblox
             this.credit.TabIndex = 28;
             this.credit.Text = "Made by Plextora#0033";
             // 
-            // injectButtonFix
+            // attachButtonFix
             // 
-            this.injectButtonFix.CheckedState.Parent = this.injectButtonFix;
-            this.injectButtonFix.CustomImages.Parent = this.injectButtonFix;
-            this.injectButtonFix.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.injectButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
-            this.injectButtonFix.HoveredState.Parent = this.injectButtonFix;
-            this.injectButtonFix.Location = new System.Drawing.Point(596, 13);
-            this.injectButtonFix.Name = "injectButtonFix";
-            this.injectButtonFix.ShadowDecoration.Parent = this.injectButtonFix;
-            this.injectButtonFix.Size = new System.Drawing.Size(135, 33);
-            this.injectButtonFix.TabIndex = 31;
-            this.injectButtonFix.Text = "Inject (WRD fix)";
-            this.injectButtonFix.Click += new System.EventHandler(this.injectButtonFix_Click);
+            this.attachButtonFix.CheckedState.Parent = this.attachButtonFix;
+            this.attachButtonFix.CustomImages.Parent = this.attachButtonFix;
+            this.attachButtonFix.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.attachButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attachButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
+            this.attachButtonFix.HoveredState.Parent = this.attachButtonFix;
+            this.attachButtonFix.Location = new System.Drawing.Point(596, 13);
+            this.attachButtonFix.Name = "attachButtonFix";
+            this.attachButtonFix.ShadowDecoration.Parent = this.attachButtonFix;
+            this.attachButtonFix.Size = new System.Drawing.Size(135, 33);
+            this.attachButtonFix.TabIndex = 31;
+            this.attachButtonFix.Text = "Attach (WRD fix)";
+            this.attachButtonFix.Click += new System.EventHandler(this.attachButtonFix_Click);
             // 
-            // injectButton
+            // attachButton
             // 
-            this.injectButton.CheckedState.Parent = this.injectButton;
-            this.injectButton.CustomImages.Parent = this.injectButton;
-            this.injectButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.injectButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.injectButton.ForeColor = System.Drawing.Color.PeachPuff;
-            this.injectButton.HoveredState.Parent = this.injectButton;
-            this.injectButton.Location = new System.Drawing.Point(455, 13);
-            this.injectButton.Name = "injectButton";
-            this.injectButton.ShadowDecoration.Parent = this.injectButton;
-            this.injectButton.Size = new System.Drawing.Size(135, 33);
-            this.injectButton.TabIndex = 30;
-            this.injectButton.Text = "Inject (WRD)";
-            this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
+            this.attachButton.CheckedState.Parent = this.attachButton;
+            this.attachButton.CustomImages.Parent = this.attachButton;
+            this.attachButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.attachButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attachButton.ForeColor = System.Drawing.Color.PeachPuff;
+            this.attachButton.HoveredState.Parent = this.attachButton;
+            this.attachButton.Location = new System.Drawing.Point(455, 13);
+            this.attachButton.Name = "attachButton";
+            this.attachButton.ShadowDecoration.Parent = this.attachButton;
+            this.attachButton.Size = new System.Drawing.Size(135, 33);
+            this.attachButton.TabIndex = 30;
+            this.attachButton.Text = "Attach (WRD)";
+            this.attachButton.Click += new System.EventHandler(this.attachButton_Click);
             // 
             // katGUI
             // 
@@ -283,8 +283,8 @@ namespace neoblox
             this.ClientSize = new System.Drawing.Size(867, 518);
             this.Controls.Add(this.mm2GUI);
             this.Controls.Add(this.katGUI);
-            this.Controls.Add(this.injectButtonFix);
-            this.Controls.Add(this.injectButton);
+            this.Controls.Add(this.attachButtonFix);
+            this.Controls.Add(this.attachButton);
             this.Controls.Add(this.icon);
             this.Controls.Add(this.credit);
             this.Controls.Add(this.phantomForcesESP);
@@ -321,8 +321,8 @@ namespace neoblox
         private ns1.SiticoneButton phantomForcesESP;
         private System.Windows.Forms.Label icon;
         private System.Windows.Forms.Label credit;
-        private ns1.SiticoneButton injectButtonFix;
-        private ns1.SiticoneButton injectButton;
+        private ns1.SiticoneButton attachButtonFix;
+        private ns1.SiticoneButton attachButton;
         private ns1.SiticoneButton katGUI;
         private ns1.SiticoneButton mm2GUI;
         private System.Windows.Forms.Timer checkInjectedTimer;

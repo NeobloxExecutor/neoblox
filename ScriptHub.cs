@@ -204,7 +204,7 @@ namespace neoblox
             }
         }
 
-        private void injectButtonFix_Click(object sender, EventArgs e)
+        private void attachButtonFix_Click(object sender, EventArgs e)
         {
             try
             {
@@ -216,7 +216,7 @@ namespace neoblox
             }
         }
 
-        private void injectButton_Click(object sender, EventArgs e)
+        private void attachButton_Click(object sender, EventArgs e)
         {
             wrdExploitAPI.LaunchExploit();
         }
