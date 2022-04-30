@@ -30,7 +30,6 @@ namespace neoblox
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.titleLabel = new System.Windows.Forms.Label();
             this.scriptHubButton = new ns1.SiticoneButton();
             this.minimizeButton = new ns1.SiticoneButton();
             this.closeButton = new ns1.SiticoneButton();
@@ -47,18 +46,8 @@ namespace neoblox
             this.mm2GUI = new ns1.SiticoneButton();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
             this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.titleLabel.Location = new System.Drawing.Point(3, 8);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(268, 38);
-            this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "Neoblox (script hub)";
             // 
             // scriptHubButton
             // 
@@ -294,6 +283,17 @@ namespace neoblox
             this.multiAPIComboBox.Text = "Multi API selection";
             this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPIComboBox_SelectedIndexChanged);
             // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.PeachPuff;
+            this.titleLabel.Location = new System.Drawing.Point(3, 8);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(268, 38);
+            this.titleLabel.TabIndex = 0;
+            this.titleLabel.Text = "Neoblox (script hub)";
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,8 +329,6 @@ namespace neoblox
         }
 
         #endregion
-
-        private System.Windows.Forms.Label titleLabel;
         private ns1.SiticoneButton scriptHubButton;
         private ns1.SiticoneButton minimizeButton;
         private ns1.SiticoneButton closeButton;
@@ -347,5 +345,6 @@ namespace neoblox
         private ns1.SiticoneButton mm2GUI;
         private System.Windows.Forms.Timer checkInjectedTimer;
         private System.Windows.Forms.ComboBox multiAPIComboBox;
+        private System.Windows.Forms.Label titleLabel;
     }
 }

@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>neoblox-icon.ico</ApplicationIcon>
+    <ApplicationIcon>Neoblox Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
@@ -146,6 +146,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Neoblox Icon.ico" />
     <Content Include="neoblox-icon.ico" />
   </ItemGroup>
   <ItemGroup>

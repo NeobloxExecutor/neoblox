@@ -39,7 +39,6 @@
             this.killRblx = new ns1.SiticoneButton();
             this.discordRPCCheckbox = new ns1.SiticoneCheckBox();
             this.topMostCheckbox = new ns1.SiticoneCheckBox();
-            this.titleLabel = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.fpsCapLabel = new System.Windows.Forms.Label();
             this.fpsCapTextbox = new System.Windows.Forms.TextBox();
@@ -55,12 +54,15 @@
             this.onButtonFly = new ns1.SiticoneButton();
             this.attachButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
+            this.titleLogo = new System.Windows.Forms.PictureBox();
             this.Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Panel.Controls.Add(this.titleLogo);
             this.Panel.Controls.Add(this.multiAPIComboBox);
             this.Panel.Controls.Add(this.scriptHubButton);
             this.Panel.Controls.Add(this.musicCheckbox);
@@ -69,7 +71,6 @@
             this.Panel.Controls.Add(this.killRblx);
             this.Panel.Controls.Add(this.discordRPCCheckbox);
             this.Panel.Controls.Add(this.topMostCheckbox);
-            this.Panel.Controls.Add(this.titleLabel);
             this.Panel.Location = new System.Drawing.Point(0, 0);
             this.Panel.Name = "Panel";
             this.Panel.Size = new System.Drawing.Size(1447, 49);
@@ -224,17 +225,6 @@
             this.topMostCheckbox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.topMostCheckbox.UseVisualStyleBackColor = false;
             this.topMostCheckbox.CheckedChanged += new System.EventHandler(this.topMostCheckbox_CheckedChanged);
-            // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.titleLabel.Location = new System.Drawing.Point(9, 6);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(121, 38);
-            this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "Neoblox";
             // 
             // listBox1
             // 
@@ -445,6 +435,15 @@
             this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
             this.monacoEditor.TabIndex = 1;
             // 
+            // titleLogo
+            // 
+            this.titleLogo.Image = ((System.Drawing.Image)(resources.GetObject("titleLogo.Image")));
+            this.titleLogo.Location = new System.Drawing.Point(3, -14);
+            this.titleLogo.Name = "titleLogo";
+            this.titleLogo.Size = new System.Drawing.Size(144, 73);
+            this.titleLogo.TabIndex = 22;
+            this.titleLogo.TabStop = false;
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,6 +474,7 @@
             this.Load += new System.EventHandler(this.neoblox_Load);
             this.Panel.ResumeLayout(false);
             this.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,11 +484,6 @@
         /// Defines the Panel.
         /// </summary>
         private System.Windows.Forms.Panel Panel;
-
-        /// <summary>
-        /// Defines the titleLabel.
-        /// </summary>
-        private System.Windows.Forms.Label titleLabel;
 
         /// <summary>
         /// Defines the listBox1.
@@ -588,5 +583,6 @@
         private ns1.SiticoneButton scriptHubButton;
         private System.Windows.Forms.WebBrowser monacoEditor;
         private System.Windows.Forms.ComboBox multiAPIComboBox;
+        private System.Windows.Forms.PictureBox titleLogo;
     }
 }
