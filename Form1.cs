@@ -261,7 +261,7 @@
             {
                 using (StreamWriter w = File.AppendText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"drivers\etc\hosts")))
                 {
-                    w.WriteLine("# Anti-Banwave measures for Roblox - added by neoblox");
+                    w.WriteLine("# Anti-Banwave measures for Roblox - added by Neoblox");
                     w.WriteLine("127.0.0.1 data.roblox.com");
                     w.WriteLine("127.0.0.1 roblox.sp.backtrace.io");
                 }
@@ -443,7 +443,18 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void closeButton_Click(object sender, EventArgs e)
         {
-            Process.Start("deactivate anti ban measures.exe");
+            try
+            {
+                string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), "drivers\\etc\\hosts");
+                File.WriteAllLines(path, (from l in File.ReadLines(path) where l != "127.0.0.1 data.roblox.com" select l).ToList<string>());
+                File.WriteAllLines(path, (from l in File.ReadLines(path) where l != "127.0.0.1 roblox.sp.backtrace.io" select l).ToList<string>());
+                File.WriteAllLines(path, (from l in File.ReadLines(path) where l != "# Anti-Banwave measures for Roblox - added by Neoblox" select l).ToList<string>());
+            }
+            catch
+            {
+                MessageBox.Show("We couldn't deactivate anti-ban measures due to an unexpected error!\nRestart the program as an administrator!");
+            }
+
             foreach (var process in Process.GetProcessesByName("discordrpc"))
             {
                 process.Kill();
