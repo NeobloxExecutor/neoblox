@@ -317,8 +317,6 @@
                 string script = obj.ToString();
 
                 krnlExploitAPI.Execute(script);
-
-                MessageBox.Show("Defaulting to Krnl API since you didn't select one ig");
             }
         }
 
@@ -419,7 +417,6 @@
             }
             else
             {
-                MessageBox.Show("Defaulting to Krnl API since you didn't select one ig");
                 krnlExploitAPI.Inject();
             }
         }
