@@ -81,7 +81,7 @@ namespace Utility
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            AnimateWindow(this.Handle, 1000, AW_ACTIVATE | (_UseSlideAnimation ? AW_HOR_POSITIVE | AW_SLIDE : AW_BLEND));
+            AnimateWindow(this.Handle, 150, AW_ACTIVATE | (_UseSlideAnimation ? AW_HOR_POSITIVE | AW_SLIDE : AW_BLEND));
         }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace Utility
             base.OnClosing(e);
             if (e.Cancel == false)
             {
-                AnimateWindow(this.Handle, 1000, AW_HIDE | (_UseSlideAnimation ? AW_HOR_NEGATIVE | AW_SLIDE : AW_BLEND));
+                AnimateWindow(this.Handle, 150, AW_HIDE | (_UseSlideAnimation ? AW_HOR_NEGATIVE | AW_SLIDE : AW_BLEND));
             }
         }
     }
