@@ -25,6 +25,8 @@ namespace neoblox
 
         KrnlApi krnlExploitAPI = new KrnlApi();
 
+        EasyExploits.Module easyExploitsAPI = new EasyExploits.Module();
+
         private void ScriptHub_Load(object sender, EventArgs e)
         {
         }
@@ -96,6 +98,10 @@ namespace neoblox
             {
                 krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/u1zKqy4s'))();");
             }
+            if (easyExploitsAPI.isInjected())
+            {
+                easyExploitsAPI.ExecuteScript("loadstring(game: HttpGet('https://pastebin.com/raw/u1zKqy4s'))();");
+            }
             if (wrdExploitAPI.isAPIAttached())
             {
                 wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/u1zKqy4s'))();");
@@ -107,6 +113,10 @@ namespace neoblox
             if (wrdExploitAPI.isAPIAttached())
             {
                 wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/GDqr8kWM'))();");
+            }
+            if (easyExploitsAPI.isInjected())
+            {
+                easyExploitsAPI.ExecuteScript("loadstring(game: HttpGet('https://pastebin.com/raw/GDqr8kWM'))();");
             }
             if (krnlExploitAPI.IsInjected())
             {
@@ -120,6 +130,10 @@ namespace neoblox
             {
                 wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/PzB5aw8q'))();");
             }
+            if (easyExploitsAPI.isInjected())
+            {
+                easyExploitsAPI.ExecuteScript("loadstring(game: HttpGet('https://pastebin.com/raw/PzB5aw8q'))();");
+            }
             if (krnlExploitAPI.IsInjected())
             {
                 krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/PzB5aw8q'))();");
@@ -131,6 +145,10 @@ namespace neoblox
             if (wrdExploitAPI.isAPIAttached())
             {
                 wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/LjD1BRMm'))();");
+            }
+            if (easyExploitsAPI.isInjected())
+            {
+                easyExploitsAPI.ExecuteScript("loadstring(game: HttpGet('https://pastebin.com/raw/LjD1BRMm'))();");
             }
             if (krnlExploitAPI.IsInjected())
             {
@@ -144,6 +162,10 @@ namespace neoblox
             {
                 wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
             }
+            if (easyExploitsAPI.isInjected())
+            {
+                easyExploitsAPI.ExecuteScript("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
+            }
             if (krnlExploitAPI.IsInjected())
             {
                 krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/bCWL1YKa'))();");
@@ -156,6 +178,10 @@ namespace neoblox
             {
                 wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/4itkacii'))();");
             }
+            if (easyExploitsAPI.isInjected())
+            {
+                easyExploitsAPI.ExecuteScript("loadstring(game: HttpGet('https://pastebin.com/raw/4itkacii'))();");
+            }
             if (krnlExploitAPI.IsInjected())
             {
                 krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/4itkacii'))();");
@@ -167,6 +193,10 @@ namespace neoblox
             if (wrdExploitAPI.isAPIAttached())
             {
                 wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/ee39zaEi'))();");
+            }
+            if (easyExploitsAPI.isInjected())
+            {
+                easyExploitsAPI.ExecuteScript("loadstring(game: HttpGet('https://pastebin.com/raw/ee39zaEi'))();");
             }
             if (krnlExploitAPI.IsInjected())
             {
