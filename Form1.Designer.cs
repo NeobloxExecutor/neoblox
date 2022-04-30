@@ -31,7 +31,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
-            this.multiAPI = new ns1.SiticoneButton();
+            this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
             this.scriptHubButton = new ns1.SiticoneButton();
             this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.siticoneButton3 = new ns1.SiticoneButton();
@@ -55,14 +55,13 @@
             this.onButtonFly = new ns1.SiticoneButton();
             this.injectButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
-            this.krnlExecute = new ns1.SiticoneButton();
             this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.Panel.Controls.Add(this.multiAPI);
+            this.Panel.Controls.Add(this.multiAPIComboBox);
             this.Panel.Controls.Add(this.scriptHubButton);
             this.Panel.Controls.Add(this.musicCheckbox);
             this.Panel.Controls.Add(this.siticoneButton3);
@@ -78,21 +77,23 @@
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
             // 
-            // multiAPI
+            // multiAPIComboBox
             // 
-            this.multiAPI.CheckedState.Parent = this.multiAPI;
-            this.multiAPI.CustomImages.Parent = this.multiAPI;
-            this.multiAPI.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.multiAPI.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiAPI.ForeColor = System.Drawing.Color.PeachPuff;
-            this.multiAPI.HoveredState.Parent = this.multiAPI;
-            this.multiAPI.Location = new System.Drawing.Point(861, 8);
-            this.multiAPI.Name = "multiAPI";
-            this.multiAPI.ShadowDecoration.Parent = this.multiAPI;
-            this.multiAPI.Size = new System.Drawing.Size(172, 33);
-            this.multiAPI.TabIndex = 20;
-            this.multiAPI.Text = "Click to select APIs";
-            this.multiAPI.Click += new System.EventHandler(this.multiAPI_Click);
+            this.multiAPIComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.multiAPIComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.multiAPIComboBox.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiAPIComboBox.ForeColor = System.Drawing.Color.PeachPuff;
+            this.multiAPIComboBox.FormattingEnabled = true;
+            this.multiAPIComboBox.Items.AddRange(new object[] {
+            "Krnl",
+            "EasyExploit",
+            "WRD"});
+            this.multiAPIComboBox.Location = new System.Drawing.Point(861, 15);
+            this.multiAPIComboBox.Name = "multiAPIComboBox";
+            this.multiAPIComboBox.Size = new System.Drawing.Size(121, 21);
+            this.multiAPIComboBox.TabIndex = 21;
+            this.multiAPIComboBox.Text = "Multi API selection";
+            this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPIComboBox_SelectedIndexChanged);
             // 
             // scriptHubButton
             // 
@@ -280,7 +281,7 @@
             this.flyLabel.ForeColor = System.Drawing.Color.PeachPuff;
             this.flyLabel.Location = new System.Drawing.Point(811, 452);
             this.flyLabel.Name = "flyLabel";
-            this.flyLabel.Size = new System.Drawing.Size(30, 21);
+            this.flyLabel.Size = new System.Drawing.Size(27, 20);
             this.flyLabel.TabIndex = 10;
             this.flyLabel.Text = "Fly";
             // 
@@ -313,7 +314,7 @@
             this.injectButton.ShadowDecoration.Parent = this.injectButton;
             this.injectButton.Size = new System.Drawing.Size(194, 33);
             this.injectButton.TabIndex = 17;
-            this.injectButton.Text = "Inject (WRD)";
+            this.injectButton.Text = "Inject";
             this.injectButton.Click += new System.EventHandler(this.injectButton_Click);
             // 
             // saveScriptButton
@@ -377,7 +378,7 @@
             this.executeButtonWRD.ShadowDecoration.Parent = this.executeButtonWRD;
             this.executeButtonWRD.Size = new System.Drawing.Size(180, 33);
             this.executeButtonWRD.TabIndex = 13;
-            this.executeButtonWRD.Text = "Execute (WRD)";
+            this.executeButtonWRD.Text = "Execute";
             this.executeButtonWRD.Click += new System.EventHandler(this.executeButton_Click);
             // 
             // icon
@@ -444,29 +445,12 @@
             this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
             this.monacoEditor.TabIndex = 1;
             // 
-            // krnlExecute
-            // 
-            this.krnlExecute.CheckedState.Parent = this.krnlExecute;
-            this.krnlExecute.CustomImages.Parent = this.krnlExecute;
-            this.krnlExecute.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.krnlExecute.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.krnlExecute.ForeColor = System.Drawing.Color.PeachPuff;
-            this.krnlExecute.HoveredState.Parent = this.krnlExecute;
-            this.krnlExecute.Location = new System.Drawing.Point(16, 479);
-            this.krnlExecute.Name = "krnlExecute";
-            this.krnlExecute.ShadowDecoration.Parent = this.krnlExecute;
-            this.krnlExecute.Size = new System.Drawing.Size(180, 33);
-            this.krnlExecute.TabIndex = 23;
-            this.krnlExecute.Text = "Execute (Krnl)";
-            this.krnlExecute.Click += new System.EventHandler(this.krnlExecute_Click);
-            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1446, 525);
-            this.Controls.Add(this.krnlExecute);
+            this.ClientSize = new System.Drawing.Size(1446, 492);
             this.Controls.Add(this.injectButtonFix);
             this.Controls.Add(this.onButtonFly);
             this.Controls.Add(this.icon);
@@ -603,7 +587,6 @@
         private ns1.SiticoneButton injectButtonFix;
         private ns1.SiticoneButton scriptHubButton;
         private System.Windows.Forms.WebBrowser monacoEditor;
-        private ns1.SiticoneButton multiAPI;
-        private ns1.SiticoneButton krnlExecute;
+        private System.Windows.Forms.ComboBox multiAPIComboBox;
     }
 }

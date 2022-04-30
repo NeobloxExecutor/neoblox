@@ -23,12 +23,16 @@
     /// </summary>
     public partial class neoblox : Form
     {
-        /// <summary>
-        /// Defines the wrdExploitAPI.
-        /// </summary>
-        internal ExploitAPI wrdExploitAPI = new ExploitAPI();
+        ExploitAPI wrdExploitAPI = new ExploitAPI();
+
         KrnlApi krnlExploitAPI = new KrnlApi();
-        EasyExploits.Module neobloxExploit = new EasyExploits.Module();
+
+        EasyExploits.Module easyExploitsAPI = new EasyExploits.Module();
+
+
+        bool isKrnl;
+        bool isEasyExploit;
+        bool isWRD;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="neoblox"/> class.
@@ -187,6 +191,8 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private async void neoblox_Load(object sender, EventArgs e)
         {
+            krnlExploitAPI.Initialize();
+
             listBox1.Items.Clear();
             PopulateListBox(listBox1, "./Scripts", "*.txt");
             PopulateListBox(listBox1, "./Scripts", "*.lua");
@@ -272,13 +278,48 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void executeButton_Click(object sender, EventArgs e)
         {
-            HtmlDocument document = monacoEditor.Document;
-            string scriptName = "GetText";
-            object[] args = new string[0];
-            object obj = document.InvokeScript(scriptName, args);
-            string script = obj.ToString();
+            if (isKrnl == true)
+            {
+                HtmlDocument document = monacoEditor.Document;
+                string scriptName = "GetText";
+                object[] args = new string[0];
+                object obj = document.InvokeScript(scriptName, args);
+                string script = obj.ToString();
 
-            wrdExploitAPI.SendLuaScript(script);
+                krnlExploitAPI.Execute(script);
+            }
+            if (isEasyExploit == true)
+            {
+                HtmlDocument document = monacoEditor.Document;
+                string scriptName = "GetText";
+                object[] args = new string[0];
+                object obj = document.InvokeScript(scriptName, args);
+                string script = obj.ToString();
+
+                easyExploitsAPI.ExecuteScript(script);
+            }
+            if (isWRD == true)
+            {
+                HtmlDocument document = monacoEditor.Document;
+                string scriptName = "GetText";
+                object[] args = new string[0];
+                object obj = document.InvokeScript(scriptName, args);
+                string script = obj.ToString();
+
+                wrdExploitAPI.SendLuaScript(script);
+            }
+            else
+            {
+                HtmlDocument document = monacoEditor.Document;
+                string scriptName = "GetText";
+                object[] args = new string[0];
+                object obj = document.InvokeScript(scriptName, args);
+                string script = obj.ToString();
+
+                krnlExploitAPI.Execute(script);
+
+                MessageBox.Show("Defaulting to Krnl API since you didn't select one ig");
+            }
         }
 
         /// <summary>
@@ -364,7 +405,23 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void injectButton_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.LaunchExploit();
+            if (isKrnl == true)
+            {
+                krnlExploitAPI.Inject();
+            }
+            if (isEasyExploit == true)
+            {
+                easyExploitsAPI.LaunchExploit();
+            }
+            if (isWRD == true)
+            {
+                wrdExploitAPI.LaunchExploit();
+            }
+            else
+            {
+                MessageBox.Show("Defaulting to Krnl API since you didn't select one ig");
+                krnlExploitAPI.Inject();
+            }
         }
 
         private void injectButtonFix_Click(object sender, EventArgs e)
@@ -579,22 +636,26 @@
             sh.ShowDialog();
         }
 
-        private void multiAPI_Click(object sender, EventArgs e)
+        private void multiAPIComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.Hide();
-            MultiAPI mAPI = new MultiAPI();
-            mAPI.ShowDialog();
-        }
-
-        private void krnlExecute_Click(object sender, EventArgs e)
-        {
-            HtmlDocument document = monacoEditor.Document;
-            string scriptName = "GetText";
-            object[] args = new string[0];
-            object obj = document.InvokeScript(scriptName, args);
-            string script = obj.ToString();
-
-            krnlExploitAPI.Execute(script);
+            if (multiAPIComboBox.SelectedIndex == 0)
+            {
+                isKrnl = true;
+                isEasyExploit = false;
+                isWRD = false;
+            }
+            if (multiAPIComboBox.SelectedIndex == 1)
+            {
+                isEasyExploit = true;
+                isKrnl = false;
+                isWRD = false;
+            }
+            if (multiAPIComboBox.SelectedIndex == 2)
+            {
+                isWRD = true;
+                isEasyExploit = false;
+                isKrnl = false;
+            }
         }
     }
 }
