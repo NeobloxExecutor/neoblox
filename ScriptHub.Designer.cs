@@ -46,6 +46,7 @@ namespace neoblox
             this.katGUI = new ns1.SiticoneButton();
             this.mm2GUI = new ns1.SiticoneButton();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
+            this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -115,7 +116,7 @@ namespace neoblox
             this.xrayScript.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrayScript.ForeColor = System.Drawing.Color.PeachPuff;
             this.xrayScript.HoveredState.Parent = this.xrayScript;
-            this.xrayScript.Location = new System.Drawing.Point(12, 63);
+            this.xrayScript.Location = new System.Drawing.Point(12, 131);
             this.xrayScript.Name = "xrayScript";
             this.xrayScript.ShadowDecoration.Parent = this.xrayScript;
             this.xrayScript.Size = new System.Drawing.Size(170, 43);
@@ -131,7 +132,7 @@ namespace neoblox
             this.infiniteJumpScript.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infiniteJumpScript.ForeColor = System.Drawing.Color.PeachPuff;
             this.infiniteJumpScript.HoveredState.Parent = this.infiniteJumpScript;
-            this.infiniteJumpScript.Location = new System.Drawing.Point(188, 63);
+            this.infiniteJumpScript.Location = new System.Drawing.Point(188, 131);
             this.infiniteJumpScript.Name = "infiniteJumpScript";
             this.infiniteJumpScript.ShadowDecoration.Parent = this.infiniteJumpScript;
             this.infiniteJumpScript.Size = new System.Drawing.Size(125, 43);
@@ -147,7 +148,7 @@ namespace neoblox
             this.qToTP.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qToTP.ForeColor = System.Drawing.Color.PeachPuff;
             this.qToTP.HoveredState.Parent = this.qToTP;
-            this.qToTP.Location = new System.Drawing.Point(319, 63);
+            this.qToTP.Location = new System.Drawing.Point(319, 131);
             this.qToTP.Name = "qToTP";
             this.qToTP.ShadowDecoration.Parent = this.qToTP;
             this.qToTP.Size = new System.Drawing.Size(125, 43);
@@ -163,7 +164,7 @@ namespace neoblox
             this.phantomForcesSilentAim.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phantomForcesSilentAim.ForeColor = System.Drawing.Color.PeachPuff;
             this.phantomForcesSilentAim.HoveredState.Parent = this.phantomForcesSilentAim;
-            this.phantomForcesSilentAim.Location = new System.Drawing.Point(450, 63);
+            this.phantomForcesSilentAim.Location = new System.Drawing.Point(450, 131);
             this.phantomForcesSilentAim.Name = "phantomForcesSilentAim";
             this.phantomForcesSilentAim.ShadowDecoration.Parent = this.phantomForcesSilentAim;
             this.phantomForcesSilentAim.Size = new System.Drawing.Size(196, 43);
@@ -179,7 +180,7 @@ namespace neoblox
             this.phantomForcesESP.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phantomForcesESP.ForeColor = System.Drawing.Color.PeachPuff;
             this.phantomForcesESP.HoveredState.Parent = this.phantomForcesESP;
-            this.phantomForcesESP.Location = new System.Drawing.Point(652, 63);
+            this.phantomForcesESP.Location = new System.Drawing.Point(652, 131);
             this.phantomForcesESP.Name = "phantomForcesESP";
             this.phantomForcesESP.ShadowDecoration.Parent = this.phantomForcesESP;
             this.phantomForcesESP.Size = new System.Drawing.Size(182, 43);
@@ -251,7 +252,7 @@ namespace neoblox
             this.katGUI.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.katGUI.ForeColor = System.Drawing.Color.PeachPuff;
             this.katGUI.HoveredState.Parent = this.katGUI;
-            this.katGUI.Location = new System.Drawing.Point(12, 112);
+            this.katGUI.Location = new System.Drawing.Point(12, 180);
             this.katGUI.Name = "katGUI";
             this.katGUI.ShadowDecoration.Parent = this.katGUI;
             this.katGUI.Size = new System.Drawing.Size(88, 43);
@@ -267,7 +268,7 @@ namespace neoblox
             this.mm2GUI.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mm2GUI.ForeColor = System.Drawing.Color.PeachPuff;
             this.mm2GUI.HoveredState.Parent = this.mm2GUI;
-            this.mm2GUI.Location = new System.Drawing.Point(106, 112);
+            this.mm2GUI.Location = new System.Drawing.Point(106, 180);
             this.mm2GUI.Name = "mm2GUI";
             this.mm2GUI.ShadowDecoration.Parent = this.mm2GUI;
             this.mm2GUI.Size = new System.Drawing.Size(101, 43);
@@ -275,12 +276,31 @@ namespace neoblox
             this.mm2GUI.Text = "MM2 GUI";
             this.mm2GUI.Click += new System.EventHandler(this.mm2GUI_Click);
             // 
+            // multiAPIComboBox
+            // 
+            this.multiAPIComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.multiAPIComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.multiAPIComboBox.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiAPIComboBox.ForeColor = System.Drawing.Color.PeachPuff;
+            this.multiAPIComboBox.FormattingEnabled = true;
+            this.multiAPIComboBox.Items.AddRange(new object[] {
+            "Krnl (not keyless!)",
+            "EasyExploit",
+            "WRD"});
+            this.multiAPIComboBox.Location = new System.Drawing.Point(12, 52);
+            this.multiAPIComboBox.Name = "multiAPIComboBox";
+            this.multiAPIComboBox.Size = new System.Drawing.Size(843, 21);
+            this.multiAPIComboBox.TabIndex = 34;
+            this.multiAPIComboBox.Text = "Multi API selection";
+            this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPIComboBox_SelectedIndexChanged);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.multiAPIComboBox);
             this.Controls.Add(this.mm2GUI);
             this.Controls.Add(this.katGUI);
             this.Controls.Add(this.attachButtonFix);
@@ -326,5 +346,6 @@ namespace neoblox
         private ns1.SiticoneButton katGUI;
         private ns1.SiticoneButton mm2GUI;
         private System.Windows.Forms.Timer checkInjectedTimer;
+        private System.Windows.Forms.ComboBox multiAPIComboBox;
     }
 }

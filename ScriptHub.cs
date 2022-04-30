@@ -27,6 +27,10 @@ namespace neoblox
 
         EasyExploits.Module easyExploitsAPI = new EasyExploits.Module();
 
+        bool isKrnl;
+        bool isEasyExploit;
+        bool isWRD;
+
         private void ScriptHub_Load(object sender, EventArgs e)
         {
         }
@@ -218,7 +222,61 @@ namespace neoblox
 
         private void attachButton_Click(object sender, EventArgs e)
         {
-            wrdExploitAPI.LaunchExploit();
+            if (isKrnl == true)
+            {
+                krnlExploitAPI.Inject();
+            }
+            if (isEasyExploit == true)
+            {
+                if (wrdExploitAPI.isAPIAttached())
+                {
+                    MessageBox.Show("Cannot attach EasyExploit and WRD at the same time!");
+                }
+                else
+                {
+                    easyExploitsAPI.LaunchExploit();
+                }
+            }
+            if (isWRD == true)
+            {
+                try
+                {
+                    if (easyExploitsAPI.isInjected())
+                    {
+                        MessageBox.Show("Cannot attach WRD and EasyExploit at the same time!");
+                    }
+                    else
+                    {
+                        wrdExploitAPI.LaunchExploit();
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Attach failed. Try using attach fix");
+                }
+            }
+        }
+
+        private void multiAPIComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (multiAPIComboBox.SelectedIndex == 0)
+            {
+                isKrnl = true;
+                isEasyExploit = false;
+                isWRD = false;
+            }
+            if (multiAPIComboBox.SelectedIndex == 1)
+            {
+                isEasyExploit = true;
+                isKrnl = false;
+                isWRD = false;
+            }
+            if (multiAPIComboBox.SelectedIndex == 2)
+            {
+                isWRD = true;
+                isEasyExploit = false;
+                isKrnl = false;
+            }
         }
     }
 }
