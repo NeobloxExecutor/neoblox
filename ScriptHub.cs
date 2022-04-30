@@ -11,10 +11,11 @@ using System.Windows.Forms;
 
 using WeAreDevs_API;
 using KrnlAPI;
+using Utility;
 
 namespace neoblox
 {
-    public partial class ScriptHub : Form
+    public partial class ScriptHub : FadeForm
     {
         public ScriptHub()
         {
