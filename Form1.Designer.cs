@@ -79,9 +79,9 @@
             // titleLogo
             // 
             this.titleLogo.Image = ((System.Drawing.Image)(resources.GetObject("titleLogo.Image")));
-            this.titleLogo.Location = new System.Drawing.Point(3, -14);
+            this.titleLogo.Location = new System.Drawing.Point(3, -17);
             this.titleLogo.Name = "titleLogo";
-            this.titleLogo.Size = new System.Drawing.Size(144, 73);
+            this.titleLogo.Size = new System.Drawing.Size(127, 63);
             this.titleLogo.TabIndex = 22;
             this.titleLogo.TabStop = false;
             // 
