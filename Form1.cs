@@ -18,6 +18,7 @@
     using WeAreDevs_API;
     using KrnlAPI;
     using EasyExploits;
+    using DiscordRPC;
 
     /// <summary>
     /// Defines the <see cref="neoblox" />.
@@ -455,10 +456,12 @@
                 MessageBox.Show("We couldn't deactivate anti-ban measures due to an unexpected error!\nRestart the program as an administrator!");
             }
 
-            foreach (var process in Process.GetProcessesByName("discordrpc"))
-            {
-                process.Kill();
-            }
+            var discordRPC = new DiscordRpcClient("953316205001842718");
+            discordRPC.Initialize();
+
+            discordRPC.Deinitialize();
+            discordRPC.Dispose();
+
             Application.Exit();
         }
 
@@ -604,16 +607,28 @@
         {
             if (discordRPCCheckbox.Checked == true)
             {
-                Process.Start("discordrpc.exe");
+                var discordRPC = new DiscordRpcClient("953316205001842718");
+                discordRPC.Initialize();
+
+                discordRPC.SetPresence(new RichPresence()
+                {
+                    Timestamps = Timestamps.Now,
+                    Details = "Exploiting in Roblox using Neoblox",
+                    Assets = new Assets()
+                    {
+                        LargeImageKey = "neoblox-icon",
+                        LargeImageText = "Made by Plextora#0033",
+                    }
+                });
             }
 
             if (discordRPCCheckbox.Checked == false)
             {
-                Process.Start("discordrpc.exe");
-                foreach (var process in Process.GetProcessesByName("discordrpc"))
-                {
-                    process.Kill();
-                }
+                var discordRPC = new DiscordRpcClient("953316205001842718");
+                discordRPC.Initialize();
+
+                discordRPC.Deinitialize();
+                discordRPC.Dispose();
             }
 
             config();
