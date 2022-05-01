@@ -47,11 +47,12 @@ namespace neoblox
             this.mm2GUI = new ns1.SiticoneButton();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
             this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
-            this.titleLabel = new System.Windows.Forms.Label();
             this.pageLabel = new System.Windows.Forms.Label();
             this.nextPage = new ns1.SiticoneButton();
             this.previousPage = new ns1.SiticoneButton();
             this.placeholderLabel = new System.Windows.Forms.Label();
+            this.titleLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // scriptHubButton
@@ -62,7 +63,7 @@ namespace neoblox
             this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scriptHubButton.ForeColor = System.Drawing.Color.PeachPuff;
             this.scriptHubButton.HoveredState.Parent = this.scriptHubButton;
-            this.scriptHubButton.Location = new System.Drawing.Point(277, 13);
+            this.scriptHubButton.Location = new System.Drawing.Point(162, 12);
             this.scriptHubButton.Name = "scriptHubButton";
             this.scriptHubButton.ShadowDecoration.Parent = this.scriptHubButton;
             this.scriptHubButton.Size = new System.Drawing.Size(172, 33);
@@ -214,7 +215,7 @@ namespace neoblox
             this.attachButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attachButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
             this.attachButtonFix.HoveredState.Parent = this.attachButtonFix;
-            this.attachButtonFix.Location = new System.Drawing.Point(539, 13);
+            this.attachButtonFix.Location = new System.Drawing.Point(424, 12);
             this.attachButtonFix.Name = "attachButtonFix";
             this.attachButtonFix.ShadowDecoration.Parent = this.attachButtonFix;
             this.attachButtonFix.Size = new System.Drawing.Size(135, 33);
@@ -230,7 +231,7 @@ namespace neoblox
             this.attachButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attachButton.ForeColor = System.Drawing.Color.PeachPuff;
             this.attachButton.HoveredState.Parent = this.attachButton;
-            this.attachButton.Location = new System.Drawing.Point(455, 13);
+            this.attachButton.Location = new System.Drawing.Point(340, 12);
             this.attachButton.Name = "attachButton";
             this.attachButton.ShadowDecoration.Parent = this.attachButton;
             this.attachButton.Size = new System.Drawing.Size(78, 33);
@@ -288,17 +289,6 @@ namespace neoblox
             this.multiAPIComboBox.Text = "Multi API selection";
             this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPIComboBox_SelectedIndexChanged);
             // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.titleLabel.Location = new System.Drawing.Point(3, 8);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(268, 38);
-            this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "Neoblox (script hub)";
-            // 
             // pageLabel
             // 
             this.pageLabel.AutoSize = true;
@@ -354,12 +344,22 @@ namespace neoblox
             this.placeholderLabel.Text = "Coming soon....";
             this.placeholderLabel.Visible = false;
             // 
+            // titleLogo
+            // 
+            this.titleLogo.Image = ((System.Drawing.Image)(resources.GetObject("titleLogo.Image")));
+            this.titleLogo.Location = new System.Drawing.Point(12, -10);
+            this.titleLogo.Name = "titleLogo";
+            this.titleLogo.Size = new System.Drawing.Size(144, 73);
+            this.titleLogo.TabIndex = 39;
+            this.titleLogo.TabStop = false;
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.titleLogo);
             this.Controls.Add(this.placeholderLabel);
             this.Controls.Add(this.previousPage);
             this.Controls.Add(this.nextPage);
@@ -378,7 +378,6 @@ namespace neoblox
             this.Controls.Add(this.xrayScript);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.minimizeButton);
-            this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.scriptHubButton);
             this.ForeColor = System.Drawing.Color.PeachPuff;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -388,6 +387,7 @@ namespace neoblox
             this.Load += new System.EventHandler(this.ScriptHub_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ScriptHub_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ScriptHub_MouseMove);
+            ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,10 +410,10 @@ namespace neoblox
         private ns1.SiticoneButton mm2GUI;
         private System.Windows.Forms.Timer checkInjectedTimer;
         private System.Windows.Forms.ComboBox multiAPIComboBox;
-        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label pageLabel;
         private ns1.SiticoneButton nextPage;
         private ns1.SiticoneButton previousPage;
         private System.Windows.Forms.Label placeholderLabel;
+        private System.Windows.Forms.PictureBox titleLogo;
     }
 }

@@ -31,6 +31,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
+            this.titleLogo = new System.Windows.Forms.PictureBox();
             this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
             this.scriptHubButton = new ns1.SiticoneButton();
             this.musicCheckbox = new ns1.SiticoneCheckBox();
@@ -54,7 +55,6 @@
             this.onButtonFly = new ns1.SiticoneButton();
             this.attachButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
-            this.titleLogo = new System.Windows.Forms.PictureBox();
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +77,15 @@
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
+            // 
+            // titleLogo
+            // 
+            this.titleLogo.Image = ((System.Drawing.Image)(resources.GetObject("titleLogo.Image")));
+            this.titleLogo.Location = new System.Drawing.Point(3, -14);
+            this.titleLogo.Name = "titleLogo";
+            this.titleLogo.Size = new System.Drawing.Size(144, 73);
+            this.titleLogo.TabIndex = 22;
+            this.titleLogo.TabStop = false;
             // 
             // multiAPIComboBox
             // 
@@ -434,15 +443,6 @@
             this.monacoEditor.Name = "monacoEditor";
             this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
             this.monacoEditor.TabIndex = 1;
-            // 
-            // titleLogo
-            // 
-            this.titleLogo.Image = ((System.Drawing.Image)(resources.GetObject("titleLogo.Image")));
-            this.titleLogo.Location = new System.Drawing.Point(3, -14);
-            this.titleLogo.Name = "titleLogo";
-            this.titleLogo.Size = new System.Drawing.Size(144, 73);
-            this.titleLogo.TabIndex = 22;
-            this.titleLogo.TabStop = false;
             // 
             // neoblox
             // 
