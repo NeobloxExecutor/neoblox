@@ -53,7 +53,7 @@
     <ApplicationIcon>Neoblox Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>61E94700098AC6C1F1FBCE50E020721BF23E18B0</ManifestCertificateThumbprint>
