@@ -3,7 +3,7 @@
 ## A level 7 keyless Lua executor for Roblox. Free, forever!
 
 ![Neoblox Image](https://us-east-1.tixte.net/uploads/plextora.is-from.space/neoblox_RjuuYRnwDJ.png)
-![Neoblox script hub image](https://us-east-1.tixte.net/uploads/plextora.is-from.space/neoblox_XoyFBUsfT5.png)
+![Neoblox script hub image](https://us-east-1.tixte.net/uploads/plextora.is-from.space/neoblox_zPeTkAJoMD.png)
 
 *I'm still adding scripts to the script hub so it looks pretty barren right now*
 
