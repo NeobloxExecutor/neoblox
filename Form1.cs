@@ -269,7 +269,11 @@
             }
             catch
             {
-                MessageBox.Show("We couldn't activate Anti-Ban measures due to an unexpected error!\nTry running neoblox as an administrator!\nAlways use an alt while exploiting!");
+                string message = "We couldn't activate Anti-Ban measures due to an unexpected error!\nTry running neoblox as an administrator!\nAlways use an alt while exploiting!";
+                string title = "Anti-ban failed!";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
             }
         }
 
@@ -398,7 +402,11 @@
             {
                 if (wrdExploitAPI.isAPIAttached())
                 {
-                    MessageBox.Show("Cannot attach EasyExploit and WRD at the same time!");
+                    string message = "Cannot attach EasyExploit and WRD at the same time!";
+                    string title = "EasyExploit attach failed!";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                    DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -411,7 +419,11 @@
                 {
                     if (easyExploitsAPI.isInjected())
                     {
-                        MessageBox.Show("Cannot attach WRD and EasyExploit at the same time!");
+                        string message = "Cannot attach WRD and EasyExploit at the same time!";
+                        string title = "WRD attach failed!";
+                        MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                        DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
                     }
                     else
                     {
@@ -420,7 +432,11 @@
                 }
                 catch
                 {
-                    MessageBox.Show("Attach failed. Try using attach fix");
+                    string message = "Attach failed. Try using attach fix.";
+                    string title = "Attached failed.";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                    DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
                 }
             }
         }
@@ -476,7 +492,11 @@
             }
             catch
             {
-                MessageBox.Show("We couldn't deactivate anti-ban measures due to an unexpected error!\nRestart the program as an administrator!");
+                string title = "Deactivate anti-ban failed!";
+                string message = "We couldn't deactivate anti-ban measures due to an unexpected error!\nRestart the program as an administrator!";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
             }
 
             var discordRPC = new DiscordRpcClient("953316205001842718");
