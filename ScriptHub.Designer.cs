@@ -350,7 +350,7 @@ namespace neoblox
             this.titleLogo.Image = ((System.Drawing.Image)(resources.GetObject("titleLogo.Image")));
             this.titleLogo.Location = new System.Drawing.Point(12, -10);
             this.titleLogo.Name = "titleLogo";
-            this.titleLogo.Size = new System.Drawing.Size(144, 73);
+            this.titleLogo.Size = new System.Drawing.Size(144, 55);
             this.titleLogo.TabIndex = 39;
             this.titleLogo.TabStop = false;
             // 
@@ -359,7 +359,6 @@ namespace neoblox
             this.flyScript.CheckedState.Parent = this.flyScript;
             this.flyScript.CustomImages.Parent = this.flyScript;
             this.flyScript.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.flyScript.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.flyScript.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.flyScript.ForeColor = System.Drawing.Color.PeachPuff;
             this.flyScript.HoveredState.Parent = this.flyScript;
