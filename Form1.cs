@@ -19,6 +19,7 @@
     using KrnlAPI;
     using EasyExploits;
     using DiscordRPC;
+    using WMPLib;
 
     /// <summary>
     /// Defines the <see cref="neoblox" />.
@@ -674,15 +675,16 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void musicCheckbox_CheckedChanged(object sender, EventArgs e)
         {
-            var soundPlayer = new System.Media.SoundPlayer();
+            WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
+
             if (musicCheckbox.Checked == true)
             {
-                soundPlayer.SoundLocation = "https://us-east-1.tixte.net/uploads/plextora.is-from.space/elevatormusic.wav";
-                soundPlayer.PlayLooping();
+                wplayer.URL = "https://us-east-1.tixte.net/uploads/plextora.is-from.space/lofi.mp3";
+                wplayer.controls.play();
             }
             if (musicCheckbox.Checked == false)
             {
-                soundPlayer.Stop();
+                wplayer.controls.stop();
             }
 
             config();
