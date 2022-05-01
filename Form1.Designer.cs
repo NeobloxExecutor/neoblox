@@ -43,7 +43,6 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.fpsCapLabel = new System.Windows.Forms.Label();
             this.fpsCapTextbox = new System.Windows.Forms.TextBox();
-            this.flyLabel = new System.Windows.Forms.Label();
             this.refreshScriptList = new ns1.SiticoneButton();
             this.attachButton = new ns1.SiticoneButton();
             this.saveScriptButton = new ns1.SiticoneButton();
@@ -52,7 +51,6 @@
             this.executeButtonWRD = new ns1.SiticoneButton();
             this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
-            this.onButtonFly = new ns1.SiticoneButton();
             this.attachButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
             this.Panel.SuspendLayout();
@@ -273,17 +271,6 @@
             this.fpsCapTextbox.TabStop = false;
             this.fpsCapTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fpsCapTextbox_KeyDown);
             // 
-            // flyLabel
-            // 
-            this.flyLabel.AutoSize = true;
-            this.flyLabel.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flyLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.flyLabel.Location = new System.Drawing.Point(811, 452);
-            this.flyLabel.Name = "flyLabel";
-            this.flyLabel.Size = new System.Drawing.Size(27, 20);
-            this.flyLabel.TabIndex = 10;
-            this.flyLabel.Text = "Fly";
-            // 
             // refreshScriptList
             // 
             this.refreshScriptList.CheckedState.Parent = this.refreshScriptList;
@@ -386,7 +373,7 @@
             this.icon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.icon.Font = new System.Drawing.Font("Hack NF", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icon.ForeColor = System.Drawing.Color.PeachPuff;
-            this.icon.Location = new System.Drawing.Point(1251, 443);
+            this.icon.Location = new System.Drawing.Point(1028, 442);
             this.icon.Name = "icon";
             this.icon.Size = new System.Drawing.Size(32, 33);
             this.icon.TabIndex = 20;
@@ -398,27 +385,11 @@
             this.credit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.credit.Font = new System.Drawing.Font("Segoe UI", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.credit.ForeColor = System.Drawing.Color.PeachPuff;
-            this.credit.Location = new System.Drawing.Point(1025, 444);
+            this.credit.Location = new System.Drawing.Point(802, 443);
             this.credit.Name = "credit";
             this.credit.Size = new System.Drawing.Size(231, 30);
             this.credit.TabIndex = 19;
             this.credit.Text = "Made by Plextora#0033";
-            // 
-            // onButtonFly
-            // 
-            this.onButtonFly.CheckedState.Parent = this.onButtonFly;
-            this.onButtonFly.CustomImages.Parent = this.onButtonFly;
-            this.onButtonFly.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.onButtonFly.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.onButtonFly.ForeColor = System.Drawing.Color.PeachPuff;
-            this.onButtonFly.HoveredState.Parent = this.onButtonFly;
-            this.onButtonFly.Location = new System.Drawing.Point(847, 449);
-            this.onButtonFly.Name = "onButtonFly";
-            this.onButtonFly.ShadowDecoration.Parent = this.onButtonFly;
-            this.onButtonFly.Size = new System.Drawing.Size(172, 27);
-            this.onButtonFly.TabIndex = 16;
-            this.onButtonFly.Text = "On (Press E to toggle)";
-            this.onButtonFly.Click += new System.EventHandler(this.onButtonFly_Click);
             // 
             // attachButtonFix
             // 
@@ -451,7 +422,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1446, 492);
             this.Controls.Add(this.attachButtonFix);
-            this.Controls.Add(this.onButtonFly);
             this.Controls.Add(this.icon);
             this.Controls.Add(this.credit);
             this.Controls.Add(this.refreshScriptList);
@@ -460,7 +430,6 @@
             this.Controls.Add(this.openScriptButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.executeButtonWRD);
-            this.Controls.Add(this.flyLabel);
             this.Controls.Add(this.fpsCapTextbox);
             this.Controls.Add(this.fpsCapLabel);
             this.Controls.Add(this.listBox1);
@@ -499,11 +468,6 @@
         /// Defines the walkspeedTextbox.
         /// </summary>
         private System.Windows.Forms.TextBox fpsCapTextbox;
-
-        /// <summary>
-        /// Defines the flyLabel.
-        /// </summary>
-        private System.Windows.Forms.Label flyLabel;
 
         /// <summary>
         /// Defines the refreshScriptList.
@@ -559,11 +523,6 @@
         /// Defines the credit.
         /// </summary>
         private System.Windows.Forms.Label credit;
-
-        /// <summary>
-        /// Defines the onButtonFly.
-        /// </summary>
-        private ns1.SiticoneButton onButtonFly;
 
         /// <summary>
         /// Defines the siticoneButton3.
