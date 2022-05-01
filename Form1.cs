@@ -429,11 +429,34 @@
         {
             try
             {
-                Process.Start("finj.exe");
+                string message = "Neoblox needs to restart to use attach fix!";
+                string title = "Restart";
+                MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
+
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.OK)
+                {
+                    var files = Directory.GetFiles(Directory.GetCurrentDirectory(), "*.exe");
+
+                    foreach (var file in files)
+                    {
+                        if (file != "neoblox.exe")
+                        {
+                            Process.Start(file);
+                            Application.Exit();
+                        }
+                    }
+                }
+                
             }
             catch
             {
-                MessageBox.Show("Attach fix failed! Try using the normal Attach. If that doesn't work report the bug at https://github.com/Plextora/neoblox/issues");
+                string message = "Attach fix failed! Try using the normal Attach. If that doesn't work report the bug at https://github.com/Plextora/neoblox/issues";
+                string title = "Attach fix failed!";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
             }
         }
 
