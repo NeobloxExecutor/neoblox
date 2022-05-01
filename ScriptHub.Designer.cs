@@ -36,7 +36,7 @@ namespace neoblox
             this.closeButton = new ns1.SiticoneButton();
             this.xrayScript = new ns1.SiticoneButton();
             this.infiniteJumpScript = new ns1.SiticoneButton();
-            this.qToTP = new ns1.SiticoneButton();
+            this.ctrlClickToTP = new ns1.SiticoneButton();
             this.phantomForcesSilentAim = new ns1.SiticoneButton();
             this.phantomForcesESP = new ns1.SiticoneButton();
             this.icon = new System.Windows.Forms.Label();
@@ -48,6 +48,10 @@ namespace neoblox
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
             this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.pageLabel = new System.Windows.Forms.Label();
+            this.nextPage = new ns1.SiticoneButton();
+            this.previousPage = new ns1.SiticoneButton();
+            this.placeholderLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // scriptHubButton
@@ -130,21 +134,21 @@ namespace neoblox
             this.infiniteJumpScript.Text = "Infinite Jump";
             this.infiniteJumpScript.Click += new System.EventHandler(this.infiniteJumpScript_Click);
             // 
-            // qToTP
+            // ctrlClickToTP
             // 
-            this.qToTP.CheckedState.Parent = this.qToTP;
-            this.qToTP.CustomImages.Parent = this.qToTP;
-            this.qToTP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.qToTP.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qToTP.ForeColor = System.Drawing.Color.PeachPuff;
-            this.qToTP.HoveredState.Parent = this.qToTP;
-            this.qToTP.Location = new System.Drawing.Point(319, 131);
-            this.qToTP.Name = "qToTP";
-            this.qToTP.ShadowDecoration.Parent = this.qToTP;
-            this.qToTP.Size = new System.Drawing.Size(125, 43);
-            this.qToTP.TabIndex = 25;
-            this.qToTP.Text = "Ctrl + click TP";
-            this.qToTP.Click += new System.EventHandler(this.ctrlClickToTP_Click);
+            this.ctrlClickToTP.CheckedState.Parent = this.ctrlClickToTP;
+            this.ctrlClickToTP.CustomImages.Parent = this.ctrlClickToTP;
+            this.ctrlClickToTP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.ctrlClickToTP.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctrlClickToTP.ForeColor = System.Drawing.Color.PeachPuff;
+            this.ctrlClickToTP.HoveredState.Parent = this.ctrlClickToTP;
+            this.ctrlClickToTP.Location = new System.Drawing.Point(319, 131);
+            this.ctrlClickToTP.Name = "ctrlClickToTP";
+            this.ctrlClickToTP.ShadowDecoration.Parent = this.ctrlClickToTP;
+            this.ctrlClickToTP.Size = new System.Drawing.Size(125, 43);
+            this.ctrlClickToTP.TabIndex = 25;
+            this.ctrlClickToTP.Text = "Ctrl + click TP";
+            this.ctrlClickToTP.Click += new System.EventHandler(this.ctrlClickToTP_Click);
             // 
             // phantomForcesSilentAim
             // 
@@ -295,12 +299,71 @@ namespace neoblox
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Neoblox (script hub)";
             // 
+            // pageLabel
+            // 
+            this.pageLabel.AutoSize = true;
+            this.pageLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pageLabel.ForeColor = System.Drawing.Color.PeachPuff;
+            this.pageLabel.Location = new System.Drawing.Point(12, 466);
+            this.pageLabel.Name = "pageLabel";
+            this.pageLabel.Size = new System.Drawing.Size(126, 38);
+            this.pageLabel.TabIndex = 35;
+            this.pageLabel.Text = "Page 1/2";
+            // 
+            // nextPage
+            // 
+            this.nextPage.CheckedState.Parent = this.nextPage;
+            this.nextPage.CustomImages.Parent = this.nextPage;
+            this.nextPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.nextPage.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextPage.ForeColor = System.Drawing.Color.PeachPuff;
+            this.nextPage.HoveredState.Parent = this.nextPage;
+            this.nextPage.Location = new System.Drawing.Point(154, 466);
+            this.nextPage.Name = "nextPage";
+            this.nextPage.ShadowDecoration.Parent = this.nextPage;
+            this.nextPage.Size = new System.Drawing.Size(107, 43);
+            this.nextPage.TabIndex = 36;
+            this.nextPage.Text = "Next page";
+            this.nextPage.Click += new System.EventHandler(this.nextPage_Click);
+            // 
+            // previousPage
+            // 
+            this.previousPage.CheckedState.Parent = this.previousPage;
+            this.previousPage.CustomImages.Parent = this.previousPage;
+            this.previousPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.previousPage.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.previousPage.ForeColor = System.Drawing.Color.PeachPuff;
+            this.previousPage.HoveredState.Parent = this.previousPage;
+            this.previousPage.Location = new System.Drawing.Point(267, 466);
+            this.previousPage.Name = "previousPage";
+            this.previousPage.ShadowDecoration.Parent = this.previousPage;
+            this.previousPage.Size = new System.Drawing.Size(124, 43);
+            this.previousPage.TabIndex = 37;
+            this.previousPage.Text = "Previous Page";
+            this.previousPage.Click += new System.EventHandler(this.previousPage_Click);
+            // 
+            // placeholderLabel
+            // 
+            this.placeholderLabel.AutoSize = true;
+            this.placeholderLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.placeholderLabel.ForeColor = System.Drawing.Color.PeachPuff;
+            this.placeholderLabel.Location = new System.Drawing.Point(312, 227);
+            this.placeholderLabel.Name = "placeholderLabel";
+            this.placeholderLabel.Size = new System.Drawing.Size(205, 38);
+            this.placeholderLabel.TabIndex = 38;
+            this.placeholderLabel.Text = "Coming soon....";
+            this.placeholderLabel.Visible = false;
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.placeholderLabel);
+            this.Controls.Add(this.previousPage);
+            this.Controls.Add(this.nextPage);
+            this.Controls.Add(this.pageLabel);
             this.Controls.Add(this.multiAPIComboBox);
             this.Controls.Add(this.mm2GUI);
             this.Controls.Add(this.katGUI);
@@ -310,7 +373,7 @@ namespace neoblox
             this.Controls.Add(this.credit);
             this.Controls.Add(this.phantomForcesESP);
             this.Controls.Add(this.phantomForcesSilentAim);
-            this.Controls.Add(this.qToTP);
+            this.Controls.Add(this.ctrlClickToTP);
             this.Controls.Add(this.infiniteJumpScript);
             this.Controls.Add(this.xrayScript);
             this.Controls.Add(this.closeButton);
@@ -336,7 +399,7 @@ namespace neoblox
         private ns1.SiticoneButton closeButton;
         private ns1.SiticoneButton xrayScript;
         private ns1.SiticoneButton infiniteJumpScript;
-        private ns1.SiticoneButton qToTP;
+        private ns1.SiticoneButton ctrlClickToTP;
         private ns1.SiticoneButton phantomForcesSilentAim;
         private ns1.SiticoneButton phantomForcesESP;
         private System.Windows.Forms.Label icon;
@@ -348,5 +411,9 @@ namespace neoblox
         private System.Windows.Forms.Timer checkInjectedTimer;
         private System.Windows.Forms.ComboBox multiAPIComboBox;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Label pageLabel;
+        private ns1.SiticoneButton nextPage;
+        private ns1.SiticoneButton previousPage;
+        private System.Windows.Forms.Label placeholderLabel;
     }
 }
