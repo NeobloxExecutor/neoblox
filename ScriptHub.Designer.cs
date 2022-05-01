@@ -359,7 +359,11 @@ namespace neoblox
             this.flyScript.CheckedState.Parent = this.flyScript;
             this.flyScript.CustomImages.Parent = this.flyScript;
             this.flyScript.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+<<<<<<< HEAD
             this.flyScript.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+=======
+            this.flyScript.Font = new System.Drawing.Font("Segoe UI", 9F);
+>>>>>>> e3dab1dc5aa491614b9baf054b43e83427dfa6c5
             this.flyScript.ForeColor = System.Drawing.Color.PeachPuff;
             this.flyScript.HoveredState.Parent = this.flyScript;
             this.flyScript.Location = new System.Drawing.Point(213, 180);
