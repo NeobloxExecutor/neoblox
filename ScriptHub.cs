@@ -309,6 +309,7 @@ namespace neoblox
                 phantomForcesSilentAim.Visible = false;
                 katGUI.Visible = false;
                 mm2GUI.Visible = false;
+                flyScript.Visible = false;
 
                 placeholderLabel.Visible = true;
                 pageLabel.Text = "Page 2/2";
@@ -325,6 +326,7 @@ namespace neoblox
                 phantomForcesSilentAim.Visible = false;
                 katGUI.Visible = false;
                 mm2GUI.Visible = false;
+                flyScript.Visible = false;
 
                 placeholderLabel.Visible = true;
                 pageLabel.Text = "Page 2/2";
@@ -344,6 +346,7 @@ namespace neoblox
                 phantomForcesSilentAim.Visible = true;
                 katGUI.Visible = true;
                 mm2GUI.Visible = true;
+                flyScript.Visible = true;
 
                 placeholderLabel.Visible = false;
                 pageLabel.Text = "Page 1/2";
