@@ -125,7 +125,7 @@ namespace neobloxBootstrapper
 
                 ZipFile.ExtractToDirectory(neobloxArchive, AppDomain.CurrentDomain.BaseDirectory);
 
-                File.Delete($"{AppDomain.CurrentDomain.BaseDirectory}\\Neoblox.zip");
+                File.Delete(neobloxArchive);
 
                 space();
 
