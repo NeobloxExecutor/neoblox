@@ -14,6 +14,8 @@ namespace neobloxBootstrapper
     {
         static void Main(string[] args)
         {
+            logoConsole();
+
             Console.WriteLine(@"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -59,6 +61,11 @@ namespace neobloxBootstrapper
             void redConsole()
             {
                 Console.ForegroundColor = ConsoleColor.Red;
+            }
+
+            void logoConsole()
+            {
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
             }
 
             void normalConsole()
