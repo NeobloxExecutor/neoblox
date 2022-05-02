@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
             this.Panel = new System.Windows.Forms.Panel();
             this.titleLogo = new System.Windows.Forms.PictureBox();
@@ -53,6 +54,7 @@
             this.credit = new System.Windows.Forms.Label();
             this.attachButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
+            this.discordRPCRelaunch = new System.Windows.Forms.Timer(this.components);
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).BeginInit();
             this.SuspendLayout();
@@ -240,7 +242,7 @@
             this.listBox1.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.Color.PeachPuff;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(1205, 58);
+            this.listBox1.Location = new System.Drawing.Point(1205, 51);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(237, 325);
             this.listBox1.TabIndex = 7;
@@ -415,6 +417,12 @@
             this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
             this.monacoEditor.TabIndex = 1;
             // 
+            // discordRPCRelaunch
+            // 
+            this.discordRPCRelaunch.Enabled = true;
+            this.discordRPCRelaunch.Interval = 1;
+            this.discordRPCRelaunch.Tick += new System.EventHandler(this.discordRPCRelaunch_Tick);
+            // 
             // neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -543,5 +551,6 @@
         private System.Windows.Forms.WebBrowser monacoEditor;
         private System.Windows.Forms.ComboBox multiAPIComboBox;
         private System.Windows.Forms.PictureBox titleLogo;
+        private System.Windows.Forms.Timer discordRPCRelaunch;
     }
 }

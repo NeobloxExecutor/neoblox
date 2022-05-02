@@ -36,6 +36,7 @@
         bool isKrnl;
         bool isEasyExploit;
         bool isWRD;
+        bool isDiscordRPCTurningOff;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="neoblox"/> class.
@@ -658,14 +659,8 @@
 
             if (discordRPCCheckbox.Checked == false)
             {
-                var discordRPC = new DiscordRpcClient("953316205001842718");
-                discordRPC.Initialize();
-
-                discordRPC.Deinitialize();
-                discordRPC.Dispose();
+                isDiscordRPCTurningOff = true;
             }
-
-            config();
         }
 
         /// <summary>
@@ -716,6 +711,34 @@
                 isWRD = true;
                 isEasyExploit = false;
                 isKrnl = false;
+            }
+        }
+
+        private void discordRPCRelaunch_Tick(object sender, EventArgs e)
+        {
+            if (isDiscordRPCTurningOff == true)
+            {
+                isDiscordRPCTurningOff = false;
+
+                var discordRPC = new DiscordRpcClient("953316205001842718");
+
+                discordRPC.Initialize();
+
+                discordRPC.ClearPresence();
+                discordRPC.Deinitialize();
+                discordRPC.Dispose();
+
+                string message = "Neoblox needs to restart to turn off DiscordRPC!";
+                string title = "Restart";
+                MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
+
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.OK)
+                {
+                    Process.Start(System.AppDomain.CurrentDomain.FriendlyName); // starts the neoblox exe file
+                    Application.Exit();
+                }
             }
         }
     }
