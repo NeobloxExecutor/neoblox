@@ -13,4 +13,4 @@ Neoblox is keyless, no BS, easy to use executor for all your exploiting needs. N
 
 # Supporting me
 
-If you're interested in supporting me (and getting some cool perks) check out my [Patreon](https://www.patreon.com/plextora) page!
+If you're interested in supporting me (and getting some cool perks like 1 on 1 support in case something with your Neoblox goes wrong) check out my [Patreon](https://www.patreon.com/plextora) page!
