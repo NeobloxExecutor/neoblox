@@ -679,8 +679,31 @@
             }
             if (musicCheckbox.Checked == false)
             {
-                wplayer.controls.stop();
+                try
+                {
+                    string message = "Neoblox needs to restart to turn off music!";
+                    string title = "Restart";
+                    MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
+
+                    DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.OK)
+                    {
+                        Process.Start(System.AppDomain.CurrentDomain.FriendlyName);
+                        Application.Exit();
+                    }
+
+                }
+                catch
+                {
+                    string message = "Failed";
+                    string title = "Oh noes!";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                    DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
+                }
             }
+
 
             config();
         }
