@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("neoblox")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Neoblox")]
+[assembly: AssemblyDescription("A level 7 keyless Lua executor for Roblox. Free, forever!")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("neoblox")]
+[assembly: AssemblyCompany("Plextora")]
+[assembly: AssemblyProduct("Neoblox")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -111,7 +111,7 @@ namespace neoblox
         private void scriptHubButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            neoblox nb = new neoblox();
+            Neoblox nb = new Neoblox();
             nb.ShowDialog();
         }
 

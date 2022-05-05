@@ -16,7 +16,7 @@
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new neoblox());
+            Application.Run(new Neoblox());
         }
     }
 }

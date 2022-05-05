@@ -22,9 +22,9 @@
     using WMPLib;
 
     /// <summary>
-    /// Defines the <see cref="neoblox" />.
+    /// Defines the <see cref="Neoblox" />.
     /// </summary>
-    public partial class neoblox : FadeForm
+    public partial class Neoblox : FadeForm
     {
         ExploitAPI wrdExploitAPI = new ExploitAPI();
 
@@ -39,9 +39,9 @@
         bool isDiscordRPCTurningOff;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="neoblox"/> class.
+        /// Initializes a new instance of the <see cref="Neoblox"/> class.
         /// </summary>
-        public neoblox()
+        public Neoblox()
         {
             InitializeComponent();
         }

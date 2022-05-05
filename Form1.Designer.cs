@@ -1,9 +1,9 @@
 ﻿namespace neoblox
 {
     /// <summary>
-    /// Defines the <see cref="neoblox" />.
+    /// Defines the <see cref="Neoblox" />.
     /// </summary>
-    public partial class neoblox
+    public partial class Neoblox
     {
         /// <summary>
         /// Required designer variable..
@@ -30,7 +30,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(neoblox));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Neoblox));
             this.Panel = new System.Windows.Forms.Panel();
             this.titleLogo = new System.Windows.Forms.PictureBox();
             this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
@@ -423,7 +423,7 @@
             this.discordRPCRelaunch.Interval = 1;
             this.discordRPCRelaunch.Tick += new System.EventHandler(this.discordRPCRelaunch_Tick);
             // 
-            // neoblox
+            // Neoblox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -446,7 +446,7 @@
             this.ForeColor = System.Drawing.Color.SeaShell;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "neoblox";
+            this.Name = "Neoblox";
             this.Text = "Neoblox";
             this.Load += new System.EventHandler(this.neoblox_Load);
             this.Panel.ResumeLayout(false);

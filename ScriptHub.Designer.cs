@@ -402,7 +402,7 @@ namespace neoblox
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ScriptHub";
             this.RightToLeftLayout = true;
-            this.Text = "ScriptHub";
+            this.Text = "Script Hub";
             this.Load += new System.EventHandler(this.ScriptHub_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ScriptHub_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ScriptHub_MouseMove);
