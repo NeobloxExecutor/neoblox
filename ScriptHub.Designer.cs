@@ -53,6 +53,7 @@ namespace neoblox
             this.titleLogo = new System.Windows.Forms.PictureBox();
             this.flyScript = new ns1.SiticoneButton();
             this.multiAPIComboBox = new ns1.SiticoneRoundedComboBox();
+            this.shamelessPlug = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -320,11 +321,11 @@ namespace neoblox
             this.placeholderLabel.AutoSize = true;
             this.placeholderLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placeholderLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.placeholderLabel.Location = new System.Drawing.Point(312, 227);
+            this.placeholderLabel.Location = new System.Drawing.Point(260, 226);
             this.placeholderLabel.Name = "placeholderLabel";
-            this.placeholderLabel.Size = new System.Drawing.Size(205, 38);
+            this.placeholderLabel.Size = new System.Drawing.Size(406, 38);
             this.placeholderLabel.TabIndex = 38;
-            this.placeholderLabel.Text = "Coming soon....";
+            this.placeholderLabel.Text = "Page 2 is only for Patreon subs!";
             this.placeholderLabel.Visible = false;
             // 
             // titleLogo
@@ -379,12 +380,28 @@ namespace neoblox
             this.multiAPIComboBox.TabIndex = 41;
             this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPICombobox_SelectedIndexChanged);
             // 
+            // shamelessPlug
+            // 
+            this.shamelessPlug.AutoSize = true;
+            this.shamelessPlug.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shamelessPlug.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.shamelessPlug.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shamelessPlug.ForeColor = System.Drawing.Color.SteelBlue;
+            this.shamelessPlug.Location = new System.Drawing.Point(312, 278);
+            this.shamelessPlug.Name = "shamelessPlug";
+            this.shamelessPlug.Size = new System.Drawing.Size(311, 38);
+            this.shamelessPlug.TabIndex = 42;
+            this.shamelessPlug.Text = "Click here for more info";
+            this.shamelessPlug.Visible = false;
+            this.shamelessPlug.Click += new System.EventHandler(this.shamelessPlug_Click);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.shamelessPlug);
             this.Controls.Add(this.multiAPIComboBox);
             this.Controls.Add(this.flyScript);
             this.Controls.Add(this.titleLogo);
@@ -444,5 +461,6 @@ namespace neoblox
         private System.Windows.Forms.PictureBox titleLogo;
         private ns1.SiticoneButton flyScript;
         private ns1.SiticoneRoundedComboBox multiAPIComboBox;
+        private System.Windows.Forms.Label shamelessPlug;
     }
 }

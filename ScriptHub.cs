@@ -312,6 +312,7 @@ namespace neoblox
                 flyScript.Visible = false;
 
                 placeholderLabel.Visible = true;
+                shamelessPlug.Visible = true;
                 pageLabel.Text = "Page 2/2";
                 page1 = false;
                 page2 = true;
@@ -329,6 +330,7 @@ namespace neoblox
                 flyScript.Visible = false;
 
                 placeholderLabel.Visible = true;
+                shamelessPlug.Visible = true;
                 pageLabel.Text = "Page 2/2";
                 page1 = false;
                 page2 = true;
@@ -349,6 +351,7 @@ namespace neoblox
                 flyScript.Visible = true;
 
                 placeholderLabel.Visible = false;
+                shamelessPlug.Visible = false;
                 pageLabel.Text = "Page 1/2";
                 page2 = false;
                 page1 = true;
@@ -369,6 +372,11 @@ namespace neoblox
             {
                 krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/ETeUDwvV'))();");
             }
+        }
+
+        private void shamelessPlug_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://patreon.com/plextora");
         }
     }
 }
