@@ -5,7 +5,7 @@
 ![Neoblox Image](https://us-east-1.tixte.net/uploads/plextora.is-from.space/Neoblox_ug8MIY1Zmr.png)
 ![Neoblox script hub image](https://us-east-1.tixte.net/uploads/plextora.is-from.space/Neoblox_TLgFMxRhq6.png)
 
-Neoblox is keyless, no BS, easy to use executor for all your exploiting needs. No linkvertise, No "Hot MILFs in your area!" ads, just a useful executor. Neoblox uses multiple APIs, so you're guaranteed to have quick patches whenever Roblox updates!
+Neoblox is a no BS, easy to use executor for all your exploiting needs. No annoying malware or trojans, just a useful executor. Neoblox uses multiple APIs, so you're guaranteed to have quick patches whenever Roblox updates!
 
 [Here's how to use Neoblox](https://youtu.be/bDQhIrLtrwM) (Neoblox does not have any viruses)
 
