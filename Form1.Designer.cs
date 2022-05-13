@@ -47,7 +47,6 @@
             this.openScriptButton = new ns1.SiticoneButton();
             this.clearButton = new ns1.SiticoneButton();
             this.executeButtonWRD = new ns1.SiticoneButton();
-            this.icon = new System.Windows.Forms.Label();
             this.credit = new System.Windows.Forms.Label();
             this.attachButtonFix = new ns1.SiticoneButton();
             this.monacoEditor = new System.Windows.Forms.WebBrowser();
@@ -69,7 +68,7 @@
             this.Panel.Controls.Add(this.topMostCheckbox);
             this.Panel.Location = new System.Drawing.Point(0, -7);
             this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(1447, 66);
+            this.Panel.Size = new System.Drawing.Size(981, 66);
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
@@ -125,7 +124,7 @@
             this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 22.25455F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton3.ForeColor = System.Drawing.Color.PeachPuff;
             this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Location = new System.Drawing.Point(1372, 3);
+            this.siticoneButton3.Location = new System.Drawing.Point(908, 15);
             this.siticoneButton3.Name = "siticoneButton3";
             this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
             this.siticoneButton3.Size = new System.Drawing.Size(62, 43);
@@ -141,7 +140,7 @@
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 28.14545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton2.ForeColor = System.Drawing.Color.PeachPuff;
             this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Location = new System.Drawing.Point(1308, 3);
+            this.siticoneButton2.Location = new System.Drawing.Point(844, 15);
             this.siticoneButton2.Name = "siticoneButton2";
             this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
             this.siticoneButton2.Size = new System.Drawing.Size(62, 43);
@@ -216,9 +215,9 @@
             this.listBox1.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.Color.PeachPuff;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(1205, 51);
+            this.listBox1.Location = new System.Drawing.Point(669, 66);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(237, 325);
+            this.listBox1.Size = new System.Drawing.Size(301, 312);
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -233,7 +232,7 @@
             this.refreshScriptList.Location = new System.Drawing.Point(16, 440);
             this.refreshScriptList.Name = "refreshScriptList";
             this.refreshScriptList.ShadowDecoration.Parent = this.refreshScriptList;
-            this.refreshScriptList.Size = new System.Drawing.Size(512, 33);
+            this.refreshScriptList.Size = new System.Drawing.Size(180, 33);
             this.refreshScriptList.TabIndex = 18;
             this.refreshScriptList.Text = "Refresh script list";
             this.refreshScriptList.Click += new System.EventHandler(this.refreshScriptList_Click);
@@ -246,7 +245,7 @@
             this.attachButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attachButton.ForeColor = System.Drawing.Color.PeachPuff;
             this.attachButton.HoveredState.Parent = this.attachButton;
-            this.attachButton.Location = new System.Drawing.Point(802, 399);
+            this.attachButton.Location = new System.Drawing.Point(202, 440);
             this.attachButton.Name = "attachButton";
             this.attachButton.ShadowDecoration.Parent = this.attachButton;
             this.attachButton.Size = new System.Drawing.Size(194, 33);
@@ -318,25 +317,13 @@
             this.executeButtonWRD.Text = "Execute";
             this.executeButtonWRD.Click += new System.EventHandler(this.executeButton_Click);
             // 
-            // icon
-            // 
-            this.icon.AutoSize = true;
-            this.icon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.icon.Font = new System.Drawing.Font("Hack NF", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.icon.ForeColor = System.Drawing.Color.PeachPuff;
-            this.icon.Location = new System.Drawing.Point(760, 440);
-            this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(32, 33);
-            this.icon.TabIndex = 20;
-            this.icon.Text = "";
-            // 
             // credit
             // 
             this.credit.AutoSize = true;
             this.credit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.credit.Font = new System.Drawing.Font("Segoe UI", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.credit.ForeColor = System.Drawing.Color.PeachPuff;
-            this.credit.Location = new System.Drawing.Point(534, 441);
+            this.credit.Location = new System.Drawing.Point(589, 443);
             this.credit.Name = "credit";
             this.credit.Size = new System.Drawing.Size(231, 30);
             this.credit.TabIndex = 19;
@@ -350,10 +337,10 @@
             this.attachButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attachButtonFix.ForeColor = System.Drawing.Color.PeachPuff;
             this.attachButtonFix.HoveredState.Parent = this.attachButtonFix;
-            this.attachButtonFix.Location = new System.Drawing.Point(1002, 399);
+            this.attachButtonFix.Location = new System.Drawing.Point(402, 440);
             this.attachButtonFix.Name = "attachButtonFix";
             this.attachButtonFix.ShadowDecoration.Parent = this.attachButtonFix;
-            this.attachButtonFix.Size = new System.Drawing.Size(194, 33);
+            this.attachButtonFix.Size = new System.Drawing.Size(181, 33);
             this.attachButtonFix.TabIndex = 21;
             this.attachButtonFix.Text = "Attach (WRD fix)";
             this.attachButtonFix.Click += new System.EventHandler(this.attachButtonFix_Click);
@@ -363,7 +350,7 @@
             this.monacoEditor.Location = new System.Drawing.Point(0, 65);
             this.monacoEditor.MinimumSize = new System.Drawing.Size(20, 20);
             this.monacoEditor.Name = "monacoEditor";
-            this.monacoEditor.Size = new System.Drawing.Size(1202, 317);
+            this.monacoEditor.Size = new System.Drawing.Size(663, 317);
             this.monacoEditor.TabIndex = 1;
             // 
             // discordRPCRelaunch
@@ -377,9 +364,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1446, 492);
+            this.ClientSize = new System.Drawing.Size(979, 492);
             this.Controls.Add(this.attachButtonFix);
-            this.Controls.Add(this.icon);
             this.Controls.Add(this.credit);
             this.Controls.Add(this.refreshScriptList);
             this.Controls.Add(this.attachButton);
@@ -458,11 +444,6 @@
         /// Defines the topMostCheckbox.
         /// </summary>
         private ns1.SiticoneCheckBox topMostCheckbox;
-
-        /// <summary>
-        /// Defines the icon.
-        /// </summary>
-        private System.Windows.Forms.Label icon;
 
         /// <summary>
         /// Defines the credit.
