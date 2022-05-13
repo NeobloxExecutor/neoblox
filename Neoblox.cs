@@ -595,9 +595,22 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void killRblx_Click(object sender, EventArgs e)
         {
-            foreach (var process in Process.GetProcessesByName("RobloxPlayerBeta"))
+            Process[] processCheck = Process.GetProcessesByName("RobloxPlayerBeta");
+
+            if (processCheck.Length == 0)
             {
-                process.Kill();
+                string message = "Roblox isn't running!";
+                string title = "Kill roblox process failed.";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
+            }
+            else
+            {
+                foreach (var process in Process.GetProcessesByName("RobloxPlayerBeta"))
+                {
+                    process.Kill();
+                }
             }
         }
 
