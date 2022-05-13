@@ -572,24 +572,6 @@
         }
 
         /// <summary>
-        /// The fpsCapTextbox_KeyDown.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="KeyEventArgs"/>.</param>
-        private void fpsCapTextbox_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                bool isIntInText = fpsCapTextbox.Text.All(char.IsDigit);
-                if (isIntInText)
-                {
-                    string fpsCap = fpsCapTextbox.Text;
-                    wrdExploitAPI.SendLuaScript($"set_fps_cap({fpsCap})");
-                }
-            }
-        }
-
-        /// <summary>
         /// The killRblx_Click.
         /// </summary>
         /// <param name="sender">The sender<see cref="object"/>.</param>

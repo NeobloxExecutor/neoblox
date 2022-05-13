@@ -42,8 +42,6 @@
             this.discordRPCCheckbox = new ns1.SiticoneCheckBox();
             this.topMostCheckbox = new ns1.SiticoneCheckBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.fpsCapLabel = new System.Windows.Forms.Label();
-            this.fpsCapTextbox = new System.Windows.Forms.TextBox();
             this.refreshScriptList = new ns1.SiticoneButton();
             this.attachButton = new ns1.SiticoneButton();
             this.saveScriptButton = new ns1.SiticoneButton();
@@ -237,31 +235,6 @@
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // fpsCapLabel
-            // 
-            this.fpsCapLabel.AutoSize = true;
-            this.fpsCapLabel.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fpsCapLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.fpsCapLabel.Location = new System.Drawing.Point(547, 453);
-            this.fpsCapLabel.Name = "fpsCapLabel";
-            this.fpsCapLabel.Size = new System.Drawing.Size(145, 17);
-            this.fpsCapLabel.TabIndex = 3;
-            this.fpsCapLabel.Text = "Change FPS cap (WRD):";
-            // 
-            // fpsCapTextbox
-            // 
-            this.fpsCapTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.fpsCapTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fpsCapTextbox.Font = new System.Drawing.Font("Hack NF", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fpsCapTextbox.ForeColor = System.Drawing.Color.Silver;
-            this.fpsCapTextbox.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.fpsCapTextbox.Location = new System.Drawing.Point(696, 453);
-            this.fpsCapTextbox.Name = "fpsCapTextbox";
-            this.fpsCapTextbox.Size = new System.Drawing.Size(100, 20);
-            this.fpsCapTextbox.TabIndex = 9;
-            this.fpsCapTextbox.TabStop = false;
-            this.fpsCapTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fpsCapTextbox_KeyDown);
-            // 
             // refreshScriptList
             // 
             this.refreshScriptList.CheckedState.Parent = this.refreshScriptList;
@@ -364,7 +337,7 @@
             this.icon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.icon.Font = new System.Drawing.Font("Hack NF", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icon.ForeColor = System.Drawing.Color.PeachPuff;
-            this.icon.Location = new System.Drawing.Point(1028, 442);
+            this.icon.Location = new System.Drawing.Point(760, 440);
             this.icon.Name = "icon";
             this.icon.Size = new System.Drawing.Size(32, 33);
             this.icon.TabIndex = 20;
@@ -376,7 +349,7 @@
             this.credit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.credit.Font = new System.Drawing.Font("Segoe UI", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.credit.ForeColor = System.Drawing.Color.PeachPuff;
-            this.credit.Location = new System.Drawing.Point(802, 443);
+            this.credit.Location = new System.Drawing.Point(534, 441);
             this.credit.Name = "credit";
             this.credit.Size = new System.Drawing.Size(231, 30);
             this.credit.TabIndex = 19;
@@ -427,8 +400,6 @@
             this.Controls.Add(this.openScriptButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.executeButtonWRD);
-            this.Controls.Add(this.fpsCapTextbox);
-            this.Controls.Add(this.fpsCapLabel);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.monacoEditor);
             this.Controls.Add(this.Panel);
@@ -455,16 +426,6 @@
         /// Defines the listBox1.
         /// </summary>
         private System.Windows.Forms.ListBox listBox1;
-
-        /// <summary>
-        /// Defines the walkspeedLabel.
-        /// </summary>
-        private System.Windows.Forms.Label fpsCapLabel;
-
-        /// <summary>
-        /// Defines the walkspeedTextbox.
-        /// </summary>
-        private System.Windows.Forms.TextBox fpsCapTextbox;
 
         /// <summary>
         /// Defines the refreshScriptList.
