@@ -55,8 +55,6 @@
 
             string discordRPCOn = "discordrpc:neutral";
 
-            string musicOn = "music:neutral";
-
             // mfw if statements go brr
 
             if (topMostCheckbox.Checked == true)
@@ -75,20 +73,11 @@
             {
                 discordRPCOn = "discordrpc:false";
             }
-            if (musicCheckbox.Checked == true)
-            {
-                musicOn = "music:true";
-            }
-            if (musicCheckbox.Checked == false)
-            {
-                musicOn = "music:false";
-            }
 
             using (StreamWriter writer = new StreamWriter("config.txt"))
             {
                 writer.WriteLine(topMostOn);
                 writer.WriteLine(discordRPCOn);
-                writer.WriteLine(musicOn);
             }
         }
 
@@ -250,14 +239,6 @@
             if (contents.Contains("discordrpc:false"))
             {
                 discordRPCCheckbox.Checked = false;
-            }
-            if (contents.Contains("music:true"))
-            {
-                musicCheckbox.Checked = true;
-            }
-            if (contents.Contains("music:false"))
-            {
-                musicCheckbox.Checked = false;
             }
 
             try
@@ -661,51 +642,6 @@
             {
                 isDiscordRPCTurningOff = true;
             }
-        }
-
-        /// <summary>
-        /// The musicCheckbox_CheckedChanged.
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/>.</param>
-        /// <param name="e">The e<see cref="EventArgs"/>.</param>
-        private void musicCheckbox_CheckedChanged(object sender, EventArgs e)
-        {
-            WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
-
-            if (musicCheckbox.Checked == true)
-            {
-                wplayer.URL = "https://us-east-1.tixte.net/uploads/plextora.is-from.space/lofi.mp3";
-                wplayer.controls.play();
-            }
-            if (musicCheckbox.Checked == false)
-            {
-                try
-                {
-                    string message = "Neoblox needs to restart to turn off music!";
-                    string title = "Restart";
-                    MessageBoxButtons buttons = MessageBoxButtons.OKCancel;
-
-                    DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
-
-                    if (result == DialogResult.OK)
-                    {
-                        Process.Start(System.AppDomain.CurrentDomain.FriendlyName);
-                        Application.Exit();
-                    }
-
-                }
-                catch
-                {
-                    string message = "Failed";
-                    string title = "Oh noes!";
-                    MessageBoxButtons buttons = MessageBoxButtons.OK;
-
-                    DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
-                }
-            }
-
-
-            config();
         }
 
         private void scriptHubButton_Click(object sender, EventArgs e)

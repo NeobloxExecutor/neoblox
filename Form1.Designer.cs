@@ -98,7 +98,7 @@
             "Krnl (not keyless!)",
             "EasyExploit",
             "WRD"});
-            this.multiAPIComboBox.Location = new System.Drawing.Point(861, 15);
+            this.multiAPIComboBox.Location = new System.Drawing.Point(768, 15);
             this.multiAPIComboBox.Name = "multiAPIComboBox";
             this.multiAPIComboBox.Size = new System.Drawing.Size(121, 21);
             this.multiAPIComboBox.TabIndex = 21;
@@ -113,7 +113,7 @@
             this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scriptHubButton.ForeColor = System.Drawing.Color.PeachPuff;
             this.scriptHubButton.HoveredState.Parent = this.scriptHubButton;
-            this.scriptHubButton.Location = new System.Drawing.Point(683, 8);
+            this.scriptHubButton.Location = new System.Drawing.Point(590, 8);
             this.scriptHubButton.Name = "scriptHubButton";
             this.scriptHubButton.ShadowDecoration.Parent = this.scriptHubButton;
             this.scriptHubButton.Size = new System.Drawing.Size(172, 33);
@@ -123,25 +123,14 @@
             // 
             // musicCheckbox
             // 
-            this.musicCheckbox.AutoSize = true;
-            this.musicCheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.musicCheckbox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.musicCheckbox.CheckedState.BorderRadius = 2;
             this.musicCheckbox.CheckedState.BorderThickness = 0;
-            this.musicCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.musicCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.musicCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.musicCheckbox.Location = new System.Drawing.Point(590, 7);
+            this.musicCheckbox.Location = new System.Drawing.Point(0, 0);
             this.musicCheckbox.Name = "musicCheckbox";
-            this.musicCheckbox.Size = new System.Drawing.Size(87, 34);
-            this.musicCheckbox.TabIndex = 18;
-            this.musicCheckbox.Text = "Music";
-            this.musicCheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.musicCheckbox.Size = new System.Drawing.Size(104, 24);
+            this.musicCheckbox.TabIndex = 23;
             this.musicCheckbox.UncheckedState.BorderRadius = 2;
             this.musicCheckbox.UncheckedState.BorderThickness = 0;
-            this.musicCheckbox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.musicCheckbox.UseVisualStyleBackColor = false;
-            this.musicCheckbox.CheckedChanged += new System.EventHandler(this.musicCheckbox_CheckedChanged);
             // 
             // siticoneButton3
             // 
