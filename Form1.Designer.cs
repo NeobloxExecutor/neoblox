@@ -35,7 +35,6 @@
             this.titleLogo = new System.Windows.Forms.PictureBox();
             this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
             this.scriptHubButton = new ns1.SiticoneButton();
-            this.musicCheckbox = new ns1.SiticoneCheckBox();
             this.siticoneButton3 = new ns1.SiticoneButton();
             this.siticoneButton2 = new ns1.SiticoneButton();
             this.killRblx = new ns1.SiticoneButton();
@@ -63,15 +62,14 @@
             this.Panel.Controls.Add(this.titleLogo);
             this.Panel.Controls.Add(this.multiAPIComboBox);
             this.Panel.Controls.Add(this.scriptHubButton);
-            this.Panel.Controls.Add(this.musicCheckbox);
             this.Panel.Controls.Add(this.siticoneButton3);
             this.Panel.Controls.Add(this.siticoneButton2);
             this.Panel.Controls.Add(this.killRblx);
             this.Panel.Controls.Add(this.discordRPCCheckbox);
             this.Panel.Controls.Add(this.topMostCheckbox);
-            this.Panel.Location = new System.Drawing.Point(0, 0);
+            this.Panel.Location = new System.Drawing.Point(0, -7);
             this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(1447, 49);
+            this.Panel.Size = new System.Drawing.Size(1447, 66);
             this.Panel.TabIndex = 0;
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
@@ -79,9 +77,9 @@
             // titleLogo
             // 
             this.titleLogo.Image = ((System.Drawing.Image)(resources.GetObject("titleLogo.Image")));
-            this.titleLogo.Location = new System.Drawing.Point(3, -17);
+            this.titleLogo.Location = new System.Drawing.Point(10, 7);
             this.titleLogo.Name = "titleLogo";
-            this.titleLogo.Size = new System.Drawing.Size(127, 63);
+            this.titleLogo.Size = new System.Drawing.Size(66, 60);
             this.titleLogo.TabIndex = 22;
             this.titleLogo.TabStop = false;
             // 
@@ -96,7 +94,7 @@
             "Krnl (not keyless!)",
             "EasyExploit",
             "WRD"});
-            this.multiAPIComboBox.Location = new System.Drawing.Point(768, 15);
+            this.multiAPIComboBox.Location = new System.Drawing.Point(717, 26);
             this.multiAPIComboBox.Name = "multiAPIComboBox";
             this.multiAPIComboBox.Size = new System.Drawing.Size(121, 21);
             this.multiAPIComboBox.TabIndex = 21;
@@ -111,24 +109,13 @@
             this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scriptHubButton.ForeColor = System.Drawing.Color.PeachPuff;
             this.scriptHubButton.HoveredState.Parent = this.scriptHubButton;
-            this.scriptHubButton.Location = new System.Drawing.Point(590, 8);
+            this.scriptHubButton.Location = new System.Drawing.Point(539, 19);
             this.scriptHubButton.Name = "scriptHubButton";
             this.scriptHubButton.ShadowDecoration.Parent = this.scriptHubButton;
             this.scriptHubButton.Size = new System.Drawing.Size(172, 33);
             this.scriptHubButton.TabIndex = 19;
             this.scriptHubButton.Text = "Click to go to script hub";
             this.scriptHubButton.Click += new System.EventHandler(this.scriptHubButton_Click);
-            // 
-            // musicCheckbox
-            // 
-            this.musicCheckbox.CheckedState.BorderRadius = 2;
-            this.musicCheckbox.CheckedState.BorderThickness = 0;
-            this.musicCheckbox.Location = new System.Drawing.Point(0, 0);
-            this.musicCheckbox.Name = "musicCheckbox";
-            this.musicCheckbox.Size = new System.Drawing.Size(104, 24);
-            this.musicCheckbox.TabIndex = 23;
-            this.musicCheckbox.UncheckedState.BorderRadius = 2;
-            this.musicCheckbox.UncheckedState.BorderThickness = 0;
             // 
             // siticoneButton3
             // 
@@ -170,7 +157,7 @@
             this.killRblx.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.killRblx.ForeColor = System.Drawing.Color.PeachPuff;
             this.killRblx.HoveredState.Parent = this.killRblx;
-            this.killRblx.Location = new System.Drawing.Point(136, 8);
+            this.killRblx.Location = new System.Drawing.Point(85, 19);
             this.killRblx.Name = "killRblx";
             this.killRblx.ShadowDecoration.Parent = this.killRblx;
             this.killRblx.Size = new System.Drawing.Size(172, 33);
@@ -188,7 +175,7 @@
             this.discordRPCCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.discordRPCCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discordRPCCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.discordRPCCheckbox.Location = new System.Drawing.Point(438, 7);
+            this.discordRPCCheckbox.Location = new System.Drawing.Point(387, 18);
             this.discordRPCCheckbox.Name = "discordRPCCheckbox";
             this.discordRPCCheckbox.Size = new System.Drawing.Size(146, 34);
             this.discordRPCCheckbox.TabIndex = 14;
@@ -210,7 +197,7 @@
             this.topMostCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.topMostCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topMostCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.topMostCheckbox.Location = new System.Drawing.Point(314, 7);
+            this.topMostCheckbox.Location = new System.Drawing.Point(263, 18);
             this.topMostCheckbox.Name = "topMostCheckbox";
             this.topMostCheckbox.Size = new System.Drawing.Size(118, 34);
             this.topMostCheckbox.TabIndex = 13;
@@ -373,10 +360,10 @@
             // 
             // monacoEditor
             // 
-            this.monacoEditor.Location = new System.Drawing.Point(0, 47);
+            this.monacoEditor.Location = new System.Drawing.Point(0, 65);
             this.monacoEditor.MinimumSize = new System.Drawing.Size(20, 20);
             this.monacoEditor.Name = "monacoEditor";
-            this.monacoEditor.Size = new System.Drawing.Size(1202, 335);
+            this.monacoEditor.Size = new System.Drawing.Size(1202, 317);
             this.monacoEditor.TabIndex = 1;
             // 
             // discordRPCRelaunch
@@ -491,11 +478,6 @@
         /// Defines the siticoneButton2.
         /// </summary>
         private ns1.SiticoneButton siticoneButton2;
-
-        /// <summary>
-        /// Defines the musicCheckbox.
-        /// </summary>
-        private ns1.SiticoneCheckBox musicCheckbox;
         private ns1.SiticoneButton attachButtonFix;
         private ns1.SiticoneButton scriptHubButton;
         private System.Windows.Forms.WebBrowser monacoEditor;
