@@ -184,7 +184,7 @@
             this.discordRPCCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.discordRPCCheckbox.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discordRPCCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.discordRPCCheckbox.Location = new System.Drawing.Point(351, 25);
+            this.discordRPCCheckbox.Location = new System.Drawing.Point(342, 25);
             this.discordRPCCheckbox.Name = "discordRPCCheckbox";
             this.discordRPCCheckbox.Size = new System.Drawing.Size(134, 29);
             this.discordRPCCheckbox.TabIndex = 14;
