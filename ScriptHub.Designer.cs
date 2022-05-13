@@ -46,13 +46,13 @@ namespace neoblox
             this.katGUI = new ns1.SiticoneButton();
             this.mm2GUI = new ns1.SiticoneButton();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
-            this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
             this.pageLabel = new System.Windows.Forms.Label();
             this.nextPage = new ns1.SiticoneButton();
             this.previousPage = new ns1.SiticoneButton();
             this.placeholderLabel = new System.Windows.Forms.Label();
             this.titleLogo = new System.Windows.Forms.PictureBox();
             this.flyScript = new ns1.SiticoneButton();
+            this.multiAPIComboBox = new ns1.SiticoneRoundedComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -272,24 +272,6 @@ namespace neoblox
             this.mm2GUI.Text = "MM2 GUI";
             this.mm2GUI.Click += new System.EventHandler(this.mm2GUI_Click);
             // 
-            // multiAPIComboBox
-            // 
-            this.multiAPIComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.multiAPIComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.multiAPIComboBox.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiAPIComboBox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.multiAPIComboBox.FormattingEnabled = true;
-            this.multiAPIComboBox.Items.AddRange(new object[] {
-            "Krnl (not keyless!)",
-            "EasyExploit",
-            "WRD"});
-            this.multiAPIComboBox.Location = new System.Drawing.Point(12, 52);
-            this.multiAPIComboBox.Name = "multiAPIComboBox";
-            this.multiAPIComboBox.Size = new System.Drawing.Size(843, 21);
-            this.multiAPIComboBox.TabIndex = 34;
-            this.multiAPIComboBox.Text = "Multi API selection";
-            this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPIComboBox_SelectedIndexChanged);
-            // 
             // pageLabel
             // 
             this.pageLabel.AutoSize = true;
@@ -370,19 +352,46 @@ namespace neoblox
             this.flyScript.Text = "Fly (Press E to toggle)";
             this.flyScript.Click += new System.EventHandler(this.flyScript_Click);
             // 
+            // multiAPIComboBox
+            // 
+            this.multiAPIComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.multiAPIComboBox.BorderColor = System.Drawing.Color.PeachPuff;
+            this.multiAPIComboBox.BorderThickness = 2;
+            this.multiAPIComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.multiAPIComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.multiAPIComboBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.multiAPIComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.multiAPIComboBox.ForeColor = System.Drawing.Color.PeachPuff;
+            this.multiAPIComboBox.FormattingEnabled = true;
+            this.multiAPIComboBox.HoveredState.Parent = this.multiAPIComboBox;
+            this.multiAPIComboBox.ItemHeight = 30;
+            this.multiAPIComboBox.Items.AddRange(new object[] {
+            "Multi API selection",
+            "Krnl (not keyless!)",
+            "EasyExploit",
+            "WRD"});
+            this.multiAPIComboBox.ItemsAppearance.Parent = this.multiAPIComboBox;
+            this.multiAPIComboBox.Location = new System.Drawing.Point(12, 51);
+            this.multiAPIComboBox.Name = "multiAPIComboBox";
+            this.multiAPIComboBox.ShadowDecoration.Parent = this.multiAPIComboBox;
+            this.multiAPIComboBox.Size = new System.Drawing.Size(843, 36);
+            this.multiAPIComboBox.StartIndex = 0;
+            this.multiAPIComboBox.TabIndex = 41;
+            this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPICombobox_SelectedIndexChanged);
+            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
+            this.Controls.Add(this.multiAPIComboBox);
             this.Controls.Add(this.flyScript);
             this.Controls.Add(this.titleLogo);
             this.Controls.Add(this.placeholderLabel);
             this.Controls.Add(this.previousPage);
             this.Controls.Add(this.nextPage);
             this.Controls.Add(this.pageLabel);
-            this.Controls.Add(this.multiAPIComboBox);
             this.Controls.Add(this.mm2GUI);
             this.Controls.Add(this.katGUI);
             this.Controls.Add(this.attachButtonFix);
@@ -428,12 +437,12 @@ namespace neoblox
         private ns1.SiticoneButton katGUI;
         private ns1.SiticoneButton mm2GUI;
         private System.Windows.Forms.Timer checkInjectedTimer;
-        private System.Windows.Forms.ComboBox multiAPIComboBox;
         private System.Windows.Forms.Label pageLabel;
         private ns1.SiticoneButton nextPage;
         private ns1.SiticoneButton previousPage;
         private System.Windows.Forms.Label placeholderLabel;
         private System.Windows.Forms.PictureBox titleLogo;
         private ns1.SiticoneButton flyScript;
+        private ns1.SiticoneRoundedComboBox multiAPIComboBox;
     }
 }

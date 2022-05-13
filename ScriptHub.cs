@@ -276,21 +276,21 @@ namespace neoblox
             }
         }
 
-        private void multiAPIComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void multiAPICombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (multiAPIComboBox.SelectedIndex == 0)
+            if (multiAPIComboBox.SelectedIndex == 1)
             {
                 isKrnl = true;
                 isEasyExploit = false;
                 isWRD = false;
             }
-            if (multiAPIComboBox.SelectedIndex == 1)
+            if (multiAPIComboBox.SelectedIndex == 2)
             {
                 isEasyExploit = true;
                 isKrnl = false;
                 isWRD = false;
             }
-            if (multiAPIComboBox.SelectedIndex == 2)
+            if (multiAPIComboBox.SelectedIndex == 3)
             {
                 isWRD = true;
                 isEasyExploit = false;

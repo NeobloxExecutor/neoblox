@@ -190,7 +190,6 @@
             PopulateListBox(listBox1, "./Scripts", "*.txt");
             PopulateListBox(listBox1, "./Scripts", "*.lua");
 
-
             WebClient wc = new WebClient
             {
                 Proxy = null
@@ -653,19 +652,19 @@
 
         private void multiAPIComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (multiAPIComboBox.SelectedIndex == 0)
+            if (multiAPICombobox.SelectedIndex == 1)
             {
                 isKrnl = true;
                 isEasyExploit = false;
                 isWRD = false;
             }
-            if (multiAPIComboBox.SelectedIndex == 1)
+            if (multiAPICombobox.SelectedIndex == 2)
             {
                 isEasyExploit = true;
                 isKrnl = false;
                 isWRD = false;
             }
-            if (multiAPIComboBox.SelectedIndex == 2)
+            if (multiAPICombobox.SelectedIndex == 3)
             {
                 isWRD = true;
                 isEasyExploit = false;

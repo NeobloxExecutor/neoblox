@@ -32,8 +32,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Neoblox));
             this.Panel = new System.Windows.Forms.Panel();
+            this.multiAPICombobox = new ns1.SiticoneRoundedComboBox();
             this.titleLogo = new System.Windows.Forms.PictureBox();
-            this.multiAPIComboBox = new System.Windows.Forms.ComboBox();
             this.scriptHubButton = new ns1.SiticoneButton();
             this.siticoneButton3 = new ns1.SiticoneButton();
             this.siticoneButton2 = new ns1.SiticoneButton();
@@ -58,8 +58,8 @@
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Panel.Controls.Add(this.multiAPICombobox);
             this.Panel.Controls.Add(this.titleLogo);
-            this.Panel.Controls.Add(this.multiAPIComboBox);
             this.Panel.Controls.Add(this.scriptHubButton);
             this.Panel.Controls.Add(this.siticoneButton3);
             this.Panel.Controls.Add(this.siticoneButton2);
@@ -73,6 +73,34 @@
             this.Panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             this.Panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseMove);
             // 
+            // multiAPICombobox
+            // 
+            this.multiAPICombobox.BackColor = System.Drawing.Color.Transparent;
+            this.multiAPICombobox.BorderColor = System.Drawing.Color.PeachPuff;
+            this.multiAPICombobox.BorderThickness = 2;
+            this.multiAPICombobox.DisplayMember = "2";
+            this.multiAPICombobox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.multiAPICombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.multiAPICombobox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.multiAPICombobox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.multiAPICombobox.ForeColor = System.Drawing.Color.PeachPuff;
+            this.multiAPICombobox.FormattingEnabled = true;
+            this.multiAPICombobox.HoveredState.Parent = this.multiAPICombobox;
+            this.multiAPICombobox.ItemHeight = 30;
+            this.multiAPICombobox.Items.AddRange(new object[] {
+            "Multi API selection",
+            "Krnl (not keyless!)",
+            "EasyExploit",
+            "WRD"});
+            this.multiAPICombobox.ItemsAppearance.Parent = this.multiAPICombobox;
+            this.multiAPICombobox.Location = new System.Drawing.Point(650, 19);
+            this.multiAPICombobox.Name = "multiAPICombobox";
+            this.multiAPICombobox.ShadowDecoration.Parent = this.multiAPICombobox;
+            this.multiAPICombobox.Size = new System.Drawing.Size(183, 36);
+            this.multiAPICombobox.StartIndex = 0;
+            this.multiAPICombobox.TabIndex = 22;
+            this.multiAPICombobox.SelectedIndexChanged += new System.EventHandler(this.multiAPIComboBox_SelectedIndexChanged);
+            // 
             // titleLogo
             // 
             this.titleLogo.Image = ((System.Drawing.Image)(resources.GetObject("titleLogo.Image")));
@@ -82,36 +110,18 @@
             this.titleLogo.TabIndex = 22;
             this.titleLogo.TabStop = false;
             // 
-            // multiAPIComboBox
-            // 
-            this.multiAPIComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.multiAPIComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.multiAPIComboBox.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiAPIComboBox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.multiAPIComboBox.FormattingEnabled = true;
-            this.multiAPIComboBox.Items.AddRange(new object[] {
-            "Krnl (not keyless!)",
-            "EasyExploit",
-            "WRD"});
-            this.multiAPIComboBox.Location = new System.Drawing.Point(717, 26);
-            this.multiAPIComboBox.Name = "multiAPIComboBox";
-            this.multiAPIComboBox.Size = new System.Drawing.Size(121, 21);
-            this.multiAPIComboBox.TabIndex = 21;
-            this.multiAPIComboBox.Text = "Multi API selection";
-            this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPIComboBox_SelectedIndexChanged);
-            // 
             // scriptHubButton
             // 
             this.scriptHubButton.CheckedState.Parent = this.scriptHubButton;
             this.scriptHubButton.CustomImages.Parent = this.scriptHubButton;
             this.scriptHubButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scriptHubButton.ForeColor = System.Drawing.Color.PeachPuff;
             this.scriptHubButton.HoveredState.Parent = this.scriptHubButton;
-            this.scriptHubButton.Location = new System.Drawing.Point(539, 19);
+            this.scriptHubButton.Location = new System.Drawing.Point(481, 22);
             this.scriptHubButton.Name = "scriptHubButton";
             this.scriptHubButton.ShadowDecoration.Parent = this.scriptHubButton;
-            this.scriptHubButton.Size = new System.Drawing.Size(172, 33);
+            this.scriptHubButton.Size = new System.Drawing.Size(163, 33);
             this.scriptHubButton.TabIndex = 19;
             this.scriptHubButton.Text = "Click to go to script hub";
             this.scriptHubButton.Click += new System.EventHandler(this.scriptHubButton_Click);
@@ -124,7 +134,7 @@
             this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 22.25455F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton3.ForeColor = System.Drawing.Color.PeachPuff;
             this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Location = new System.Drawing.Point(908, 15);
+            this.siticoneButton3.Location = new System.Drawing.Point(906, 15);
             this.siticoneButton3.Name = "siticoneButton3";
             this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
             this.siticoneButton3.Size = new System.Drawing.Size(62, 43);
@@ -156,10 +166,10 @@
             this.killRblx.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.killRblx.ForeColor = System.Drawing.Color.PeachPuff;
             this.killRblx.HoveredState.Parent = this.killRblx;
-            this.killRblx.Location = new System.Drawing.Point(85, 19);
+            this.killRblx.Location = new System.Drawing.Point(85, 22);
             this.killRblx.Name = "killRblx";
             this.killRblx.ShadowDecoration.Parent = this.killRblx;
-            this.killRblx.Size = new System.Drawing.Size(172, 33);
+            this.killRblx.Size = new System.Drawing.Size(133, 33);
             this.killRblx.TabIndex = 15;
             this.killRblx.Text = "Kill Roblox Process";
             this.killRblx.Click += new System.EventHandler(this.killRblx_Click);
@@ -172,11 +182,11 @@
             this.discordRPCCheckbox.CheckedState.BorderRadius = 2;
             this.discordRPCCheckbox.CheckedState.BorderThickness = 0;
             this.discordRPCCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.discordRPCCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discordRPCCheckbox.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discordRPCCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.discordRPCCheckbox.Location = new System.Drawing.Point(387, 18);
+            this.discordRPCCheckbox.Location = new System.Drawing.Point(351, 25);
             this.discordRPCCheckbox.Name = "discordRPCCheckbox";
-            this.discordRPCCheckbox.Size = new System.Drawing.Size(146, 34);
+            this.discordRPCCheckbox.Size = new System.Drawing.Size(134, 29);
             this.discordRPCCheckbox.TabIndex = 14;
             this.discordRPCCheckbox.Text = "Discord RPC";
             this.discordRPCCheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -194,11 +204,11 @@
             this.topMostCheckbox.CheckedState.BorderRadius = 2;
             this.topMostCheckbox.CheckedState.BorderThickness = 0;
             this.topMostCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.topMostCheckbox.Font = new System.Drawing.Font("Segoe UI", 13.09091F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topMostCheckbox.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topMostCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
-            this.topMostCheckbox.Location = new System.Drawing.Point(263, 18);
+            this.topMostCheckbox.Location = new System.Drawing.Point(227, 25);
             this.topMostCheckbox.Name = "topMostCheckbox";
-            this.topMostCheckbox.Size = new System.Drawing.Size(118, 34);
+            this.topMostCheckbox.Size = new System.Drawing.Size(108, 29);
             this.topMostCheckbox.TabIndex = 13;
             this.topMostCheckbox.Text = "Top Most";
             this.topMostCheckbox.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -464,8 +474,8 @@
         private ns1.SiticoneButton attachButtonFix;
         private ns1.SiticoneButton scriptHubButton;
         private System.Windows.Forms.WebBrowser monacoEditor;
-        private System.Windows.Forms.ComboBox multiAPIComboBox;
-        private System.Windows.Forms.PictureBox titleLogo;
         private System.Windows.Forms.Timer discordRPCRelaunch;
+        private ns1.SiticoneRoundedComboBox multiAPICombobox;
+        private System.Windows.Forms.PictureBox titleLogo;
     }
 }
