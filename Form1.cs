@@ -506,6 +506,20 @@
         /// </summary>
         internal Point lastPoint;
 
+        private void Neoblox_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void Neoblox_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Left += e.X - lastPoint.X;
+                Top += e.Y - lastPoint.Y;
+            }
+        }
+
         /// <summary>
         /// The Panel_MouseDown.
         /// </summary>
@@ -553,10 +567,14 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            monacoEditor.Document.InvokeScript("SetText", new object[]
+            try
+            {
+                monacoEditor.Document.InvokeScript("SetText", new object[]
             {
                 File.ReadAllText($"./Scripts/{listBox1.SelectedItem}")
             });
+            }
+            catch { }
         }
 
         /// <summary>
