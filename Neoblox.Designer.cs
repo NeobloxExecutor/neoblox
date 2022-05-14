@@ -77,11 +77,11 @@
             // 
             this.multiAPICombobox.BackColor = System.Drawing.Color.Transparent;
             this.multiAPICombobox.BorderColor = System.Drawing.Color.PeachPuff;
-            this.multiAPICombobox.BorderThickness = 2;
             this.multiAPICombobox.DisplayMember = "2";
             this.multiAPICombobox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.multiAPICombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.multiAPICombobox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.multiAPICombobox.FocusedColor = System.Drawing.Color.PeachPuff;
             this.multiAPICombobox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.multiAPICombobox.ForeColor = System.Drawing.Color.PeachPuff;
             this.multiAPICombobox.FormattingEnabled = true;
@@ -93,7 +93,7 @@
             "EasyExploit",
             "WRD"});
             this.multiAPICombobox.ItemsAppearance.Parent = this.multiAPICombobox;
-            this.multiAPICombobox.Location = new System.Drawing.Point(650, 19);
+            this.multiAPICombobox.Location = new System.Drawing.Point(651, 20);
             this.multiAPICombobox.Name = "multiAPICombobox";
             this.multiAPICombobox.ShadowDecoration.Parent = this.multiAPICombobox;
             this.multiAPICombobox.Size = new System.Drawing.Size(183, 36);
