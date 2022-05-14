@@ -68,9 +68,14 @@ namespace neobloxBootstrapper
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
             }
 
+            void infoConsole()
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+            }
+
             void normalConsole()
             {
-                Console.ForegroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
             }
 
             void space()
@@ -78,81 +83,178 @@ namespace neobloxBootstrapper
                 Console.WriteLine("");
             }
 
-            using (var client = new WebClient())
+            space();
+
+            infoConsole();
+
+            Console.WriteLine("Would you like to download Monaco Neoblox? (Made for normal computers) Or Scintilla Neoblox? (Made for lower end computers)");
+
+            space();
+
+            Console.WriteLine("Enter \"1\" for Monaco Neoblox. Enter \"2\" for Scintilla Neoblox");
+
+            space();
+
+            string decision = Console.ReadLine();
+
+            if (decision == "1")
             {
-                try
+                using (var client = new WebClient())
                 {
-                    space();
-
-                    greenConsole();
-                    Console.WriteLine("Downloading Neoblox...");
-                    space();
-                    normalConsole();
-
-                    if (File.Exists("Neoblox.zip") != false)
+                    try
                     {
-                        redConsole();
-                        Console.WriteLine("Neoblox.zip is already downloaded in this directory!");
+                        space();
+
+                        greenConsole();
+                        Console.WriteLine("Downloading Monaco Neoblox...");
                         space();
                         normalConsole();
+
+                        if (File.Exists("Neoblox.zip") != false)
+                        {
+                            redConsole();
+                            Console.WriteLine("Neoblox.zip is already downloaded in this directory!");
+                            space();
+                            normalConsole();
+                        }
+
+                        if (File.Exists("Neoblox.zip") == false)
+                        {
+                            greenConsole();
+                            client.DownloadFile("https://plextora.is-from.space/r/Neoblox.zip", "Neoblox.zip");
+                            Thread.Sleep(2000);
+                            Console.WriteLine("Successfully downloaded Neoblox!");
+                            normalConsole();
+
+                            space();
+                        }
+                    }
+                    catch
+                    {
+                        space();
+
+                        redConsole();
+                        Console.WriteLine("Failed to download Neoblox!");
+
+                        Thread.Sleep(2000);
+
+                        System.Environment.Exit(1);
                     }
 
-                    if (File.Exists("Neoblox.zip") == false)
+                    try
                     {
                         greenConsole();
-                        client.DownloadFile("https://plextora.is-from.space/r/Neoblox.zip", "Neoblox.zip");
-                        Thread.Sleep(2000);
-                        Console.WriteLine("Successfully downloaded Neoblox!");
-                        normalConsole();
+                        Console.WriteLine("Extracting Neoblox.zip....");
+
+                        Thread.Sleep(5000);
+
+                        string neobloxArchive = $"{AppDomain.CurrentDomain.BaseDirectory}\\Neoblox.zip";
+
+                        ZipFile.ExtractToDirectory(neobloxArchive, AppDomain.CurrentDomain.BaseDirectory);
+
+                        File.Delete(neobloxArchive);
 
                         space();
+
+                        Console.WriteLine("Successfully extracted Neoblox.zip!");
+
+                        Thread.Sleep(1000);
+
+                        System.Diagnostics.Process.Start($"{AppDomain.CurrentDomain.BaseDirectory}\\Neoblox");
+                    }
+
+                    catch
+                    {
+                        space();
+
+                        redConsole();
+                        Console.WriteLine("Failed to extract Neoblox!");
+
+                        Thread.Sleep(2000);
+
+                        System.Environment.Exit(1);
                     }
                 }
-                catch
+            }
+
+            if (decision == "2")
+            {
+                using (var client = new WebClient())
                 {
-                    space();
+                    try
+                    {
+                        space();
 
-                    redConsole();
-                    Console.WriteLine("Failed to download Neoblox!");
+                        greenConsole();
+                        Console.WriteLine("Downloading Scintilla Neoblox...");
+                        space();
+                        normalConsole();
 
-                    Thread.Sleep(2000);
+                        if (File.Exists("Scintilla Neoblox.zip") != false)
+                        {
+                            redConsole();
+                            Console.WriteLine("Scintilla Neoblox.zip is already downloaded in this directory!");
+                            space();
+                            normalConsole();
+                        }
 
-                    System.Environment.Exit(1);
+                        if (File.Exists("Scintilla Neoblox.zip") == false)
+                        {
+                            greenConsole();
+                            client.DownloadFile("https://plextora.is-from.space/r/Scintilla_Neoblox.zip", "Scintilla Neoblox.zip");
+                            Thread.Sleep(2000);
+                            Console.WriteLine("Successfully downloaded Scintilla Neoblox!");
+                            normalConsole();
+
+                            space();
+                        }
+                    }
+                    catch
+                    {
+                        space();
+
+                        redConsole();
+                        Console.WriteLine("Failed to download Scintilla Neoblox!");
+
+                        Thread.Sleep(2000);
+
+                        System.Environment.Exit(1);
+                    }
+
+                    try
+                    {
+                        greenConsole();
+                        Console.WriteLine("Extracting Scintilla Neoblox.zip....");
+
+                        Thread.Sleep(5000);
+
+                        string neobloxArchive = $"{AppDomain.CurrentDomain.BaseDirectory}\\Scintilla Neoblox.zip";
+
+                        ZipFile.ExtractToDirectory(neobloxArchive, AppDomain.CurrentDomain.BaseDirectory);
+
+                        File.Delete(neobloxArchive);
+
+                        space();
+
+                        Console.WriteLine("Successfully extracted Neoblox.zip!");
+
+                        Thread.Sleep(1000);
+
+                        System.Diagnostics.Process.Start($"{AppDomain.CurrentDomain.BaseDirectory}\\Scintilla Neoblox");
+                    }
+
+                    catch
+                    {
+                        space();
+
+                        redConsole();
+                        Console.WriteLine("Failed to extract Scintilla Neoblox!");
+
+                        Thread.Sleep(2000);
+
+                        System.Environment.Exit(1);
+                    }
                 }
-            }
-
-            try
-            {
-                greenConsole();
-                Console.WriteLine("Extracting Neoblox.zip....");
-
-                Thread.Sleep(5000);
-
-                string neobloxArchive = $"{AppDomain.CurrentDomain.BaseDirectory}\\Neoblox.zip";
-
-                ZipFile.ExtractToDirectory(neobloxArchive, AppDomain.CurrentDomain.BaseDirectory);
-
-                File.Delete(neobloxArchive);
-
-                space();
-
-                Console.WriteLine("Successfully extracted Neoblox.zip!");
-
-                Thread.Sleep(2000);
-
-                System.Diagnostics.Process.Start($"{AppDomain.CurrentDomain.BaseDirectory}\\Neoblox");
-            }
-
-            catch
-            {
-                space();
-
-                redConsole();
-                Console.WriteLine("Failed to extract Neoblox!");
-
-                Thread.Sleep(2000);
-
-                System.Environment.Exit(1);
             }
         }
     }
