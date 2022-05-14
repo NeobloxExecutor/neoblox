@@ -60,6 +60,7 @@ namespace neoblox
             // scriptHubButton
             // 
             this.scriptHubButton.CheckedState.Parent = this.scriptHubButton;
+            this.scriptHubButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.scriptHubButton.CustomImages.Parent = this.scriptHubButton;
             this.scriptHubButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,12 +77,13 @@ namespace neoblox
             // minimizeButton
             // 
             this.minimizeButton.CheckedState.Parent = this.minimizeButton;
+            this.minimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimizeButton.CustomImages.Parent = this.minimizeButton;
             this.minimizeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.minimizeButton.Font = new System.Drawing.Font("Segoe UI Semibold", 28.14545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minimizeButton.ForeColor = System.Drawing.Color.PeachPuff;
             this.minimizeButton.HoveredState.Parent = this.minimizeButton;
-            this.minimizeButton.Location = new System.Drawing.Point(735, 3);
+            this.minimizeButton.Location = new System.Drawing.Point(741, 3);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.ShadowDecoration.Parent = this.minimizeButton;
             this.minimizeButton.Size = new System.Drawing.Size(62, 43);
@@ -92,6 +94,7 @@ namespace neoblox
             // closeButton
             // 
             this.closeButton.CheckedState.Parent = this.closeButton;
+            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeButton.CustomImages.Parent = this.closeButton;
             this.closeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.closeButton.Font = new System.Drawing.Font("Segoe UI", 22.25455F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -108,6 +111,7 @@ namespace neoblox
             // xrayScript
             // 
             this.xrayScript.CheckedState.Parent = this.xrayScript;
+            this.xrayScript.Cursor = System.Windows.Forms.Cursors.Hand;
             this.xrayScript.CustomImages.Parent = this.xrayScript;
             this.xrayScript.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.xrayScript.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -124,6 +128,7 @@ namespace neoblox
             // infiniteJumpScript
             // 
             this.infiniteJumpScript.CheckedState.Parent = this.infiniteJumpScript;
+            this.infiniteJumpScript.Cursor = System.Windows.Forms.Cursors.Hand;
             this.infiniteJumpScript.CustomImages.Parent = this.infiniteJumpScript;
             this.infiniteJumpScript.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.infiniteJumpScript.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -140,6 +145,7 @@ namespace neoblox
             // ctrlClickToTP
             // 
             this.ctrlClickToTP.CheckedState.Parent = this.ctrlClickToTP;
+            this.ctrlClickToTP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ctrlClickToTP.CustomImages.Parent = this.ctrlClickToTP;
             this.ctrlClickToTP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ctrlClickToTP.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -156,6 +162,7 @@ namespace neoblox
             // phantomForcesSilentAim
             // 
             this.phantomForcesSilentAim.CheckedState.Parent = this.phantomForcesSilentAim;
+            this.phantomForcesSilentAim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.phantomForcesSilentAim.CustomImages.Parent = this.phantomForcesSilentAim;
             this.phantomForcesSilentAim.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.phantomForcesSilentAim.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -172,6 +179,7 @@ namespace neoblox
             // phantomForcesESP
             // 
             this.phantomForcesESP.CheckedState.Parent = this.phantomForcesESP;
+            this.phantomForcesESP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.phantomForcesESP.CustomImages.Parent = this.phantomForcesESP;
             this.phantomForcesESP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.phantomForcesESP.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,6 +220,7 @@ namespace neoblox
             // attachButtonFix
             // 
             this.attachButtonFix.CheckedState.Parent = this.attachButtonFix;
+            this.attachButtonFix.Cursor = System.Windows.Forms.Cursors.Hand;
             this.attachButtonFix.CustomImages.Parent = this.attachButtonFix;
             this.attachButtonFix.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.attachButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,6 +237,7 @@ namespace neoblox
             // attachButton
             // 
             this.attachButton.CheckedState.Parent = this.attachButton;
+            this.attachButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.attachButton.CustomImages.Parent = this.attachButton;
             this.attachButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.attachButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,6 +254,7 @@ namespace neoblox
             // katGUI
             // 
             this.katGUI.CheckedState.Parent = this.katGUI;
+            this.katGUI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.katGUI.CustomImages.Parent = this.katGUI;
             this.katGUI.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.katGUI.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -260,6 +271,7 @@ namespace neoblox
             // mm2GUI
             // 
             this.mm2GUI.CheckedState.Parent = this.mm2GUI;
+            this.mm2GUI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mm2GUI.CustomImages.Parent = this.mm2GUI;
             this.mm2GUI.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.mm2GUI.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -287,6 +299,7 @@ namespace neoblox
             // nextPage
             // 
             this.nextPage.CheckedState.Parent = this.nextPage;
+            this.nextPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.nextPage.CustomImages.Parent = this.nextPage;
             this.nextPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.nextPage.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -303,6 +316,7 @@ namespace neoblox
             // previousPage
             // 
             this.previousPage.CheckedState.Parent = this.previousPage;
+            this.previousPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.previousPage.CustomImages.Parent = this.previousPage;
             this.previousPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.previousPage.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -340,6 +354,7 @@ namespace neoblox
             // flyScript
             // 
             this.flyScript.CheckedState.Parent = this.flyScript;
+            this.flyScript.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flyScript.CustomImages.Parent = this.flyScript;
             this.flyScript.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.flyScript.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -357,7 +372,6 @@ namespace neoblox
             // 
             this.multiAPIComboBox.BackColor = System.Drawing.Color.Transparent;
             this.multiAPIComboBox.BorderColor = System.Drawing.Color.PeachPuff;
-            this.multiAPIComboBox.BorderThickness = 2;
             this.multiAPIComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.multiAPIComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.multiAPIComboBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));

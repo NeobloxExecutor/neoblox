@@ -113,6 +113,7 @@
             // scriptHubButton
             // 
             this.scriptHubButton.CheckedState.Parent = this.scriptHubButton;
+            this.scriptHubButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.scriptHubButton.CustomImages.Parent = this.scriptHubButton;
             this.scriptHubButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.scriptHubButton.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -129,6 +130,7 @@
             // siticoneButton3
             // 
             this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
+            this.siticoneButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
             this.siticoneButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 22.25455F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,6 +147,7 @@
             // siticoneButton2
             // 
             this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
+            this.siticoneButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
             this.siticoneButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 28.14545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,6 +164,7 @@
             // killRblx
             // 
             this.killRblx.CheckedState.Parent = this.killRblx;
+            this.killRblx.Cursor = System.Windows.Forms.Cursors.Hand;
             this.killRblx.CustomImages.Parent = this.killRblx;
             this.killRblx.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.killRblx.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -182,6 +186,7 @@
             this.discordRPCCheckbox.CheckedState.BorderRadius = 2;
             this.discordRPCCheckbox.CheckedState.BorderThickness = 0;
             this.discordRPCCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.discordRPCCheckbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.discordRPCCheckbox.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discordRPCCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
             this.discordRPCCheckbox.Location = new System.Drawing.Point(342, 25);
@@ -204,6 +209,7 @@
             this.topMostCheckbox.CheckedState.BorderRadius = 2;
             this.topMostCheckbox.CheckedState.BorderThickness = 0;
             this.topMostCheckbox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.topMostCheckbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.topMostCheckbox.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topMostCheckbox.ForeColor = System.Drawing.Color.PeachPuff;
             this.topMostCheckbox.Location = new System.Drawing.Point(227, 25);
@@ -234,6 +240,7 @@
             // refreshScriptList
             // 
             this.refreshScriptList.CheckedState.Parent = this.refreshScriptList;
+            this.refreshScriptList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.refreshScriptList.CustomImages.Parent = this.refreshScriptList;
             this.refreshScriptList.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.refreshScriptList.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -250,6 +257,7 @@
             // attachButton
             // 
             this.attachButton.CheckedState.Parent = this.attachButton;
+            this.attachButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.attachButton.CustomImages.Parent = this.attachButton;
             this.attachButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.attachButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -266,6 +274,7 @@
             // saveScriptButton
             // 
             this.saveScriptButton.CheckedState.Parent = this.saveScriptButton;
+            this.saveScriptButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveScriptButton.CustomImages.Parent = this.saveScriptButton;
             this.saveScriptButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.saveScriptButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -282,6 +291,7 @@
             // openScriptButton
             // 
             this.openScriptButton.CheckedState.Parent = this.openScriptButton;
+            this.openScriptButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.openScriptButton.CustomImages.Parent = this.openScriptButton;
             this.openScriptButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.openScriptButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -298,6 +308,7 @@
             // clearButton
             // 
             this.clearButton.CheckedState.Parent = this.clearButton;
+            this.clearButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearButton.CustomImages.Parent = this.clearButton;
             this.clearButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.clearButton.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -314,6 +325,7 @@
             // executeButtonWRD
             // 
             this.executeButtonWRD.CheckedState.Parent = this.executeButtonWRD;
+            this.executeButtonWRD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.executeButtonWRD.CustomImages.Parent = this.executeButtonWRD;
             this.executeButtonWRD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.executeButtonWRD.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -342,6 +354,7 @@
             // attachButtonFix
             // 
             this.attachButtonFix.CheckedState.Parent = this.attachButtonFix;
+            this.attachButtonFix.Cursor = System.Windows.Forms.Cursors.Hand;
             this.attachButtonFix.CustomImages.Parent = this.attachButtonFix;
             this.attachButtonFix.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.attachButtonFix.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
