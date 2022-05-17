@@ -7,7 +7,7 @@
 
 Neoblox is a no BS, easy to use executor for all your exploiting needs. No annoying malware or trojans, just a useful executor. Neoblox uses multiple APIs, so you're guaranteed to have quick patches whenever Roblox updates!
 
-[Here's how to use Neoblox](https://youtu.be/bDQhIrLtrwM) (Neoblox does not have any viruses)
+[Here's how to use Neoblox](https://www.youtube.com/watch?v=TOD7yAiThVc) (Neoblox does not have any viruses)
 
 # Supporting me
 
