@@ -184,8 +184,6 @@
         /// <param name="e">The e<see cref="EventArgs"/>.</param>
         private async void neoblox_Load(object sender, EventArgs e)
         {
-            krnlExploitAPI.Initialize();
-
             listBox1.Items.Clear();
             PopulateListBox(listBox1, "./Scripts", "*.txt");
             PopulateListBox(listBox1, "./Scripts", "*.lua");
@@ -257,6 +255,8 @@
 
                 DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
             }
+
+            krnlExploitAPI.Initialize();
         }
 
         /// <summary>

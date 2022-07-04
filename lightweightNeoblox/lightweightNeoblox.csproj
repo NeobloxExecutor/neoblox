@@ -42,7 +42,8 @@
     <Reference Include="EasyExploits">
       <HintPath>..\DLLs\EasyExploits.dll</HintPath>
     </Reference>
-    <Reference Include="KrnlAPI">
+    <Reference Include="KrnlAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLLs\KrnlAPI.dll</HintPath>
     </Reference>
     <Reference Include="ScintillaNET">
