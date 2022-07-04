@@ -33,8 +33,6 @@ namespace neoblox
         bool isKrnl;
         bool isEasyExploit;
         bool isWRD;
-        bool page1 = false;
-        bool page2 = false;
 
         private void ScriptHub_Load(object sender, EventArgs e)
         {
@@ -298,66 +296,6 @@ namespace neoblox
             }
         }
 
-        private void nextPage_Click(object sender, EventArgs e)
-        {
-            if (page1 == true && page2 == false)
-            {
-                xrayScript.Visible = false;
-                infiniteJumpScript.Visible = false;
-                ctrlClickToTP.Visible = false;
-                phantomForcesESP.Visible = false;
-                phantomForcesSilentAim.Visible = false;
-                katGUI.Visible = false;
-                mm2GUI.Visible = false;
-                flyScript.Visible = false;
-
-                placeholderLabel.Visible = true;
-                shamelessPlug.Visible = true;
-                pageLabel.Text = "Page 2/2";
-                page1 = false;
-                page2 = true;
-            }
-
-            if (page1 == false && page2 == false)
-            {
-                xrayScript.Visible = false;
-                infiniteJumpScript.Visible = false;
-                ctrlClickToTP.Visible = false;
-                phantomForcesESP.Visible = false;
-                phantomForcesSilentAim.Visible = false;
-                katGUI.Visible = false;
-                mm2GUI.Visible = false;
-                flyScript.Visible = false;
-
-                placeholderLabel.Visible = true;
-                shamelessPlug.Visible = true;
-                pageLabel.Text = "Page 2/2";
-                page1 = false;
-                page2 = true;
-            }
-        }
-
-        private void previousPage_Click(object sender, EventArgs e)
-        {
-            if (page1 == false && page2 == true)
-            {
-                xrayScript.Visible = true;
-                infiniteJumpScript.Visible = true;
-                ctrlClickToTP.Visible = true;
-                phantomForcesESP.Visible = true;
-                phantomForcesSilentAim.Visible = true;
-                katGUI.Visible = true;
-                mm2GUI.Visible = true;
-                flyScript.Visible = true;
-
-                placeholderLabel.Visible = false;
-                shamelessPlug.Visible = false;
-                pageLabel.Text = "Page 1/2";
-                page2 = false;
-                page1 = true;
-            }
-        }
-
         private void flyScript_Click(object sender, EventArgs e)
         {
             if (wrdExploitAPI.isAPIAttached())
@@ -372,11 +310,6 @@ namespace neoblox
             {
                 krnlExploitAPI.Execute("loadstring(game: HttpGet('https://pastebin.com/raw/ETeUDwvV'))();");
             }
-        }
-
-        private void shamelessPlug_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://patreon.com/plextora");
         }
     }
 }

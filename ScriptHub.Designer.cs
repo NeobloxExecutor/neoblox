@@ -47,13 +47,9 @@ namespace neoblox
             this.mm2GUI = new ns1.SiticoneButton();
             this.checkInjectedTimer = new System.Windows.Forms.Timer(this.components);
             this.pageLabel = new System.Windows.Forms.Label();
-            this.nextPage = new ns1.SiticoneButton();
-            this.previousPage = new ns1.SiticoneButton();
-            this.placeholderLabel = new System.Windows.Forms.Label();
             this.titleLogo = new System.Windows.Forms.PictureBox();
             this.flyScript = new ns1.SiticoneButton();
             this.multiAPIComboBox = new ns1.SiticoneRoundedComboBox();
-            this.shamelessPlug = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.titleLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -197,11 +193,11 @@ namespace neoblox
             // 
             this.icon.AutoSize = true;
             this.icon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.icon.Font = new System.Drawing.Font("Hack NF", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.icon.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.icon.ForeColor = System.Drawing.Color.PeachPuff;
             this.icon.Location = new System.Drawing.Point(829, 478);
             this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(32, 33);
+            this.icon.Size = new System.Drawing.Size(28, 31);
             this.icon.TabIndex = 29;
             this.icon.Text = "";
             // 
@@ -287,60 +283,10 @@ namespace neoblox
             // 
             // pageLabel
             // 
-            this.pageLabel.AutoSize = true;
-            this.pageLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pageLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.pageLabel.Location = new System.Drawing.Point(12, 466);
+            this.pageLabel.Location = new System.Drawing.Point(0, 0);
             this.pageLabel.Name = "pageLabel";
-            this.pageLabel.Size = new System.Drawing.Size(126, 38);
-            this.pageLabel.TabIndex = 35;
-            this.pageLabel.Text = "Page 1/2";
-            // 
-            // nextPage
-            // 
-            this.nextPage.CheckedState.Parent = this.nextPage;
-            this.nextPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nextPage.CustomImages.Parent = this.nextPage;
-            this.nextPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.nextPage.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextPage.ForeColor = System.Drawing.Color.PeachPuff;
-            this.nextPage.HoveredState.Parent = this.nextPage;
-            this.nextPage.Location = new System.Drawing.Point(154, 466);
-            this.nextPage.Name = "nextPage";
-            this.nextPage.ShadowDecoration.Parent = this.nextPage;
-            this.nextPage.Size = new System.Drawing.Size(107, 43);
-            this.nextPage.TabIndex = 36;
-            this.nextPage.Text = "Next page";
-            this.nextPage.Click += new System.EventHandler(this.nextPage_Click);
-            // 
-            // previousPage
-            // 
-            this.previousPage.CheckedState.Parent = this.previousPage;
-            this.previousPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.previousPage.CustomImages.Parent = this.previousPage;
-            this.previousPage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.previousPage.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.previousPage.ForeColor = System.Drawing.Color.PeachPuff;
-            this.previousPage.HoveredState.Parent = this.previousPage;
-            this.previousPage.Location = new System.Drawing.Point(267, 466);
-            this.previousPage.Name = "previousPage";
-            this.previousPage.ShadowDecoration.Parent = this.previousPage;
-            this.previousPage.Size = new System.Drawing.Size(124, 43);
-            this.previousPage.TabIndex = 37;
-            this.previousPage.Text = "Previous Page";
-            this.previousPage.Click += new System.EventHandler(this.previousPage_Click);
-            // 
-            // placeholderLabel
-            // 
-            this.placeholderLabel.AutoSize = true;
-            this.placeholderLabel.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.placeholderLabel.ForeColor = System.Drawing.Color.PeachPuff;
-            this.placeholderLabel.Location = new System.Drawing.Point(260, 226);
-            this.placeholderLabel.Name = "placeholderLabel";
-            this.placeholderLabel.Size = new System.Drawing.Size(406, 38);
-            this.placeholderLabel.TabIndex = 38;
-            this.placeholderLabel.Text = "Page 2 is only for Patreon subs!";
-            this.placeholderLabel.Visible = false;
+            this.pageLabel.Size = new System.Drawing.Size(100, 23);
+            this.pageLabel.TabIndex = 45;
             // 
             // titleLogo
             // 
@@ -394,34 +340,15 @@ namespace neoblox
             this.multiAPIComboBox.TabIndex = 41;
             this.multiAPIComboBox.SelectedIndexChanged += new System.EventHandler(this.multiAPICombobox_SelectedIndexChanged);
             // 
-            // shamelessPlug
-            // 
-            this.shamelessPlug.AutoSize = true;
-            this.shamelessPlug.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.shamelessPlug.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.shamelessPlug.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shamelessPlug.ForeColor = System.Drawing.Color.SteelBlue;
-            this.shamelessPlug.Location = new System.Drawing.Point(312, 278);
-            this.shamelessPlug.Name = "shamelessPlug";
-            this.shamelessPlug.Size = new System.Drawing.Size(311, 38);
-            this.shamelessPlug.TabIndex = 42;
-            this.shamelessPlug.Text = "Click here for more info";
-            this.shamelessPlug.Visible = false;
-            this.shamelessPlug.Click += new System.EventHandler(this.shamelessPlug_Click);
-            // 
             // ScriptHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(867, 518);
-            this.Controls.Add(this.shamelessPlug);
             this.Controls.Add(this.multiAPIComboBox);
             this.Controls.Add(this.flyScript);
             this.Controls.Add(this.titleLogo);
-            this.Controls.Add(this.placeholderLabel);
-            this.Controls.Add(this.previousPage);
-            this.Controls.Add(this.nextPage);
             this.Controls.Add(this.pageLabel);
             this.Controls.Add(this.mm2GUI);
             this.Controls.Add(this.katGUI);
@@ -469,12 +396,8 @@ namespace neoblox
         private ns1.SiticoneButton mm2GUI;
         private System.Windows.Forms.Timer checkInjectedTimer;
         private System.Windows.Forms.Label pageLabel;
-        private ns1.SiticoneButton nextPage;
-        private ns1.SiticoneButton previousPage;
-        private System.Windows.Forms.Label placeholderLabel;
         private System.Windows.Forms.PictureBox titleLogo;
         private ns1.SiticoneButton flyScript;
         private ns1.SiticoneRoundedComboBox multiAPIComboBox;
-        private System.Windows.Forms.Label shamelessPlug;
     }
 }
