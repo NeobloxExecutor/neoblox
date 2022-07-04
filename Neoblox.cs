@@ -217,7 +217,7 @@
 
             if (!File.Exists("config.txt"))
             {
-                File.Create("config.txt");
+                File.Create("config.txt").Close();
             }
 
             string contents = File.ReadAllText("config.txt");
