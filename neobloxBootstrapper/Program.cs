@@ -63,8 +63,9 @@ namespace neobloxBootstrapper
                 File.WriteAllText("err.txt", err.ToString());
 
                 Console.WriteLine("Wrote error to err.txt! Please make sure to open a GitHub issue on the NeobloxExecutor/Neoblox repository with the error!");
-                Console.WriteLine("Press enter to close...");
+                Console.WriteLine("Press any key to open the GitHub repository issues page...");
                 Console.ReadLine();
+                System.Diagnostics.Process.Start("https://github.com/NeobloxExecutor/neoblox/issues");
             }
 
             void greenConsole()
