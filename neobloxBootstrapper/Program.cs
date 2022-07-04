@@ -148,7 +148,7 @@ namespace neobloxBootstrapper
                         space();
 
                         redConsole();
-                        Console.WriteLine("Failed to download Neoblox!");
+                        Console.WriteLine("Ran into an error in the archive download phase");
 
                         errorDump(ex);
 
@@ -182,7 +182,7 @@ namespace neobloxBootstrapper
                         space();
 
                         redConsole();
-                        Console.WriteLine("Failed to extract Neoblox!");
+                        Console.WriteLine("Ran into an error in the archive extraction phase");
 
                         errorDump(ex);
 
@@ -228,7 +228,7 @@ namespace neobloxBootstrapper
                         space();
 
                         redConsole();
-                        Console.WriteLine("Failed to download Scintilla Neoblox!");
+                        Console.WriteLine("Ran into an error in the download phase");
 
                         errorDump(ex);
 
@@ -262,7 +262,7 @@ namespace neobloxBootstrapper
                         space();
 
                         redConsole();
-                        Console.WriteLine("Failed to extract Scintilla Neoblox!");
+                        Console.WriteLine("Ran into an error in the archive extraction phase");
 
                         errorDump(ex);
 
