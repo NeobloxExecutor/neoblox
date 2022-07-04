@@ -53,6 +53,20 @@ namespace neobloxBootstrapper
 
             // Console managment
 
+            void errorDump(Exception err)
+            {
+                if (!File.Exists("err.txt"))
+                {
+                    File.Create("err.txt").Close();
+                }
+
+                File.WriteAllText("err.txt", err.ToString());
+
+                Console.WriteLine("Wrote error to err.txt! Please make sure to open a GitHub issue on the NeobloxExecutor/Neoblox repository with the error!");
+                Console.WriteLine("Press enter to close...");
+                Console.ReadLine();
+            }
+
             void greenConsole()
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -129,14 +143,14 @@ namespace neobloxBootstrapper
                             space();
                         }
                     }
-                    catch
+                    catch (Exception ex)
                     {
                         space();
 
                         redConsole();
                         Console.WriteLine("Failed to download Neoblox!");
 
-                        Thread.Sleep(2000);
+                        errorDump(ex);
 
                         System.Environment.Exit(1);
                     }
@@ -163,14 +177,14 @@ namespace neobloxBootstrapper
                         System.Diagnostics.Process.Start($"{AppDomain.CurrentDomain.BaseDirectory}\\Neoblox");
                     }
 
-                    catch
+                    catch (Exception ex)
                     {
                         space();
 
                         redConsole();
                         Console.WriteLine("Failed to extract Neoblox!");
 
-                        Thread.Sleep(2000);
+                        errorDump(ex);
 
                         System.Environment.Exit(1);
                     }
@@ -209,14 +223,14 @@ namespace neobloxBootstrapper
                             space();
                         }
                     }
-                    catch
+                    catch (Exception ex)
                     {
                         space();
 
                         redConsole();
                         Console.WriteLine("Failed to download Scintilla Neoblox!");
 
-                        Thread.Sleep(2000);
+                        errorDump(ex);
 
                         System.Environment.Exit(1);
                     }
@@ -243,14 +257,14 @@ namespace neobloxBootstrapper
                         System.Diagnostics.Process.Start($"{AppDomain.CurrentDomain.BaseDirectory}\\lightweightNeoblox");
                     }
 
-                    catch
+                    catch (Exception ex)
                     {
                         space();
 
                         redConsole();
                         Console.WriteLine("Failed to extract Scintilla Neoblox!");
 
-                        Thread.Sleep(2000);
+                        errorDump(ex);
 
                         System.Environment.Exit(1);
                     }
