@@ -121,7 +121,7 @@ namespace neobloxBootstrapper
                         if (File.Exists("Neoblox.zip") == false)
                         {
                             greenConsole();
-                            client.DownloadFile("https://plextora.is-from.space/r/Neoblox.zip", "Neoblox.zip");
+                            client.DownloadFile("https://neoblox.is-from.space/r/Neoblox.zip", "Neoblox.zip");
                             Thread.Sleep(2000);
                             Console.WriteLine("Successfully downloaded Neoblox!");
                             normalConsole();
@@ -201,7 +201,7 @@ namespace neobloxBootstrapper
                         if (File.Exists("Scintilla Neoblox.zip") == false)
                         {
                             greenConsole();
-                            client.DownloadFile("https://plextora.is-from.space/r/Scintilla_Neoblox.zip", "Scintilla Neoblox.zip");
+                            client.DownloadFile("https://neoblox.is-from.space/r/lightweightNeoblox.zip", "Scintilla Neoblox.zip");
                             Thread.Sleep(2000);
                             Console.WriteLine("Successfully downloaded Scintilla Neoblox!");
                             normalConsole();
@@ -240,7 +240,7 @@ namespace neobloxBootstrapper
 
                         Thread.Sleep(1000);
 
-                        System.Diagnostics.Process.Start($"{AppDomain.CurrentDomain.BaseDirectory}\\Scintilla Neoblox");
+                        System.Diagnostics.Process.Start($"{AppDomain.CurrentDomain.BaseDirectory}\\lightweightNeoblox");
                     }
 
                     catch
